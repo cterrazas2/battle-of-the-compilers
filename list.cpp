@@ -72,6 +72,27 @@ void insert(const unordered_set<T> us, list<T>& lis)
   }
 }
 
+template<typename T>
+void erase(list<T>& lis)
+{
+  random_device rd;
+  default_random_engine dr(rd());
+  int size = lis.size()-1;
+  int shrinking = size;
+  int listIndex = 0;
+  while (size-- >= 0) {
+       uniform_int_distribution<int> aa(0,shrinking--);
+       listIndex = aa(dr);
+       auto pos = lis.begin();
+    //   int target = listIndex;
+       while ( listIndex-- > 0)
+           pos++;
+
+    //   cout << "Deleting: list[" << target << "] = " << *pos << "\n";
+       lis.erase(pos);
+  }
+
+}
 
 template<typename T>
 void print(T v)
@@ -103,6 +124,19 @@ int main() {
   cout << "Sorted In Place List Sequence: ";
   print(lis);
   cout << "====================\n";
+
+  //    ==================== Remove Randomly List =====================
+  cout << "Deleting random indexes in List...\n";
+  print(lis);
+  begin = std::chrono::high_resolution_clock::now();
+  erase(lis);
+  end = std::chrono::high_resolution_clock::now();
+  time_trial = end-begin;
+  cout << "TIME: Random List Deletion: " << time_trial.count() << " ms\n";
+  cout << "List Sequence SIZE: " << lis.size() <<"\n";
+  cout << "====================\n";
+  cout << "After Random Deletion, List: ";
+  print(lis);
 
 	return 0;
 }
