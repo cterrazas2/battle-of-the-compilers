@@ -2,6 +2,7 @@
 #include <list>
 #include <chrono>
 #include <random>
+#include <algorithm>
 #include <unordered_set>
 using namespace std;
 
@@ -84,59 +85,41 @@ void erase(list<T>& lis)
        uniform_int_distribution<int> aa(0,shrinking--);
        listIndex = aa(dr);
        auto pos = lis.begin();
-    //   int target = listIndex;
+
        while ( listIndex-- > 0)
            pos++;
 
-    //   cout << "Deleting: list[" << target << "] = " << *pos << "\n";
        lis.erase(pos);
   }
 
 }
 
 template<typename T>
-void print(T v)
+bool find(list<T>& lis, T target)
 {
-  if (v.size()) {
-      cout << "[";
-      for (auto n: v) {
-            cout << n << "," ;
-          }
-          cout <<  "]\n";
-  } else { cout << "[]\n"; }
+  return std::binary_search(lis.begin(),lis.end(),target);
 }
 
 int main() {
-
-  int MAX = 1000;
-  int N = 100; // Default num integers.
-  unordered_set<int> rs; // for checking if rand num is in set already, O(1) cost on avg.
+  int MAX = 1000000;
+  int N = 5000; // Default num integers.
+  unordered_set<int> rs;
   generateRandom(rs,MAX,N);
   list<int> lis;
-  //    ==================== Insert Randomly List =====================
+  
+  // Discard first trial
+  insert(rs,lis);
+  find(lis.begin(),lis.end(),*rs.begin());
+  erase(lis);
+
+  //    ==================== Insert/Erase Randomly List =====================
   auto begin = std::chrono::high_resolution_clock::now();
   insert(rs,lis);
+  find(lis.begin(),lis.end(),*rs.begin());
+  erase(lis);
   auto end = std::chrono::high_resolution_clock::now();
   std::chrono::duration<double, std::milli> time_trial = end-begin;
-  cout << "TIME: In Place List Sequence: " << time_trial.count() << " ms\n";
-  cout << "List Sequence SIZE: " << lis.size() <<"\n";
-  cout << "====================\n";
-  cout << "Sorted In Place List Sequence: ";
-  print(lis);
-  cout << "====================\n";
-
-  //    ==================== Remove Randomly List =====================
-  cout << "Deleting random indexes in List...\n";
-  print(lis);
-  begin = std::chrono::high_resolution_clock::now();
-  erase(lis);
-  end = std::chrono::high_resolution_clock::now();
-  time_trial = end-begin;
-  cout << "TIME: Random List Deletion: " << time_trial.count() << " ms\n";
-  cout << "List Sequence SIZE: " << lis.size() <<"\n";
-  cout << "====================\n";
-  cout << "After Random Deletion, List: ";
-  print(lis);
+  cout << " List Time: " << time_trial.count() << " ms\n";
 
 	return 0;
 }
