@@ -1,6 +1,5 @@
 #include <iostream>
 #include <list>
-#include <chrono>
 #include <random>
 #include <algorithm>
 #include <unordered_set>
@@ -106,20 +105,17 @@ int main() {
   unordered_set<int> rs;
   generateRandom(rs,MAX,N);
   list<int> lis;
-  
+
   // Discard first trial
   insert(rs,lis);
   find(lis.begin(),lis.end(),*rs.begin());
   erase(lis);
 
   //    ==================== Insert/Erase Randomly List =====================
-  auto begin = std::chrono::high_resolution_clock::now();
   insert(rs,lis);
   find(lis.begin(),lis.end(),*rs.begin());
   erase(lis);
-  auto end = std::chrono::high_resolution_clock::now();
-  std::chrono::duration<double, std::milli> time_trial = end-begin;
-  cout << " List Time: " << time_trial.count() << " ms\n";
+
 
 	return 0;
 }
