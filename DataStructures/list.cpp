@@ -2,6 +2,7 @@
 #include <list>
 #include <chrono>
 #include <random>
+#include <algorithm>
 #include <unordered_set>
 using namespace std;
 
@@ -94,32 +95,31 @@ void erase(list<T>& lis)
 }
 
 template<typename T>
-void print(T v)
+bool find(list<T>& lis, T target)
 {
-  if (v.size()) {
-      cout << "[";
-      for (auto n: v) {
-            cout << n << "," ;
-          }
-          cout <<  "]\n";
-  } else { cout << "[]\n"; }
+  return std::binary_search(lis.begin(),lis.end(),target);
 }
 
 int main() {
-  int MAX = 100000;
-  int N = 100; // Default num integers.
+  int MAX = 1000000;
+  int N = 5000; // Default num integers.
   unordered_set<int> rs;
   generateRandom(rs,MAX,N);
   list<int> lis;
+  
   // Discard first trial
   insert(rs,lis);
+  find(lis.begin(),lis.end(),*rs.begin());
   erase(lis);
+
   //    ==================== Insert/Erase Randomly List =====================
   auto begin = std::chrono::high_resolution_clock::now();
   insert(rs,lis);
+  find(lis.begin(),lis.end(),*rs.begin());
   erase(lis);
   auto end = std::chrono::high_resolution_clock::now();
   std::chrono::duration<double, std::milli> time_trial = end-begin;
   cout << " List Time: " << time_trial.count() << " ms\n";
+
 	return 0;
 }
