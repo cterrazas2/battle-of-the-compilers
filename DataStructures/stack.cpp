@@ -108,7 +108,7 @@ bool find(stack<T>& stk, T target)
 
 int main() {
 
-        int MAX = 100000;
+        int MAX = 100000000;
         int N = 5000; // Default num integers.
         unordered_set<int> rs;
         generateRandom(rs,MAX,N);
