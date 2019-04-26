@@ -2,7 +2,10 @@
 #include <stack>
 #include <random>
 #include <unordered_set>
-using namespace std;
+#include <chrono>
+
+using namespace::std;
+using namespace std::chrono;
 
 
 template<typename T>
@@ -36,6 +39,7 @@ void generateRandom(unordered_set<T>& rs, const int MAX, const int N)
                 }
 
         }
+      cerr << rs.size();
 }
 
 template<typename T>
@@ -74,6 +78,8 @@ void insert(const unordered_set<T> us, stack<T>& st)
                 }
         }
 
+        cerr << st.size();
+
 }
 
 template<typename T>
@@ -81,6 +87,8 @@ void erase(stack<T>& st)
 {
   while (!st.empty())
       st.pop();
+
+  cerr << st.size();
 }
 
 template<typename T>
@@ -109,20 +117,28 @@ bool find(stack<T>& stk, T target)
 int main() {
 
         int MAX = 100000000;
-        int N = 5000; // Default num integers.
+        int N = 10000; // Default num integers.
         unordered_set<int> rs;
         generateRandom(rs,MAX,N);
         stack<int> stk;
 
-        // Discard first trial
+        // Cold Cache
+        auto start = system_clock::now();
         insert(rs,stk);
         find(stk,*rs.begin());
         erase(stk);
+        auto end = system_clock::now();
+        auto time_trial = duration_cast<milliseconds>(end-start).count();
+        cerr << "Cold Cache Time: " << time_trial << "ms\n";
 
-        //    ==================== Insert Randomly Stack =====================
+        // Warm Cache
+        start = system_clock::now();
         insert(rs,stk);
         find(stk,*rs.begin());
         erase(stk);
+        end = system_clock::now();
+        time_trial = duration_cast<milliseconds>(end-start).count();
+        cerr << "Warm Cache Time: " << time_trial << "ms\n";
 
         return 0;
 }

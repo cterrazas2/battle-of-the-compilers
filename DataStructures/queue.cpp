@@ -2,7 +2,10 @@
 #include <queue>
 #include <random>
 #include <unordered_set>
-using namespace std;
+#include <chrono>
+
+using namespace::std;
+using namespace std::chrono;
 
 
 template<typename T>
@@ -36,6 +39,7 @@ void generateRandom(unordered_set<T>& rs, const int MAX, const int N)
                 }
 
         }
+        cerr << rs.size();
 }
 
 template<typename T>
@@ -81,6 +85,7 @@ void insert(const unordered_set<T> us, queue<T>& q)
 
                 }
         }
+          	cerr << q.size();
 
 }
 
@@ -89,6 +94,8 @@ void erase(queue<T>& q)
 {
   while (!q.empty())
       q.pop();
+
+  cerr << q.size();
 }
 
 template<typename T>
@@ -122,15 +129,23 @@ int main() {
         generateRandom(rs,MAX,N);
         queue<int> q;
 
-        // Discard first trial
+        // Cold Cache
+        auto start = system_clock::now();
         insert(rs,q);
         find(q,*rs.begin());
         erase(q);
+        auto end = system_clock::now();
+        auto time_trial = duration_cast<milliseconds>(end-start).count();
+        cerr << "Cold Cache Time: " << time_trial << "ms\n";
 
-        //    ==================== Insert Randomly Queue =====================
+        // Warm Cache
+        start = system_clock::now();
         insert(rs,q);
         find(q,*rs.begin());
         erase(q);
+        end = system_clock::now();
+        time_trial = duration_cast<milliseconds>(end-start).count();
+        cerr << "Warm Cache Time: " << time_trial << "ms\n";
 
         return 0;
 }
