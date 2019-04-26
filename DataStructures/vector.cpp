@@ -42,9 +42,9 @@ void testVec(int* a, int* x, int n) {
 
 //main function
 int main() {
-    int n = 5000;
+    int n = 10000;
 
-    //run twice to account for cold caching
+    //run twice: once for warm, once for cold cache
     for (int seed=0; seed<2; seed++) {
         default_random_engine re(seed);
         uniform_real_distribution<double> dist(0.0, 100000000); //reduce chance of collision
@@ -73,9 +73,10 @@ int main() {
         auto end = system_clock::now();
         auto dur = duration_cast<milliseconds>(end-start).count();
         
-        //ignore first trial
-        if (seed != 0)
-            cout << dur << endl;
+        if (seed == 0)
+            cout << "runtime(cold):" << dur << endl;
+        else if (seed == 1)
+            cout << "runtime(warm):" << dur << endl;
     }
 		
 	return 0;
