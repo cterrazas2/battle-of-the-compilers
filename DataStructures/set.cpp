@@ -12,6 +12,8 @@ void set_access(const vector<string>& rands, set<string>* set){
 		set->insert(elem);
 	}
 
+	std::cerr << set->size() << "\n";
+
 	default_random_engine real(0); 
 	uniform_int_distribution<int> distribution(0, set->size());
 
@@ -27,15 +29,32 @@ void set_access(const vector<string>& rands, set<string>* set){
 			++i;
 		}
 	}
+
+	std::cerr << set->size() << "\n";
+
 	std::set<string> tempset;
 	for (const auto& elem: rands) {
 		tempset.insert(elem);
 	}
 
-	// Test swap
-	for (int i=0; i < 10; i++){
-		set->swap(tempset);
-	}
+	std::cerr << set->size() << "\n";
+	// Test swap 
+	set->swap(tempset);
+	std::cerr << set->size() << "\n";
+}
+
+/* Times set function */
+void time(void (*fn)(const std::vector<string>&, std::set<string>*), const std::vector<string>& rands, std::set<string>* set){
+	auto start = chrono::high_resolution_clock::now();
+	fn(rands, set);
+	auto end = chrono::high_resolution_clock::now();
+	auto duration = chrono::duration_cast<chrono::milliseconds>(end - start).count();
+	cout << "cold cache took time: " << duration << " milliseconds" << endl;
+	start = chrono::high_resolution_clock::now();
+	fn(rands, set);
+	end = chrono::high_resolution_clock::now();
+	duration = chrono::duration_cast<chrono::milliseconds>(end - start).count();
+	cout << "warm cache took time: " << duration << " milliseconds" << endl;
 }
 
 int main() {
@@ -48,6 +67,6 @@ int main() {
 	}
 	std::cout << rands[0];
 	std::set<string> set;
-	set_access(rands, &set);
+	time(set_access, rands, &set);
 	return 0;
 }

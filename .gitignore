@@ -1,5 +1,6 @@
-.bash_* 
-.bashrc 
-.profile 
+.bash_*
+.bashrc
+.profile
 .viminfo
 .gitconfig
+*.out
