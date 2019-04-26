@@ -12,6 +12,8 @@ void map_access(const std::vector<int>& rands, std::map<int, int>* map){
 		(*map)[elem] = 0;
 	}
 
+	std::cerr << map->size() << "\n";
+
 	default_random_engine real(0); 
 	uniform_int_distribution<int> distribution(0, map->size());
 
@@ -28,6 +30,10 @@ void map_access(const std::vector<int>& rands, std::map<int, int>* map){
 		}
 	}
 
+	std::cerr << map->size() << "\n";
+	map->clear();
+	std::cerr << map->size() << "\n";
+
 	for (const auto& elem: rands) {
 		(*map)[elem] = 0;
 	}
@@ -40,17 +46,33 @@ void map_access(const std::vector<int>& rands, std::map<int, int>* map){
 			(*map)[key] = 1;
 		}
 	}
+
+	std::cerr << map->size() << "\n";
+}
+
+/* Times map function */
+void time(void (*fn)(const std::vector<int>&, std::map<int, int>*), const std::vector<int>& rands, std::map<int, int>* map){
+	auto start = chrono::high_resolution_clock::now();
+	fn(rands, map);
+	auto end = chrono::high_resolution_clock::now();
+	auto duration = chrono::duration_cast<chrono::milliseconds>(end - start).count();
+	cout << "cold cache took time: " << duration << " milliseconds" << endl;
+	start = chrono::high_resolution_clock::now();
+	fn(rands, map);
+	end = chrono::high_resolution_clock::now();
+	duration = chrono::duration_cast<chrono::milliseconds>(end - start).count();
+	cout << "warm cache took time: " << duration << " milliseconds" << endl;
 }
 
 int main() {
 	default_random_engine re(0); 
 	uniform_int_distribution<int> dist(0, 100000000);
-	int size = 5000;
+	int size = 10000;
 	std::vector<int> rands(size);
 	for (int i=0; i < size; ++i){
 		rands.push_back(dist(re));
 	}
 	std::map<int, int> map;
-	map_access(rands, &map);
+	time(map_access, rands, &map);
 	return 0;
 }
