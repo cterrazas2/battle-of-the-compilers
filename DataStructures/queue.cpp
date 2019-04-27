@@ -1,3 +1,11 @@
+/*
+ * author: Christopher Terrazas
+ * uni: ct2856
+ * queue.cpp: file for insert, access and erase for queue data structure.
+ * Used following resources:
+ *  Tour of C++ - Bjarne Stroustrup
+ *  https://en.cppreference.com
+ */
 #include <iostream>
 #include <queue>
 #include <random>
@@ -8,6 +16,11 @@ using namespace::std;
 using namespace std::chrono;
 
 
+/*
+ *  generateRandom - Generates a random set of integers based on MAX and N.
+ *  params: unordered set, max bound, N bound
+ *  return: void
+*/
 template<typename T>
 void generateRandom(unordered_set<T>& rs, const int MAX, const int N)
 {
@@ -42,6 +55,11 @@ void generateRandom(unordered_set<T>& rs, const int MAX, const int N)
         cerr << rs.size();
 }
 
+/*
+ * insert - inserts elements in non-decreasing order into a queue.
+ * params: unordered set, queue
+ * return: void
+*/
 template<typename T>
 void insert(const unordered_set<T> us, queue<T>& q)
 {
@@ -89,6 +107,11 @@ void insert(const unordered_set<T> us, queue<T>& q)
 
 }
 
+/*
+ * erase - Erases all elements in a queue.
+ * params: queue
+ * return: void
+*/
 template<typename T>
 void erase(queue<T>& q)
 {
@@ -98,6 +121,11 @@ void erase(queue<T>& q)
   cerr << q.size();
 }
 
+/*
+ * find - Finds an element in a sorted queue.
+ * params: queue, target
+ * return: bool for if element is in sorted queue.
+*/
 template<typename T>
 bool find(queue<T>& q, T target)
 {

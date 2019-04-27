@@ -1,3 +1,12 @@
+/*
+ * author: Christopher Terrazas
+ * uni: ct2856
+ * list.cpp: file for insert, access and erase for list data structure.
+ * Used following resources:
+ *  Tour of C++ - Bjarne Stroustrup
+ *  https://en.cppreference.com
+ */
+
 #include <iostream>
 #include <list>
 #include <random>
@@ -8,7 +17,11 @@
 using namespace::std;
 using namespace std::chrono;
 
-
+/*
+ *  generateRandom - Generates a random set of integers based on MAX and N.
+ *  params: unordered set, max bound, N bound
+ *  return: void
+*/
 template<typename T>
 void generateRandom(unordered_set<T>& rs, const int MAX, const int N)
 {
@@ -43,6 +56,11 @@ void generateRandom(unordered_set<T>& rs, const int MAX, const int N)
   	cerr << rs.size();
 }
 
+/*
+ * insert - inserts elements in non-decreasing order into a list.
+ * params: unordered set, list
+ * return: void
+*/
 template<typename T>
 void insert(const unordered_set<T> us, list<T>& lis)
 {
@@ -77,6 +95,12 @@ void insert(const unordered_set<T> us, list<T>& lis)
     	cerr << lis.size();
 }
 
+
+/*
+ * erase - Erases all elements in a list.
+ * params: list
+ * return: void
+*/
 template<typename T>
 void erase(list<T>& lis)
 {
@@ -100,6 +124,12 @@ void erase(list<T>& lis)
 
 }
 
+
+/*
+ * find - Finds an element in a sorted list.
+ * params: list, target
+ * return: bool for if element is in sorted list.
+*/
 template<typename T>
 bool find(list<T>& lis, T target)
 {
@@ -121,7 +151,6 @@ int main() {
   auto end = system_clock::now();
   auto time_trial = duration_cast<milliseconds>(end-start).count();
   cerr << "Cold Cache Time: " << time_trial << "ms\n";
-
 
 
    // Warm Cache

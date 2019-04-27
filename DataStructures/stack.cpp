@@ -1,3 +1,11 @@
+/*
+ * author: Christopher Terrazas
+ * uni: ct2856
+ * stack.cpp: file for insert, access and erase for stack data structure.
+ * Used following resources:
+ *  Tour of C++ - Bjarne Stroustrup
+ *  https://en.cppreference.com
+ */
 #include <iostream>
 #include <stack>
 #include <random>
@@ -8,6 +16,11 @@ using namespace::std;
 using namespace std::chrono;
 
 
+/*
+ *  generateRandom - Generates a random set of integers based on MAX and N.
+ *  params: unordered set, max bound, N bound
+ *  return: void
+*/
 template<typename T>
 void generateRandom(unordered_set<T>& rs, const int MAX, const int N)
 {
@@ -42,6 +55,11 @@ void generateRandom(unordered_set<T>& rs, const int MAX, const int N)
       cerr << rs.size();
 }
 
+/*
+ * insert - inserts elements in non-decreasing order into a stack.
+ * params: unordered set, stack
+ * return: void
+*/
 template<typename T>
 void insert(const unordered_set<T> us, stack<T>& st)
 {
@@ -82,6 +100,11 @@ void insert(const unordered_set<T> us, stack<T>& st)
 
 }
 
+/*
+ * erase - Erases all elements in a stack.
+ * params: stack
+ * return: void
+*/
 template<typename T>
 void erase(stack<T>& st)
 {
@@ -91,6 +114,11 @@ void erase(stack<T>& st)
   cerr << st.size();
 }
 
+/*
+ * find - Finds an element in a sorted stack.
+ * params: stack, target
+ * return: bool for if element is in sorted stack.
+*/
 template<typename T>
 bool find(stack<T>& stk, T target)
 {
