@@ -1,7 +1,7 @@
 #### File - list.cpp
 
 
-###### Function: generateRandom
+#### Function: generateRandom
 
 ```cpp
 template<typename T>
@@ -25,7 +25,7 @@ constant time on average.
 
 **Complexity:** At most `(N*MAX)` steps
 
-###### Function: insert
+#### Function: insert
 ```cpp
 template<typename T>
 void insert(const unordered_set<T> us, list<T>& lis);
@@ -45,7 +45,7 @@ order into a list by utilizing an offset.
 
 **Complexity:** At most `(N*M)` steps
 
-###### Function: erase
+#### Function: erase
 ```cpp
 template<typename T>
 void erase(list<T>& lis)
@@ -65,7 +65,7 @@ offset for deletion.
 
 **Complexity:** At most `(N)` steps
 
-###### Function: find
+#### Function: find
 
 ```cpp
 template<typename T>

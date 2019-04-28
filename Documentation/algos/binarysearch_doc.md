@@ -1,7 +1,7 @@
 #### File - binarysearch.cpp
 
 
-###### Function: insert
+#### Function: insert
 ```cpp
 template<typename T>
 void insert(list<T>& lis, T MAX)
@@ -18,7 +18,7 @@ void insert(list<T>& lis, T MAX)
 
 **Complexity:** At most `(N)` steps
 
-###### Function: BinarySearch
+#### Function: BinarySearch
 ```cpp
 template<typename T>
 bool BinarySearch(list<T>& lis, T target)

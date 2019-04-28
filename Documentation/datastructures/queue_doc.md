@@ -1,11 +1,11 @@
 #### File - queue.cpp
 
 
-###### Function: generateRandom
+#### Function: generateRandom
 
 See list.cpp for documentation.
 
-###### Function: insert
+#### Function: insert
 ```cpp
 template<typename T>
 void insert(const unordered_set<T> us, queue<T>& q)
@@ -24,7 +24,7 @@ This function will iterate over an unordered set and sorting in place in non-dec
 
 **Complexity:** At most `(N*M)` steps
 
-###### Function: erase
+#### Function: erase
 ```cpp
 template<typename T>
 void erase(queue<T>& q)
@@ -40,7 +40,7 @@ void erase(queue<T>& q)
 
 **Complexity:** At most `(N)` steps
 
-###### Function: find
+#### Function: find
 
 ```cpp
 template<typename T>

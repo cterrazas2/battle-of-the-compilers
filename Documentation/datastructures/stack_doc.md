@@ -1,11 +1,11 @@
 #### File - stack.cpp
 
 
-###### Function: generateRandom
+#### Function: generateRandom
 
 See list.cpp for documentation.
 
-###### Function: insert
+#### Function: insert
 ```cpp
 template<typename T>
 void insert(const unordered_set<T> us, stack<T>& st)
@@ -24,7 +24,7 @@ This function will iterate over an unordered set and sorting in place in non-dec
 
 **Complexity:** At most `(N*M)` steps
 
-###### Function: erase
+#### Function: erase
 ```cpp
 template<typename T>
 void erase(stack<T>& st)
@@ -40,7 +40,7 @@ void erase(stack<T>& st)
 
 **Complexity:** At most `(N)` steps
 
-###### Function: find
+#### Function: find
 
 ```cpp
 template<typename T>

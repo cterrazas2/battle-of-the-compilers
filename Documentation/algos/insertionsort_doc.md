@@ -1,10 +1,10 @@
 #### File - insertionsort.cpp
 
-###### Function: generateRandom
+#### Function: generateRandom
 
 See list.cpp for documentation.
 
-###### Function: insert
+#### Function: insert
 ```cpp
 template<typename T>
 void insert(const unordered_set<T> us, vector<T>& vec)
@@ -23,7 +23,7 @@ This function will iterate over an unordered set and place in non-decreasing ord
 
 **Complexity:** At most `(N)` steps
 
-###### Function: InsertionSort
+#### Function: InsertionSort
 ```cpp
 template<typename T>
 void InsertionSort(vector<T>& vec)
