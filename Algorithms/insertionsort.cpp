@@ -1,3 +1,11 @@
+/*
+ * author: Christopher Terrazas
+ * uni: ct2856
+ * insertionsort.cpp: file for utilizing insertion sort on a vector.
+ * Used following resources:
+ *  Tour of C++ - Bjarne Stroustrup
+ *  https://en.cppreference.com
+ */
 #include <iostream>
 #include <unordered_set>
 #include <vector>
@@ -8,6 +16,11 @@
 using namespace::std;
 using namespace std::chrono;
 
+/*
+ *  generateRandom - Generates a random set of integers based on MAX and N.
+ *  params: unordered set, max bound, N bound
+ *  return: void
+*/
 template<typename T>
 void generateRandom(unordered_set<T>& rs, const int MAX, const int N)
 {
@@ -42,6 +55,11 @@ void generateRandom(unordered_set<T>& rs, const int MAX, const int N)
     	cerr << rs.size();
 }
 
+/*
+ * insert - inserts elements into a vector.
+ * params: unordered set, vector
+ * return: void
+*/
 template<typename T>
 void insert(const unordered_set<T> us, vector<T>& vec)
 {
@@ -51,12 +69,17 @@ void insert(const unordered_set<T> us, vector<T>& vec)
     	cerr << vec.size();
 }
 
+/*
+ * InsertionSort - sorts elements in vector using insertion sort
+ * params: vector
+ * return: void
+*/
 template<typename T>
 void InsertionSort(vector<T>& vec)
 {
   for (int i=1;i<vec.size();i++) {
-      int k = vec[i];
-      int j = i-1;
+      auto k = vec[i];
+      auto j = i-1;
       while (j >= 0 && vec[j] > k) {
         vec[j+1] = vec[j];
         j = j-1;
