@@ -16,5 +16,9 @@ set3: set.cpp
 clean:
 	rm -f *.s set1 set2 set3 buf.txt
 
+.PHONY: suites
+suites:
+	sh SetTestSuite.sh
+
 .PHONY: all
 all: clean default

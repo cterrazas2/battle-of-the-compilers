@@ -16,5 +16,9 @@ stack3: stack.cpp
 clean:
 	rm -f *.s stack1 stack2 stack3 buf.txt
 
+.PHONY: suites
+suites:
+	sh StackTestSuite.sh
+
 .PHONY: all
 all: clean default

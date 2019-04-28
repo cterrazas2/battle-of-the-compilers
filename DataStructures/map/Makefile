@@ -16,5 +16,9 @@ map3: map.cpp
 clean:
 	rm -f *.s map1 map2 map3 buf.txt
 
+.PHONY: suites
+suites:
+	sh MapTestSuite.sh
+
 .PHONY: all
 all: clean default

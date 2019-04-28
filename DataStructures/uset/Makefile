@@ -16,5 +16,9 @@ uset3: unordered_set.cpp
 clean:
 	rm -f *.s uset1 uset2 uset3 buf.txt
 
+.PHONY: suites
+suites:
+	sh UsetTestSuite.sh
+
 .PHONY: all
 all: clean default

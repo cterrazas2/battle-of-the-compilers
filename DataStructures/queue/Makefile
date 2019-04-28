@@ -16,5 +16,9 @@ queue3: queue.cpp
 clean:
 	rm -f *.s queue1 queue2 queue3 buf.txt
 
+.PHONY: suites
+suites:
+	sh QueueTestSuite.sh
+
 .PHONY: all
 all: clean default

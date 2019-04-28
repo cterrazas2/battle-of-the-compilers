@@ -16,5 +16,9 @@ list3: list.cpp
 clean:
 	rm -f *.s list1 list2 list3 buf.txt
 
+.PHONY: suites
+suites:
+	sh ListTestSuite.sh
+
 .PHONY: all
-all: clean default
+all: clean suites default

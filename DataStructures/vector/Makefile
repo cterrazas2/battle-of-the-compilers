@@ -16,5 +16,9 @@ vector3: vector.cpp
 clean:
 	rm -f *.s vector1 vector2 vector3 buf.txt
 
+.PHONY: suites
+suites:
+	sh VectorTestSuite.sh
+
 .PHONY: all
 all: clean default
