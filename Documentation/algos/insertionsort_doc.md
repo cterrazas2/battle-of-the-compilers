@@ -9,9 +9,8 @@ See list.cpp for documentation.
 template<typename T>
 void insert(const unordered_set<T> us, vector<T>& vec)
 ```
-1) Inserts elements from a randomly unsorted set in non-decreasing order into a vector.
+1) Inserts elements from a randomly unsorted set into a vector.
 
-This function will iterate over an unordered set and place in non-decreasing order into a vector.
 
 **Parameters**
 - `us`, the random set to be iterated on.

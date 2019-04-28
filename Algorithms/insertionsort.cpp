@@ -56,7 +56,7 @@ void generateRandom(unordered_set<T>& rs, const int MAX, const int N)
 }
 
 /*
- * insert - inserts elements in non-decreasing order into a vector.
+ * insert - inserts elements into a vector.
  * params: unordered set, vector
  * return: void
 */

@@ -6,7 +6,7 @@
 template<typename T>
 void insert(list<T>& lis, T MAX)
 ```
-1) Inserts `MAX` number elements in non-decreasing order into a list.
+1) Inserts `MAX` number elements in into a list.
 
 **Parameters**
 - `lis`, the list to insert elements.

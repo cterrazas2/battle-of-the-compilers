@@ -16,7 +16,7 @@ using namespace std::chrono;
 
 
 /*
- * insert - inserts elements in non-decreasing order into a list.
+ * insert - inserts elements into a list.
  * params: list, N elements
  * return: void
 */
