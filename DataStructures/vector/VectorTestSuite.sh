@@ -1,3 +1,4 @@
+#!/bin/bash 
 >&2 echo "g++ compiling..."
 ./vector1
 >&2 echo "clang++ compiling..."

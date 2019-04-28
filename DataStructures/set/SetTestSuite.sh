@@ -1,3 +1,4 @@
+#!/bin/bash 
 >&2 echo "g++ compiling..."
 ./set1
 >&2 echo "clang++ compiling..."

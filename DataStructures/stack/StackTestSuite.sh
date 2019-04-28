@@ -1,3 +1,4 @@
+#!/bin/bash 
 >&2 echo "g++ compiling..."
 ./stack1
 >&2 echo "clang++ compiling..."
