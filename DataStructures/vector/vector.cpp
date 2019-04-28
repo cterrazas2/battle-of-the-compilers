@@ -2,9 +2,7 @@
 #include <chrono>
 #include <vector>
 #include <random>
-#include <algorithm>
 #include <cmath>
-#include <set>
 
 using namespace::std;
 using namespace std::chrono;
@@ -42,27 +40,20 @@ void testVec(int* a, int* x, int n) {
 
 //main function
 int main() {
-    int n = 10000;
+    static const int n = 10000;
 
     //run twice: once for warm, once for cold cache
     for (int seed=0; seed<2; seed++) {
         default_random_engine re(seed);
         uniform_real_distribution<double> dist(0.0, 100000000); //reduce chance of collision
 
-        int randn = 2*n;
-        int a_rand[randn];
-        for (int i=0; i<randn; i++)
-            a_rand[i] = dist(re);
-        set<int> a_unique(a_rand,a_rand+n);
-
-        int a[n];
-        auto tp = a_unique.begin();
-        for (int i=0; i<n; i++)
-            tp++;
-        copy(a_unique.begin(), tp, a);
+		int a[n];
+		for (int i = 0; i < n; i++) {
+			a[i] = dist(re);
+		}
 
         //construct array of random indices to remove
-        int x[n];
+		int x[n];
         for (int i=0; i<n; i++) {
             uniform_real_distribution<double> dist2(0,n-i);
             x[i] = dist2(re);

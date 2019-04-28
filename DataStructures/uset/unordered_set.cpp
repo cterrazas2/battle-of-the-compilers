@@ -3,6 +3,7 @@
 #include <vector>
 #include <unordered_set>
 #include <random>
+#include <string>
 using namespace std;
 
 /* Fills an unordered_set with random strings and then randomly removes elements from the unordered_set. */
