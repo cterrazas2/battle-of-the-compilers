@@ -1,6 +1,4 @@
-#### File - insertionsort.cpp
-
-#### Function: generateRandom
+#### File - threading.cpp
 
 #### Function: generateRandom
 
@@ -62,24 +60,46 @@ This function will sort all elements within a vector and utilizes `auto` to hand
 
 **Complexity:** At most `(N^2)` steps
 
-**Example of all functions within insertionsort.cpp (#includes excluded):**
+#### Function: print
+```cpp
+template<typename T>
+void print(T v)
+```
+1) Prints all elements from a container.
+
+
+**Parameters**
+- `v`, the container to print.
+
+**Return Value**
+
+1) `void`, however will output to stderr for measurements.
+
+**Complexity:** At most `(N)` steps
+
+**Example of all functions within threading.cpp (#includes excluded):**
 ```cpp
 int main() {
-
   int MAX = 1000000;
-  int N = 10000; // Default num integers.
+  int N = 100000; // Default num integers.
   unordered_set<int> rs;
   vector<int> vec;
 
-  generateRandom(rs,MAX,N);
-  insert(rs,vec);
+  std::thread t1(generateRandom<int>, std::ref(rs), std::ref(MAX), std::ref(N) );
+  t1.join();
 
-  auto start = system_clock::now();
-  InsertionSort(vec);
-  auto end = system_clock::now();
-  auto time_trial = duration_cast<milliseconds>(end-start).count();
-  cerr << "Insertion Sort Time: " << time_trial << "ms\n";
-  return 0;
+  std::thread t2(insert<int>, std::ref(rs), std::ref(vec) );
+  t2.join();
+
+  std::thread t3(InsertionSort<int>, std::ref(vec) );
+  t3.join();
+
+  print(vec);
+
+  std::thread t4(erase<int>, std::ref(vec) );
+  t4.join();
+
+
+	return 0;
 }
-
 ```

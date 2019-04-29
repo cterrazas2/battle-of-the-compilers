@@ -3,7 +3,27 @@
 
 #### Function: generateRandom
 
-See list.cpp for documentation.
+```cpp
+template<typename T>
+void generateRandom(unordered_set<T>& rs, const int MAX, const int N)
+```
+
+1) Generates a unique set of random integers.
+
+This function will utilize an unordered set for generating
+unique random integers. The find operation will be useful due to
+constant time on average.
+
+**Parameters**
+- `rs` , the random set utilized to store random integers.
+- `MAX` bound, the value set for the highest range for the distribution.
+- `N` bound, the value set for the number of random integers to generate.
+
+**Return Value**
+
+1) `void`, however will output to stderr for measurements.
+
+**Complexity:** At most `(N*MAX)` steps
 
 #### Function: insert
 ```cpp
