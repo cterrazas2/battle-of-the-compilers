@@ -1,0 +1,1668 @@
+
+SYM _main:
+XDIS 1000006b0: PUSH      BASE       55                       push rbp
+XDIS 1000006b1: DATAXFER  BASE       4889E5                   mov rbp, rsp
+XDIS 1000006b4: PUSH      BASE       4157                     push r15
+XDIS 1000006b6: PUSH      BASE       4156                     push r14
+XDIS 1000006b8: PUSH      BASE       4155                     push r13
+XDIS 1000006ba: PUSH      BASE       4154                     push r12
+XDIS 1000006bc: PUSH      BASE       53                       push rbx
+XDIS 1000006bd: BINARY    BASE       4881ECA8000000           sub rsp, 0xa8
+XDIS 1000006c4: LOGICAL_FP SSE        0F57C0                   xorps xmm0, xmm0
+XDIS 1000006c7: DATAXFER  SSE        0F2945A0                 movaps xmmword ptr [rbp-0x60], xmm0
+XDIS 1000006cb: DATAXFER  SSE        0F294590                 movaps xmmword ptr [rbp-0x70], xmm0
+XDIS 1000006cf: DATAXFER  BASE       C745B00000803F           mov dword ptr [rbp-0x50], 0x3f800000
+XDIS 1000006d6: MISC      BASE       488D7D90                 lea rdi, ptr [rbp-0x70]
+XDIS 1000006da: DATAXFER  BASE       BE40420F00               mov esi, 0xf4240
+XDIS 1000006df: DATAXFER  BASE       BA10270000               mov edx, 0x2710
+XDIS 1000006e4: CALL      BASE       E807040000               call 0x100000af0 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii>
+XDIS 1000006e9: MISC      BASE       4C8D65C0                 lea r12, ptr [rbp-0x40]
+XDIS 1000006ed: DATAXFER  BASE       4C8965C0                 mov qword ptr [rbp-0x40], r12
+XDIS 1000006f1: DATAXFER  BASE       4C8965C8                 mov qword ptr [rbp-0x38], r12
+XDIS 1000006f5: DATAXFER  BASE       48C745D000000000         mov qword ptr [rbp-0x30], 0x0
+XDIS 1000006fd: CALL      BASE       E844150000               call 0x100001c46 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1a6>
+XDIS 100000702: DATAXFER  BASE       4989C6                   mov r14, rax
+XDIS 100000705: LOGICAL_FP SSE        0F57C0                   xorps xmm0, xmm0
+XDIS 100000708: DATAXFER  SSE        0F298540FFFFFF           movaps xmmword ptr [rbp-0xc0], xmm0
+XDIS 10000070f: DATAXFER  SSE        0F298530FFFFFF           movaps xmmword ptr [rbp-0xd0], xmm0
+XDIS 100000716: DATAXFER  BASE       8B45B0                   mov eax, dword ptr [rbp-0x50]
+XDIS 100000719: DATAXFER  BASE       898550FFFFFF             mov dword ptr [rbp-0xb0], eax
+XDIS 10000071f: DATAXFER  BASE       488B7598                 mov rsi, qword ptr [rbp-0x68]
+XDIS 100000723: MISC      BASE       488DBD30FFFFFF           lea rdi, ptr [rbp-0xd0]
+XDIS 10000072a: CALL      BASE       E8410F0000               call 0x100001670 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE6rehashEm>
+XDIS 10000072f: DATAXFER  BASE       488B5DA0                 mov rbx, qword ptr [rbp-0x60]
+XDIS 100000733: LOGICAL   BASE       4885DB                   test rbx, rbx
+XDIS 100000736: COND_BR   BASE       741C                     jz 0x100000754 <_main+0xa4>
+XDIS 100000738: MISC      BASE       4C8DBD30FFFFFF           lea r15, ptr [rbp-0xd0]
+XDIS 10000073f: NOP       BASE       90                       nop
+XDIS 100000740: MISC      BASE       488D7310                 lea rsi, ptr [rbx+0x10]
+XDIS 100000744: DATAXFER  BASE       4C89FF                   mov rdi, r15
+XDIS 100000747: CALL      BASE       E8D40C0000               call 0x100001420 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi>
+XDIS 10000074c: DATAXFER  BASE       488B1B                   mov rbx, qword ptr [rbx]
+XDIS 10000074f: LOGICAL   BASE       4885DB                   test rbx, rbx
+XDIS 100000752: COND_BR   BASE       75EC                     jnz 0x100000740 <_main+0x90>
+XDIS 100000754: MISC      BASE       488DBD30FFFFFF           lea rdi, ptr [rbp-0xd0]
+XDIS 10000075b: MISC      BASE       488D75C0                 lea rsi, ptr [rbp-0x40]
+XDIS 10000075f: CALL      BASE       E87C060000               call 0x100000de0 <__Z6insertIiEvNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEERNS0_4listIS2_S8_EE>
+XDIS 100000764: DATAXFER  BASE       488BBD40FFFFFF           mov rdi, qword ptr [rbp-0xc0]
+XDIS 10000076b: LOGICAL   BASE       4885FF                   test rdi, rdi
+XDIS 10000076e: COND_BR   BASE       7410                     jz 0x100000780 <_main+0xd0>
+XDIS 100000770: DATAXFER  BASE       488B1F                   mov rbx, qword ptr [rdi]
+XDIS 100000773: CALL      BASE       E8EC140000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 100000778: DATAXFER  BASE       4889DF                   mov rdi, rbx
+XDIS 10000077b: LOGICAL   BASE       4885DB                   test rbx, rbx
+XDIS 10000077e: COND_BR   BASE       75F0                     jnz 0x100000770 <_main+0xc0>
+XDIS 100000780: DATAXFER  BASE       488BBD30FFFFFF           mov rdi, qword ptr [rbp-0xd0]
+XDIS 100000787: DATAXFER  BASE       48C78530FFFFFF00000000   mov qword ptr [rbp-0xd0], 0x0
+XDIS 100000792: LOGICAL   BASE       4885FF                   test rdi, rdi
+XDIS 100000795: COND_BR   BASE       7405                     jz 0x10000079c <_main+0xec>
+XDIS 100000797: CALL      BASE       E8C8140000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 10000079c: MISC      BASE       488D7DC0                 lea rdi, ptr [rbp-0x40]
+XDIS 1000007a0: CALL      BASE       E82B070000               call 0x100000ed0 <__Z5eraseIiEvRNSt3__14listIT_NS0_9allocatorIS2_EEEE>
+XDIS 1000007a5: CALL      BASE       E89C140000               call 0x100001c46 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1a6>
+XDIS 1000007aa: DATAXFER  BASE       4889C3                   mov rbx, rax
+XDIS 1000007ad: DATAXFER  BASE       488B3D6C180000           mov rdi, qword ptr [rip+0x186c] <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x580>
+XDIS 1000007b4: MISC      BASE       488D35ED160000           lea rsi, ptr [rip+0x16ed] <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x408>
+XDIS 1000007bb: DATAXFER  BASE       BA11000000               mov edx, 0x11
+XDIS 1000007c0: CALL      BASE       E87B110000               call 0x100001940 <__ZNSt3__124__put_character_sequenceIcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m>
+XDIS 1000007c5: DATAXFER  BASE       4889C1                   mov rcx, rax
+XDIS 1000007c8: BINARY    BASE       4C29F3                   sub rbx, r14
+XDIS 1000007cb: DATAXFER  BASE       49BDCFF753E3A59BC420     mov r13, 0x20c49ba5e353f7cf
+XDIS 1000007d5: DATAXFER  BASE       4889D8                   mov rax, rbx
+XDIS 1000007d8: BINARY    BASE       49F7ED                   imul r13
+XDIS 1000007db: DATAXFER  BASE       4889D0                   mov rax, rdx
+XDIS 1000007de: SHIFT     BASE       48C1E83F                 shr rax, 0x3f
+XDIS 1000007e2: SHIFT     BASE       48C1FA07                 sar rdx, 0x7
+XDIS 1000007e6: MISC      BASE       488D3402                 lea rsi, ptr [rdx+rax*1]
+XDIS 1000007ea: DATAXFER  BASE       4889CF                   mov rdi, rcx
+XDIS 1000007ed: CALL      BASE       E83C140000               call 0x100001c2e <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x18e>
+XDIS 1000007f2: MISC      BASE       488D35C1160000           lea rsi, ptr [rip+0x16c1] <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x41a>
+XDIS 1000007f9: DATAXFER  BASE       BA03000000               mov edx, 0x3
+XDIS 1000007fe: DATAXFER  BASE       4889C7                   mov rdi, rax
+XDIS 100000801: CALL      BASE       E83A110000               call 0x100001940 <__ZNSt3__124__put_character_sequenceIcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m>
+XDIS 100000806: CALL      BASE       E83B140000               call 0x100001c46 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1a6>
+XDIS 10000080b: DATAXFER  BASE       4989C6                   mov r14, rax
+XDIS 10000080e: LOGICAL_FP SSE        0F57C0                   xorps xmm0, xmm0
+XDIS 100000811: DATAXFER  SSE        0F298570FFFFFF           movaps xmmword ptr [rbp-0x90], xmm0
+XDIS 100000818: DATAXFER  SSE        0F298560FFFFFF           movaps xmmword ptr [rbp-0xa0], xmm0
+XDIS 10000081f: DATAXFER  BASE       8B45B0                   mov eax, dword ptr [rbp-0x50]
+XDIS 100000822: DATAXFER  BASE       894580                   mov dword ptr [rbp-0x80], eax
+XDIS 100000825: DATAXFER  BASE       488B7598                 mov rsi, qword ptr [rbp-0x68]
+XDIS 100000829: MISC      BASE       488DBD60FFFFFF           lea rdi, ptr [rbp-0xa0]
+XDIS 100000830: CALL      BASE       E83B0E0000               call 0x100001670 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE6rehashEm>
+XDIS 100000835: DATAXFER  BASE       488B5DA0                 mov rbx, qword ptr [rbp-0x60]
+XDIS 100000839: LOGICAL   BASE       4885DB                   test rbx, rbx
+XDIS 10000083c: COND_BR   BASE       7426                     jz 0x100000864 <_main+0x1b4>
+XDIS 10000083e: MISC      BASE       4C8DBD60FFFFFF           lea r15, ptr [rbp-0xa0]
+XDIS 100000845: WIDENOP   BASE       662E0F1F840000000000     nop word ptr [rax+rax*1], ax
+XDIS 10000084f: NOP       BASE       90                       nop
+XDIS 100000850: MISC      BASE       488D7310                 lea rsi, ptr [rbx+0x10]
+XDIS 100000854: DATAXFER  BASE       4C89FF                   mov rdi, r15
+XDIS 100000857: CALL      BASE       E8C40B0000               call 0x100001420 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi>
+XDIS 10000085c: DATAXFER  BASE       488B1B                   mov rbx, qword ptr [rbx]
+XDIS 10000085f: LOGICAL   BASE       4885DB                   test rbx, rbx
+XDIS 100000862: COND_BR   BASE       75EC                     jnz 0x100000850 <_main+0x1a0>
+XDIS 100000864: MISC      BASE       488DBD60FFFFFF           lea rdi, ptr [rbp-0xa0]
+XDIS 10000086b: MISC      BASE       488D75C0                 lea rsi, ptr [rbp-0x40]
+XDIS 10000086f: CALL      BASE       E86C050000               call 0x100000de0 <__Z6insertIiEvNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEERNS0_4listIS2_S8_EE>
+XDIS 100000874: DATAXFER  BASE       488BBD70FFFFFF           mov rdi, qword ptr [rbp-0x90]
+XDIS 10000087b: LOGICAL   BASE       4885FF                   test rdi, rdi
+XDIS 10000087e: COND_BR   BASE       7410                     jz 0x100000890 <_main+0x1e0>
+XDIS 100000880: DATAXFER  BASE       488B1F                   mov rbx, qword ptr [rdi]
+XDIS 100000883: CALL      BASE       E8DC130000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 100000888: DATAXFER  BASE       4889DF                   mov rdi, rbx
+XDIS 10000088b: LOGICAL   BASE       4885DB                   test rbx, rbx
+XDIS 10000088e: COND_BR   BASE       75F0                     jnz 0x100000880 <_main+0x1d0>
+XDIS 100000890: DATAXFER  BASE       488BBD60FFFFFF           mov rdi, qword ptr [rbp-0xa0]
+XDIS 100000897: DATAXFER  BASE       48C78560FFFFFF00000000   mov qword ptr [rbp-0xa0], 0x0
+XDIS 1000008a2: LOGICAL   BASE       4885FF                   test rdi, rdi
+XDIS 1000008a5: COND_BR   BASE       7405                     jz 0x1000008ac <_main+0x1fc>
+XDIS 1000008a7: CALL      BASE       E8B8130000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 1000008ac: MISC      BASE       4C8D7DC0                 lea r15, ptr [rbp-0x40]
+XDIS 1000008b0: DATAXFER  BASE       4C89FF                   mov rdi, r15
+XDIS 1000008b3: CALL      BASE       E818060000               call 0x100000ed0 <__Z5eraseIiEvRNSt3__14listIT_NS0_9allocatorIS2_EEEE>
+XDIS 1000008b8: CALL      BASE       E889130000               call 0x100001c46 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1a6>
+XDIS 1000008bd: DATAXFER  BASE       4889C3                   mov rbx, rax
+XDIS 1000008c0: DATAXFER  BASE       488B3D59170000           mov rdi, qword ptr [rip+0x1759] <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x580>
+XDIS 1000008c7: MISC      BASE       488D35F0150000           lea rsi, ptr [rip+0x15f0] <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x41e>
+XDIS 1000008ce: DATAXFER  BASE       BA11000000               mov edx, 0x11
+XDIS 1000008d3: CALL      BASE       E868100000               call 0x100001940 <__ZNSt3__124__put_character_sequenceIcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m>
+XDIS 1000008d8: DATAXFER  BASE       4889C1                   mov rcx, rax
+XDIS 1000008db: BINARY    BASE       4C29F3                   sub rbx, r14
+XDIS 1000008de: DATAXFER  BASE       4889D8                   mov rax, rbx
+XDIS 1000008e1: BINARY    BASE       49F7ED                   imul r13
+XDIS 1000008e4: DATAXFER  BASE       4889D0                   mov rax, rdx
+XDIS 1000008e7: SHIFT     BASE       48C1E83F                 shr rax, 0x3f
+XDIS 1000008eb: SHIFT     BASE       48C1FA07                 sar rdx, 0x7
+XDIS 1000008ef: MISC      BASE       488D3402                 lea rsi, ptr [rdx+rax*1]
+XDIS 1000008f3: DATAXFER  BASE       4889CF                   mov rdi, rcx
+XDIS 1000008f6: CALL      BASE       E833130000               call 0x100001c2e <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x18e>
+XDIS 1000008fb: MISC      BASE       488D35B8150000           lea rsi, ptr [rip+0x15b8] <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x41a>
+XDIS 100000902: DATAXFER  BASE       BA03000000               mov edx, 0x3
+XDIS 100000907: DATAXFER  BASE       4889C7                   mov rdi, rax
+XDIS 10000090a: CALL      BASE       E831100000               call 0x100001940 <__ZNSt3__124__put_character_sequenceIcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m>
+XDIS 10000090f: BINARY    BASE       48837DD000               cmp qword ptr [rbp-0x30], 0x0
+XDIS 100000914: COND_BR   BASE       743B                     jz 0x100000951 <_main+0x2a1>
+XDIS 100000916: DATAXFER  BASE       488B45C0                 mov rax, qword ptr [rbp-0x40]
+XDIS 10000091a: DATAXFER  BASE       488B7DC8                 mov rdi, qword ptr [rbp-0x38]
+XDIS 10000091e: DATAXFER  BASE       488B4808                 mov rcx, qword ptr [rax+0x8]
+XDIS 100000922: DATAXFER  BASE       488B17                   mov rdx, qword ptr [rdi]
+XDIS 100000925: DATAXFER  BASE       48894A08                 mov qword ptr [rdx+0x8], rcx
+XDIS 100000929: DATAXFER  BASE       488B4008                 mov rax, qword ptr [rax+0x8]
+XDIS 10000092d: DATAXFER  BASE       488910                   mov qword ptr [rax], rdx
+XDIS 100000930: DATAXFER  BASE       48C745D000000000         mov qword ptr [rbp-0x30], 0x0
+XDIS 100000938: BINARY    BASE       4C39FF                   cmp rdi, r15
+XDIS 10000093b: COND_BR   BASE       7414                     jz 0x100000951 <_main+0x2a1>
+XDIS 10000093d: WIDENOP   BASE       0F1F00                   nop dword ptr [rax], eax
+XDIS 100000940: DATAXFER  BASE       488B5F08                 mov rbx, qword ptr [rdi+0x8]
+XDIS 100000944: CALL      BASE       E81B130000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 100000949: DATAXFER  BASE       4889DF                   mov rdi, rbx
+XDIS 10000094c: BINARY    BASE       4C39FB                   cmp rbx, r15
+XDIS 10000094f: COND_BR   BASE       75EF                     jnz 0x100000940 <_main+0x290>
+XDIS 100000951: DATAXFER  BASE       488B7DA0                 mov rdi, qword ptr [rbp-0x60]
+XDIS 100000955: LOGICAL   BASE       4885FF                   test rdi, rdi
+XDIS 100000958: COND_BR   BASE       7416                     jz 0x100000970 <_main+0x2c0>
+XDIS 10000095a: WIDENOP   BASE       660F1F440000             nop word ptr [rax+rax*1], ax
+XDIS 100000960: DATAXFER  BASE       488B1F                   mov rbx, qword ptr [rdi]
+XDIS 100000963: CALL      BASE       E8FC120000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 100000968: DATAXFER  BASE       4889DF                   mov rdi, rbx
+XDIS 10000096b: LOGICAL   BASE       4885DB                   test rbx, rbx
+XDIS 10000096e: COND_BR   BASE       75F0                     jnz 0x100000960 <_main+0x2b0>
+XDIS 100000970: DATAXFER  BASE       488B7D90                 mov rdi, qword ptr [rbp-0x70]
+XDIS 100000974: DATAXFER  BASE       48C7459000000000         mov qword ptr [rbp-0x70], 0x0
+XDIS 10000097c: LOGICAL   BASE       4885FF                   test rdi, rdi
+XDIS 10000097f: COND_BR   BASE       7405                     jz 0x100000986 <_main+0x2d6>
+XDIS 100000981: CALL      BASE       E8DE120000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 100000986: LOGICAL   BASE       31C0                     xor eax, eax
+XDIS 100000988: BINARY    BASE       4881C4A8000000           add rsp, 0xa8
+XDIS 10000098f: POP       BASE       5B                       pop rbx
+XDIS 100000990: POP       BASE       415C                     pop r12
+XDIS 100000992: POP       BASE       415D                     pop r13
+XDIS 100000994: POP       BASE       415E                     pop r14
+XDIS 100000996: POP       BASE       415F                     pop r15
+XDIS 100000998: POP       BASE       5D                       pop rbp
+XDIS 100000999: RET       BASE       C3                       ret 
+XDIS 10000099a: DATAXFER  BASE       4989C6                   mov r14, rax
+XDIS 10000099d: DATAXFER  BASE       488BBD70FFFFFF           mov rdi, qword ptr [rbp-0x90]
+XDIS 1000009a4: LOGICAL   BASE       4885FF                   test rdi, rdi
+XDIS 1000009a7: COND_BR   BASE       7473                     jz 0x100000a1c <_main+0x36c>
+XDIS 1000009a9: DATAXFER  BASE       488B1F                   mov rbx, qword ptr [rdi]
+XDIS 1000009ac: CALL      BASE       E8B3120000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 1000009b1: DATAXFER  BASE       4889DF                   mov rdi, rbx
+XDIS 1000009b4: LOGICAL   BASE       4885DB                   test rbx, rbx
+XDIS 1000009b7: COND_BR   BASE       75F0                     jnz 0x1000009a9 <_main+0x2f9>
+XDIS 1000009b9: UNCOND_BR BASE       EB61                     jmp 0x100000a1c <_main+0x36c>
+XDIS 1000009bb: UNCOND_BR BASE       EB40                     jmp 0x1000009fd <_main+0x34d>
+XDIS 1000009bd: UNCOND_BR BASE       EB2F                     jmp 0x1000009ee <_main+0x33e>
+XDIS 1000009bf: DATAXFER  BASE       4989C6                   mov r14, rax
+XDIS 1000009c2: DATAXFER  BASE       488BBD40FFFFFF           mov rdi, qword ptr [rbp-0xc0]
+XDIS 1000009c9: LOGICAL   BASE       4885FF                   test rdi, rdi
+XDIS 1000009cc: COND_BR   BASE       0F8482000000             jz 0x100000a54 <_main+0x3a4>
+XDIS 1000009d2: DATAXFER  BASE       488B1F                   mov rbx, qword ptr [rdi]
+XDIS 1000009d5: CALL      BASE       E88A120000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 1000009da: DATAXFER  BASE       4889DF                   mov rdi, rbx
+XDIS 1000009dd: LOGICAL   BASE       4885DB                   test rbx, rbx
+XDIS 1000009e0: COND_BR   BASE       75F0                     jnz 0x1000009d2 <_main+0x322>
+XDIS 1000009e2: UNCOND_BR BASE       EB70                     jmp 0x100000a54 <_main+0x3a4>
+XDIS 1000009e4: UNCOND_BR BASE       EB4F                     jmp 0x100000a35 <_main+0x385>
+XDIS 1000009e6: DATAXFER  BASE       4989C6                   mov r14, rax
+XDIS 1000009e9: UNCOND_BR BASE       E9C1000000               jmp 0x100000aaf <_main+0x3ff>
+XDIS 1000009ee: DATAXFER  BASE       4989C6                   mov r14, rax
+XDIS 1000009f1: BINARY    BASE       48837DD000               cmp qword ptr [rbp-0x30], 0x0
+XDIS 1000009f6: COND_BR   BASE       757F                     jnz 0x100000a77 <_main+0x3c7>
+XDIS 1000009f8: UNCOND_BR BASE       E9B2000000               jmp 0x100000aaf <_main+0x3ff>
+XDIS 1000009fd: DATAXFER  BASE       4989C6                   mov r14, rax
+XDIS 100000a00: DATAXFER  BASE       488BBD70FFFFFF           mov rdi, qword ptr [rbp-0x90]
+XDIS 100000a07: LOGICAL   BASE       4885FF                   test rdi, rdi
+XDIS 100000a0a: COND_BR   BASE       7410                     jz 0x100000a1c <_main+0x36c>
+XDIS 100000a0c: DATAXFER  BASE       488B1F                   mov rbx, qword ptr [rdi]
+XDIS 100000a0f: CALL      BASE       E850120000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 100000a14: DATAXFER  BASE       4889DF                   mov rdi, rbx
+XDIS 100000a17: LOGICAL   BASE       4885DB                   test rbx, rbx
+XDIS 100000a1a: COND_BR   BASE       75F0                     jnz 0x100000a0c <_main+0x35c>
+XDIS 100000a1c: DATAXFER  BASE       488BBD60FFFFFF           mov rdi, qword ptr [rbp-0xa0]
+XDIS 100000a23: DATAXFER  BASE       48C78560FFFFFF00000000   mov qword ptr [rbp-0xa0], 0x0
+XDIS 100000a2e: LOGICAL   BASE       4885FF                   test rdi, rdi
+XDIS 100000a31: COND_BR   BASE       7538                     jnz 0x100000a6b <_main+0x3bb>
+XDIS 100000a33: UNCOND_BR BASE       EB3B                     jmp 0x100000a70 <_main+0x3c0>
+XDIS 100000a35: DATAXFER  BASE       4989C6                   mov r14, rax
+XDIS 100000a38: DATAXFER  BASE       488BBD40FFFFFF           mov rdi, qword ptr [rbp-0xc0]
+XDIS 100000a3f: LOGICAL   BASE       4885FF                   test rdi, rdi
+XDIS 100000a42: COND_BR   BASE       7410                     jz 0x100000a54 <_main+0x3a4>
+XDIS 100000a44: DATAXFER  BASE       488B1F                   mov rbx, qword ptr [rdi]
+XDIS 100000a47: CALL      BASE       E818120000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 100000a4c: DATAXFER  BASE       4889DF                   mov rdi, rbx
+XDIS 100000a4f: LOGICAL   BASE       4885DB                   test rbx, rbx
+XDIS 100000a52: COND_BR   BASE       75F0                     jnz 0x100000a44 <_main+0x394>
+XDIS 100000a54: DATAXFER  BASE       488BBD30FFFFFF           mov rdi, qword ptr [rbp-0xd0]
+XDIS 100000a5b: DATAXFER  BASE       48C78530FFFFFF00000000   mov qword ptr [rbp-0xd0], 0x0
+XDIS 100000a66: LOGICAL   BASE       4885FF                   test rdi, rdi
+XDIS 100000a69: COND_BR   BASE       7405                     jz 0x100000a70 <_main+0x3c0>
+XDIS 100000a6b: CALL      BASE       E8F4110000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 100000a70: BINARY    BASE       48837DD000               cmp qword ptr [rbp-0x30], 0x0
+XDIS 100000a75: COND_BR   BASE       7438                     jz 0x100000aaf <_main+0x3ff>
+XDIS 100000a77: DATAXFER  BASE       488B45C0                 mov rax, qword ptr [rbp-0x40]
+XDIS 100000a7b: DATAXFER  BASE       488B7DC8                 mov rdi, qword ptr [rbp-0x38]
+XDIS 100000a7f: DATAXFER  BASE       488B4808                 mov rcx, qword ptr [rax+0x8]
+XDIS 100000a83: DATAXFER  BASE       488B17                   mov rdx, qword ptr [rdi]
+XDIS 100000a86: DATAXFER  BASE       48894A08                 mov qword ptr [rdx+0x8], rcx
+XDIS 100000a8a: DATAXFER  BASE       488B4008                 mov rax, qword ptr [rax+0x8]
+XDIS 100000a8e: DATAXFER  BASE       488910                   mov qword ptr [rax], rdx
+XDIS 100000a91: DATAXFER  BASE       48C745D000000000         mov qword ptr [rbp-0x30], 0x0
+XDIS 100000a99: BINARY    BASE       4C39E7                   cmp rdi, r12
+XDIS 100000a9c: COND_BR   BASE       7411                     jz 0x100000aaf <_main+0x3ff>
+XDIS 100000a9e: DATAXFER  BASE       488B5F08                 mov rbx, qword ptr [rdi+0x8]
+XDIS 100000aa2: CALL      BASE       E8BD110000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 100000aa7: DATAXFER  BASE       4889DF                   mov rdi, rbx
+XDIS 100000aaa: BINARY    BASE       4C39E3                   cmp rbx, r12
+XDIS 100000aad: COND_BR   BASE       75EF                     jnz 0x100000a9e <_main+0x3ee>
+XDIS 100000aaf: DATAXFER  BASE       488B7DA0                 mov rdi, qword ptr [rbp-0x60]
+XDIS 100000ab3: LOGICAL   BASE       4885FF                   test rdi, rdi
+XDIS 100000ab6: COND_BR   BASE       7418                     jz 0x100000ad0 <_main+0x420>
+XDIS 100000ab8: WIDENOP   BASE       0F1F840000000000         nop dword ptr [rax+rax*1], eax
+XDIS 100000ac0: DATAXFER  BASE       488B1F                   mov rbx, qword ptr [rdi]
+XDIS 100000ac3: CALL      BASE       E89C110000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 100000ac8: DATAXFER  BASE       4889DF                   mov rdi, rbx
+XDIS 100000acb: LOGICAL   BASE       4885DB                   test rbx, rbx
+XDIS 100000ace: COND_BR   BASE       75F0                     jnz 0x100000ac0 <_main+0x410>
+XDIS 100000ad0: DATAXFER  BASE       488B7D90                 mov rdi, qword ptr [rbp-0x70]
+XDIS 100000ad4: DATAXFER  BASE       48C7459000000000         mov qword ptr [rbp-0x70], 0x0
+XDIS 100000adc: LOGICAL   BASE       4885FF                   test rdi, rdi
+XDIS 100000adf: COND_BR   BASE       7405                     jz 0x100000ae6 <_main+0x436>
+XDIS 100000ae1: CALL      BASE       E87E110000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 100000ae6: DATAXFER  BASE       4C89F7                   mov rdi, r14
+XDIS 100000ae9: CALL      BASE       E810110000               call 0x100001bfe <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x15e>
+XDIS 100000aee: MISC      BASE       0F0B                     ud2
+
+SYM __Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii:
+XDIS 100000af0: PUSH      BASE       55                       push rbp
+XDIS 100000af1: DATAXFER  BASE       4889E5                   mov rbp, rsp
+XDIS 100000af4: PUSH      BASE       4157                     push r15
+XDIS 100000af6: PUSH      BASE       4156                     push r14
+XDIS 100000af8: PUSH      BASE       4155                     push r13
+XDIS 100000afa: PUSH      BASE       4154                     push r12
+XDIS 100000afc: PUSH      BASE       53                       push rbx
+XDIS 100000afd: BINARY    BASE       4883EC48                 sub rsp, 0x48
+XDIS 100000b01: DATAXFER  BASE       8955C4                   mov dword ptr [rbp-0x3c], edx
+XDIS 100000b04: DATAXFER  BASE       8975CC                   mov dword ptr [rbp-0x34], esi
+XDIS 100000b07: DATAXFER  BASE       4989FE                   mov r14, rdi
+XDIS 100000b0a: LOGICAL_FP SSE        0F57C0                   xorps xmm0, xmm0
+XDIS 100000b0d: DATAXFER  SSE        0F2945A0                 movaps xmmword ptr [rbp-0x60], xmm0
+XDIS 100000b11: DATAXFER  BASE       48C745B000000000         mov qword ptr [rbp-0x50], 0x0
+XDIS 100000b19: DATAXFER  BASE       C645A018                 mov byte ptr [rbp-0x60], 0x18
+XDIS 100000b1d: DATAXFER  BASE       48B82F6465762F757261     mov rax, 0x6172752f7665642f
+XDIS 100000b27: DATAXFER  BASE       488945A1                 mov qword ptr [rbp-0x5f], rax
+XDIS 100000b2b: DATAXFER  BASE       C745A96E646F6D           mov dword ptr [rbp-0x57], 0x6d6f646e
+XDIS 100000b32: DATAXFER  BASE       C645AD00                 mov byte ptr [rbp-0x53], 0x0
+XDIS 100000b36: MISC      BASE       488D7DD0                 lea rdi, ptr [rbp-0x30]
+XDIS 100000b3a: MISC      BASE       488D75A0                 lea rsi, ptr [rbp-0x60]
+XDIS 100000b3e: CALL      BASE       E8F1100000               call 0x100001c34 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x194>
+XDIS 100000b43: LOGICAL   BASE       F645A001                 test byte ptr [rbp-0x60], 0x1
+XDIS 100000b47: COND_BR   BASE       7409                     jz 0x100000b52 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x62>
+XDIS 100000b49: DATAXFER  BASE       488B7DB0                 mov rdi, qword ptr [rbp-0x50]
+XDIS 100000b4d: CALL      BASE       E812110000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 100000b52: MISC      BASE       488D7DD0                 lea rdi, ptr [rbp-0x30]
+XDIS 100000b56: CALL      BASE       E8E5100000               call 0x100001c40 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1a0>
+XDIS 100000b5b: DATAXFER  BASE       89C1                     mov ecx, eax
+XDIS 100000b5d: MISC      BASE       488D0C49                 lea rcx, ptr [rcx+rcx*2]
+XDIS 100000b61: SHIFT     BASE       48C1E920                 shr rcx, 0x20
+XDIS 100000b65: DATAXFER  BASE       89C2                     mov edx, eax
+XDIS 100000b67: BINARY    BASE       29CA                     sub edx, ecx
+XDIS 100000b69: SHIFT     BASE       D1EA                     shr edx, 0x1
+XDIS 100000b6b: BINARY    BASE       01CA                     add edx, ecx
+XDIS 100000b6d: SHIFT     BASE       C1EA1E                   shr edx, 0x1e
+XDIS 100000b70: DATAXFER  BASE       89D1                     mov ecx, edx
+XDIS 100000b72: SHIFT     BASE       C1E11F                   shl ecx, 0x1f
+XDIS 100000b75: BINARY    BASE       29CA                     sub edx, ecx
+XDIS 100000b77: BINARY    BASE       01C2                     add edx, eax
+XDIS 100000b79: DATAXFER  BASE       B801000000               mov eax, 0x1
+XDIS 100000b7e: CMOV      BASE       0F45C2                   cmovnz eax, edx
+XDIS 100000b81: DATAXFER  BASE       8945C8                   mov dword ptr [rbp-0x38], eax
+XDIS 100000b84: DATAXFER  BASE       C745A000000000           mov dword ptr [rbp-0x60], 0x0
+XDIS 100000b8b: DATAXFER  BASE       8B45CC                   mov eax, dword ptr [rbp-0x34]
+XDIS 100000b8e: DATAXFER  BASE       8945A4                   mov dword ptr [rbp-0x5c], eax
+XDIS 100000b91: DATAXFER  BASE       C745D400000000           mov dword ptr [rbp-0x2c], 0x0
+XDIS 100000b98: BINARY    BASE       837DC400                 cmp dword ptr [rbp-0x3c], 0x0
+XDIS 100000b9c: COND_BR   BASE       0F8EDB010000             jle 0x100000d7d <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x28d>
+XDIS 100000ba2: LOGICAL   BASE       4531E4                   xor r12d, r12d
+XDIS 100000ba5: MISC      BASE       4C8D6DA0                 lea r13, ptr [rbp-0x60]
+XDIS 100000ba9: WIDENOP   BASE       0F1F8000000000           nop dword ptr [rax], eax
+XDIS 100000bb0: DATAXFER  BASE       4C89EF                   mov rdi, r13
+XDIS 100000bb3: MISC      BASE       488D75C8                 lea rsi, ptr [rbp-0x38]
+XDIS 100000bb7: DATAXFER  BASE       4C89EA                   mov rdx, r13
+XDIS 100000bba: CALL      BASE       E811050000               call 0x1000010d0 <__ZNSt3__124uniform_int_distributionIiEclINS_26linear_congruential_engineIjLj48271ELj0ELj2147483647EEEEEiRT_RKNS1_10param_typeE>
+XDIS 100000bbf: DATAXFER  BASE       4189C7                   mov r15d, eax
+XDIS 100000bc2: DATAXFER  BASE       8945D4                   mov dword ptr [rbp-0x2c], eax
+XDIS 100000bc5: DATAXFER  BASE       498B7E08                 mov rdi, qword ptr [r14+0x8]
+XDIS 100000bc9: LOGICAL   BASE       4885FF                   test rdi, rdi
+XDIS 100000bcc: COND_BR   BASE       0F849E000000             jz 0x100000c70 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x180>
+XDIS 100000bd2: DATAXFER  LONGMODE   4963CF                   movsxd rcx, r15d
+XDIS 100000bd5: MISC      BASE       4C8D47FF                 lea r8, ptr [rdi-0x1]
+XDIS 100000bd9: LOGICAL   BASE       4985F8                   test r8, rdi
+XDIS 100000bdc: COND_BR   BASE       7422                     jz 0x100000c00 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x110>
+XDIS 100000bde: DATAXFER  BASE       4889CE                   mov rsi, rcx
+XDIS 100000be1: BINARY    BASE       4839CF                   cmp rdi, rcx
+XDIS 100000be4: COND_BR   BASE       7720                     jnbe 0x100000c06 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x116>
+XDIS 100000be6: LOGICAL   BASE       31D2                     xor edx, edx
+XDIS 100000be8: DATAXFER  BASE       4889C8                   mov rax, rcx
+XDIS 100000beb: BINARY    BASE       48F7F7                   div rdi
+XDIS 100000bee: DATAXFER  BASE       4889D6                   mov rsi, rdx
+XDIS 100000bf1: UNCOND_BR BASE       EB13                     jmp 0x100000c06 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x116>
+XDIS 100000bf3: WIDENOP   BASE       662E0F1F840000000000     nop word ptr [rax+rax*1], ax
+XDIS 100000bfd: WIDENOP   BASE       0F1F00                   nop dword ptr [rax], eax
+XDIS 100000c00: DATAXFER  BASE       4C89C6                   mov rsi, r8
+XDIS 100000c03: LOGICAL   BASE       4821CE                   and rsi, rcx
+XDIS 100000c06: DATAXFER  BASE       498B06                   mov rax, qword ptr [r14]
+XDIS 100000c09: DATAXFER  BASE       488B04F0                 mov rax, qword ptr [rax+rsi*8]
+XDIS 100000c0d: LOGICAL   BASE       4885C0                   test rax, rax
+XDIS 100000c10: COND_BR   BASE       745E                     jz 0x100000c70 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x180>
+XDIS 100000c12: DATAXFER  BASE       488B18                   mov rbx, qword ptr [rax]
+XDIS 100000c15: LOGICAL   BASE       4885DB                   test rbx, rbx
+XDIS 100000c18: COND_BR   BASE       750E                     jnz 0x100000c28 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x138>
+XDIS 100000c1a: UNCOND_BR BASE       EB54                     jmp 0x100000c70 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x180>
+XDIS 100000c1c: WIDENOP   BASE       0F1F4000                 nop dword ptr [rax], eax
+XDIS 100000c20: DATAXFER  BASE       488B1B                   mov rbx, qword ptr [rbx]
+XDIS 100000c23: LOGICAL   BASE       4885DB                   test rbx, rbx
+XDIS 100000c26: COND_BR   BASE       7448                     jz 0x100000c70 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x180>
+XDIS 100000c28: DATAXFER  BASE       488B4308                 mov rax, qword ptr [rbx+0x8]
+XDIS 100000c2c: BINARY    BASE       4839C8                   cmp rax, rcx
+XDIS 100000c2f: COND_BR   BASE       750F                     jnz 0x100000c40 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x150>
+XDIS 100000c31: BINARY    BASE       44397B10                 cmp dword ptr [rbx+0x10], r15d
+XDIS 100000c35: COND_BR   BASE       75E9                     jnz 0x100000c20 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x130>
+XDIS 100000c37: UNCOND_BR BASE       EB55                     jmp 0x100000c8e <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x19e>
+XDIS 100000c39: WIDENOP   BASE       0F1F8000000000           nop dword ptr [rax], eax
+XDIS 100000c40: LOGICAL   BASE       4985F8                   test r8, rdi
+XDIS 100000c43: COND_BR   BASE       7414                     jz 0x100000c59 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x169>
+XDIS 100000c45: BINARY    BASE       4839F8                   cmp rax, rdi
+XDIS 100000c48: COND_BR   BASE       7208                     jb 0x100000c52 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x162>
+XDIS 100000c4a: LOGICAL   BASE       31D2                     xor edx, edx
+XDIS 100000c4c: BINARY    BASE       48F7F7                   div rdi
+XDIS 100000c4f: DATAXFER  BASE       4889D0                   mov rax, rdx
+XDIS 100000c52: BINARY    BASE       4839F0                   cmp rax, rsi
+XDIS 100000c55: COND_BR   BASE       74C9                     jz 0x100000c20 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x130>
+XDIS 100000c57: UNCOND_BR BASE       EB17                     jmp 0x100000c70 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x180>
+XDIS 100000c59: LOGICAL   BASE       4C21C0                   and rax, r8
+XDIS 100000c5c: BINARY    BASE       4839F0                   cmp rax, rsi
+XDIS 100000c5f: COND_BR   BASE       74BF                     jz 0x100000c20 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x130>
+XDIS 100000c61: WIDENOP   BASE       662E0F1F840000000000     nop word ptr [rax+rax*1], ax
+XDIS 100000c6b: WIDENOP   BASE       0F1F440000               nop dword ptr [rax+rax*1], eax
+XDIS 100000c70: DATAXFER  BASE       4C89F7                   mov rdi, r14
+XDIS 100000c73: MISC      BASE       488D75D4                 lea rsi, ptr [rbp-0x2c]
+XDIS 100000c77: CALL      BASE       E8A4070000               call 0x100001420 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi>
+XDIS 100000c7c: BINARY    BASE       41FFC4                   inc r12d
+XDIS 100000c7f: BINARY    BASE       443B65C4                 cmp r12d, dword ptr [rbp-0x3c]
+XDIS 100000c83: COND_BR   BASE       0F8C27FFFFFF             jl 0x100000bb0 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0xc0>
+XDIS 100000c89: UNCOND_BR BASE       E9EF000000               jmp 0x100000d7d <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x28d>
+XDIS 100000c8e: BINARY    BASE       837DCC00                 cmp dword ptr [rbp-0x34], 0x0
+XDIS 100000c92: COND_BR   BASE       7EE8                     jle 0x100000c7c <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x18c>
+XDIS 100000c94: LOGICAL   BASE       31C0                     xor eax, eax
+XDIS 100000c96: DATAXFER  BASE       4489FB                   mov ebx, r15d
+XDIS 100000c99: UNCOND_BR BASE       E9B2000000               jmp 0x100000d50 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x260>
+XDIS 100000c9e: NOP       BASE       6690                     data16 nop
+XDIS 100000ca0: DATAXFER  BASE       89459C                   mov dword ptr [rbp-0x64], eax
+XDIS 100000ca3: DATAXFER  BASE       4C89EF                   mov rdi, r13
+XDIS 100000ca6: MISC      BASE       488D75C8                 lea rsi, ptr [rbp-0x38]
+XDIS 100000caa: DATAXFER  BASE       4C89EA                   mov rdx, r13
+XDIS 100000cad: CALL      BASE       E81E040000               call 0x1000010d0 <__ZNSt3__124uniform_int_distributionIiEclINS_26linear_congruential_engineIjLj48271ELj0ELj2147483647EEEEEiRT_RKNS1_10param_typeE>
+XDIS 100000cb2: DATAXFER  BASE       4189C0                   mov r8d, eax
+XDIS 100000cb5: DATAXFER  BASE       498B4E08                 mov rcx, qword ptr [r14+0x8]
+XDIS 100000cb9: LOGICAL   BASE       4885C9                   test rcx, rcx
+XDIS 100000cbc: COND_BR   BASE       0F84A6000000             jz 0x100000d68 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x278>
+XDIS 100000cc2: DATAXFER  LONGMODE   4963F0                   movsxd rsi, r8d
+XDIS 100000cc5: MISC      BASE       488D79FF                 lea rdi, ptr [rcx-0x1]
+XDIS 100000cc9: LOGICAL   BASE       4885CF                   test rdi, rcx
+XDIS 100000ccc: COND_BR   BASE       7415                     jz 0x100000ce3 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x1f3>
+XDIS 100000cce: DATAXFER  BASE       4989F1                   mov r9, rsi
+XDIS 100000cd1: BINARY    BASE       4839F1                   cmp rcx, rsi
+XDIS 100000cd4: COND_BR   BASE       7713                     jnbe 0x100000ce9 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x1f9>
+XDIS 100000cd6: LOGICAL   BASE       31D2                     xor edx, edx
+XDIS 100000cd8: DATAXFER  BASE       4889F0                   mov rax, rsi
+XDIS 100000cdb: BINARY    BASE       48F7F1                   div rcx
+XDIS 100000cde: DATAXFER  BASE       4989D1                   mov r9, rdx
+XDIS 100000ce1: UNCOND_BR BASE       EB06                     jmp 0x100000ce9 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x1f9>
+XDIS 100000ce3: DATAXFER  BASE       4989F9                   mov r9, rdi
+XDIS 100000ce6: LOGICAL   BASE       4921F1                   and r9, rsi
+XDIS 100000ce9: DATAXFER  BASE       498B06                   mov rax, qword ptr [r14]
+XDIS 100000cec: DATAXFER  BASE       4A8B04C8                 mov rax, qword ptr [rax+r9*8]
+XDIS 100000cf0: LOGICAL   BASE       4885C0                   test rax, rax
+XDIS 100000cf3: COND_BR   BASE       7473                     jz 0x100000d68 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x278>
+XDIS 100000cf5: DATAXFER  BASE       488B18                   mov rbx, qword ptr [rax]
+XDIS 100000cf8: LOGICAL   BASE       4885DB                   test rbx, rbx
+XDIS 100000cfb: COND_BR   BASE       750B                     jnz 0x100000d08 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x218>
+XDIS 100000cfd: UNCOND_BR BASE       EB69                     jmp 0x100000d68 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x278>
+XDIS 100000cff: NOP       BASE       90                       nop
+XDIS 100000d00: DATAXFER  BASE       488B1B                   mov rbx, qword ptr [rbx]
+XDIS 100000d03: LOGICAL   BASE       4885DB                   test rbx, rbx
+XDIS 100000d06: COND_BR   BASE       7460                     jz 0x100000d68 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x278>
+XDIS 100000d08: DATAXFER  BASE       488B4308                 mov rax, qword ptr [rbx+0x8]
+XDIS 100000d0c: BINARY    BASE       4839F0                   cmp rax, rsi
+XDIS 100000d0f: COND_BR   BASE       750F                     jnz 0x100000d20 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x230>
+XDIS 100000d11: BINARY    BASE       44394310                 cmp dword ptr [rbx+0x10], r8d
+XDIS 100000d15: COND_BR   BASE       75E9                     jnz 0x100000d00 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x210>
+XDIS 100000d17: UNCOND_BR BASE       EB2A                     jmp 0x100000d43 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x253>
+XDIS 100000d19: WIDENOP   BASE       0F1F8000000000           nop dword ptr [rax], eax
+XDIS 100000d20: LOGICAL   BASE       4885CF                   test rdi, rcx
+XDIS 100000d23: COND_BR   BASE       7414                     jz 0x100000d39 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x249>
+XDIS 100000d25: BINARY    BASE       4839C8                   cmp rax, rcx
+XDIS 100000d28: COND_BR   BASE       7208                     jb 0x100000d32 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x242>
+XDIS 100000d2a: LOGICAL   BASE       31D2                     xor edx, edx
+XDIS 100000d2c: BINARY    BASE       48F7F1                   div rcx
+XDIS 100000d2f: DATAXFER  BASE       4889D0                   mov rax, rdx
+XDIS 100000d32: BINARY    BASE       4C39C8                   cmp rax, r9
+XDIS 100000d35: COND_BR   BASE       74C9                     jz 0x100000d00 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x210>
+XDIS 100000d37: UNCOND_BR BASE       EB2F                     jmp 0x100000d68 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x278>
+XDIS 100000d39: LOGICAL   BASE       4821F8                   and rax, rdi
+XDIS 100000d3c: BINARY    BASE       4C39C8                   cmp rax, r9
+XDIS 100000d3f: COND_BR   BASE       74BF                     jz 0x100000d00 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x210>
+XDIS 100000d41: UNCOND_BR BASE       EB25                     jmp 0x100000d68 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x278>
+XDIS 100000d43: DATAXFER  BASE       4489C3                   mov ebx, r8d
+XDIS 100000d46: DATAXFER  BASE       8B459C                   mov eax, dword ptr [rbp-0x64]
+XDIS 100000d49: UNCOND_BR BASE       EB0E                     jmp 0x100000d59 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x269>
+XDIS 100000d4b: WIDENOP   BASE       0F1F440000               nop dword ptr [rax+rax*1], eax
+XDIS 100000d50: BINARY    BASE       4439F8                   cmp eax, r15d
+XDIS 100000d53: COND_BR   BASE       0F8547FFFFFF             jnz 0x100000ca0 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x1b0>
+XDIS 100000d59: BINARY    BASE       FFC0                     inc eax
+XDIS 100000d5b: BINARY    BASE       3B45CC                   cmp eax, dword ptr [rbp-0x34]
+XDIS 100000d5e: COND_BR   BASE       7CF0                     jl 0x100000d50 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x260>
+XDIS 100000d60: DATAXFER  BASE       895DD4                   mov dword ptr [rbp-0x2c], ebx
+XDIS 100000d63: UNCOND_BR BASE       E914FFFFFF               jmp 0x100000c7c <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x18c>
+XDIS 100000d68: DATAXFER  BASE       448945D4                 mov dword ptr [rbp-0x2c], r8d
+XDIS 100000d6c: DATAXFER  BASE       4C89F7                   mov rdi, r14
+XDIS 100000d6f: MISC      BASE       488D75D4                 lea rsi, ptr [rbp-0x2c]
+XDIS 100000d73: CALL      BASE       E8A8060000               call 0x100001420 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi>
+XDIS 100000d78: UNCOND_BR BASE       E9FFFEFFFF               jmp 0x100000c7c <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x18c>
+XDIS 100000d7d: DATAXFER  BASE       498B7618                 mov rsi, qword ptr [r14+0x18]
+XDIS 100000d81: DATAXFER  BASE       488B3D90120000           mov rdi, qword ptr [rip+0x1290] <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x578>
+XDIS 100000d88: CALL      BASE       E89B0E0000               call 0x100001c28 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x188>
+XDIS 100000d8d: MISC      BASE       488D7DD0                 lea rdi, ptr [rbp-0x30]
+XDIS 100000d91: CALL      BASE       E8A40E0000               call 0x100001c3a <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x19a>
+XDIS 100000d96: BINARY    BASE       4883C448                 add rsp, 0x48
+XDIS 100000d9a: POP       BASE       5B                       pop rbx
+XDIS 100000d9b: POP       BASE       415C                     pop r12
+XDIS 100000d9d: POP       BASE       415D                     pop r13
+XDIS 100000d9f: POP       BASE       415E                     pop r14
+XDIS 100000da1: POP       BASE       415F                     pop r15
+XDIS 100000da3: POP       BASE       5D                       pop rbp
+XDIS 100000da4: RET       BASE       C3                       ret 
+XDIS 100000da5: UNCOND_BR BASE       EB22                     jmp 0x100000dc9 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x2d9>
+XDIS 100000da7: UNCOND_BR BASE       EB20                     jmp 0x100000dc9 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x2d9>
+XDIS 100000da9: DATAXFER  BASE       4989C6                   mov r14, rax
+XDIS 100000dac: DATAXFER  BASE       895DD4                   mov dword ptr [rbp-0x2c], ebx
+XDIS 100000daf: UNCOND_BR BASE       EB1B                     jmp 0x100000dcc <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x2dc>
+XDIS 100000db1: UNCOND_BR BASE       EB16                     jmp 0x100000dc9 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x2d9>
+XDIS 100000db3: DATAXFER  BASE       4989C6                   mov r14, rax
+XDIS 100000db6: LOGICAL   BASE       F645A001                 test byte ptr [rbp-0x60], 0x1
+XDIS 100000dba: COND_BR   BASE       7419                     jz 0x100000dd5 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x2e5>
+XDIS 100000dbc: DATAXFER  BASE       488B7DB0                 mov rdi, qword ptr [rbp-0x50]
+XDIS 100000dc0: CALL      BASE       E89F0E0000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 100000dc5: UNCOND_BR BASE       EB0E                     jmp 0x100000dd5 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x2e5>
+XDIS 100000dc7: UNCOND_BR BASE       EB00                     jmp 0x100000dc9 <__Z14generateRandomIiEvRNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEEii+0x2d9>
+XDIS 100000dc9: DATAXFER  BASE       4989C6                   mov r14, rax
+XDIS 100000dcc: MISC      BASE       488D7DD0                 lea rdi, ptr [rbp-0x30]
+XDIS 100000dd0: CALL      BASE       E8650E0000               call 0x100001c3a <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x19a>
+XDIS 100000dd5: DATAXFER  BASE       4C89F7                   mov rdi, r14
+XDIS 100000dd8: CALL      BASE       E8210E0000               call 0x100001bfe <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x15e>
+XDIS 100000ddd: MISC      BASE       0F0B                     ud2
+XDIS 100000ddf: NOP       BASE       90                       nop
+
+SYM __Z6insertIiEvNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEERNS0_4listIS2_S8_EE:
+XDIS 100000de0: PUSH      BASE       55                       push rbp
+XDIS 100000de1: DATAXFER  BASE       4889E5                   mov rbp, rsp
+XDIS 100000de4: PUSH      BASE       4157                     push r15
+XDIS 100000de6: PUSH      BASE       4156                     push r14
+XDIS 100000de8: PUSH      BASE       4154                     push r12
+XDIS 100000dea: PUSH      BASE       53                       push rbx
+XDIS 100000deb: DATAXFER  BASE       4989F4                   mov r12, rsi
+XDIS 100000dee: DATAXFER  BASE       4C8B7710                 mov r14, qword ptr [rdi+0x10]
+XDIS 100000df2: LOGICAL   BASE       4D85F6                   test r14, r14
+XDIS 100000df5: COND_BR   BASE       0F84BA000000             jz 0x100000eb5 <__Z6insertIiEvNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEERNS0_4listIS2_S8_EE+0xd5>
+XDIS 100000dfb: DATAXFER  BASE       4D89F7                   mov r15, r14
+XDIS 100000dfe: NOP       BASE       6690                     data16 nop
+XDIS 100000e00: BINARY    BASE       4D39FE                   cmp r14, r15
+XDIS 100000e03: COND_BR   BASE       743B                     jz 0x100000e40 <__Z6insertIiEvNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEERNS0_4listIS2_S8_EE+0x60>
+XDIS 100000e05: DATAXFER  BASE       498B5C2408               mov rbx, qword ptr [r12+0x8]
+XDIS 100000e0a: BINARY    BASE       4939DC                   cmp r12, rbx
+XDIS 100000e0d: COND_BR   BASE       7469                     jz 0x100000e78 <__Z6insertIiEvNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEERNS0_4listIS2_S8_EE+0x98>
+XDIS 100000e0f: DATAXFER  BASE       418B4F10                 mov ecx, dword ptr [r15+0x10]
+XDIS 100000e13: LOGICAL   BASE       31C0                     xor eax, eax
+XDIS 100000e15: DATAXFER  BASE       4889DA                   mov rdx, rbx
+XDIS 100000e18: WIDENOP   BASE       0F1F840000000000         nop dword ptr [rax+rax*1], eax
+XDIS 100000e20: BINARY    BASE       3B4A10                   cmp ecx, dword ptr [rdx+0x10]
+XDIS 100000e23: COND_BR   BASE       7C41                     jl 0x100000e66 <__Z6insertIiEvNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEERNS0_4listIS2_S8_EE+0x86>
+XDIS 100000e25: BINARY    BASE       FFC0                     inc eax
+XDIS 100000e27: DATAXFER  BASE       488B5208                 mov rdx, qword ptr [rdx+0x8]
+XDIS 100000e2b: BINARY    BASE       4939D4                   cmp r12, rdx
+XDIS 100000e2e: COND_BR   BASE       75F0                     jnz 0x100000e20 <__Z6insertIiEvNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEERNS0_4listIS2_S8_EE+0x40>
+XDIS 100000e30: UNCOND_BR BASE       EB3E                     jmp 0x100000e70 <__Z6insertIiEvNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEERNS0_4listIS2_S8_EE+0x90>
+XDIS 100000e32: WIDENOP   BASE       662E0F1F840000000000     nop word ptr [rax+rax*1], ax
+XDIS 100000e3c: WIDENOP   BASE       0F1F4000                 nop dword ptr [rax], eax
+XDIS 100000e40: DATAXFER  BASE       BF18000000               mov edi, 0x18
+XDIS 100000e45: CALL      BASE       E8200E0000               call 0x100001c6a <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1ca>
+XDIS 100000e4a: DATAXFER  BASE       418B4E10                 mov ecx, dword ptr [r14+0x10]
+XDIS 100000e4e: DATAXFER  BASE       894810                   mov dword ptr [rax+0x10], ecx
+XDIS 100000e51: DATAXFER  BASE       4C896008                 mov qword ptr [rax+0x8], r12
+XDIS 100000e55: DATAXFER  BASE       498B0C24                 mov rcx, qword ptr [r12]
+XDIS 100000e59: DATAXFER  BASE       488908                   mov qword ptr [rax], rcx
+XDIS 100000e5c: DATAXFER  BASE       48894108                 mov qword ptr [rcx+0x8], rax
+XDIS 100000e60: DATAXFER  BASE       49890424                 mov qword ptr [r12], rax
+XDIS 100000e64: UNCOND_BR BASE       EB34                     jmp 0x100000e9a <__Z6insertIiEvNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEERNS0_4listIS2_S8_EE+0xba>
+XDIS 100000e66: LOGICAL   BASE       85C0                     test eax, eax
+XDIS 100000e68: COND_BR   BASE       740E                     jz 0x100000e78 <__Z6insertIiEvNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEERNS0_4listIS2_S8_EE+0x98>
+XDIS 100000e6a: WIDENOP   BASE       660F1F440000             nop word ptr [rax+rax*1], ax
+XDIS 100000e70: DATAXFER  BASE       488B5B08                 mov rbx, qword ptr [rbx+0x8]
+XDIS 100000e74: BINARY    BASE       FFC8                     dec eax
+XDIS 100000e76: COND_BR   BASE       7FF8                     jnle 0x100000e70 <__Z6insertIiEvNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEERNS0_4listIS2_S8_EE+0x90>
+XDIS 100000e78: DATAXFER  BASE       BF18000000               mov edi, 0x18
+XDIS 100000e7d: CALL      BASE       E8E80D0000               call 0x100001c6a <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1ca>
+XDIS 100000e82: DATAXFER  BASE       418B4F10                 mov ecx, dword ptr [r15+0x10]
+XDIS 100000e86: DATAXFER  BASE       894810                   mov dword ptr [rax+0x10], ecx
+XDIS 100000e89: DATAXFER  BASE       488B0B                   mov rcx, qword ptr [rbx]
+XDIS 100000e8c: DATAXFER  BASE       48894108                 mov qword ptr [rcx+0x8], rax
+XDIS 100000e90: DATAXFER  BASE       488908                   mov qword ptr [rax], rcx
+XDIS 100000e93: DATAXFER  BASE       488903                   mov qword ptr [rbx], rax
+XDIS 100000e96: DATAXFER  BASE       48895808                 mov qword ptr [rax+0x8], rbx
+XDIS 100000e9a: DATAXFER  BASE       498B742410               mov rsi, qword ptr [r12+0x10]
+XDIS 100000e9f: BINARY    BASE       48FFC6                   inc rsi
+XDIS 100000ea2: DATAXFER  BASE       4989742410               mov qword ptr [r12+0x10], rsi
+XDIS 100000ea7: DATAXFER  BASE       4D8B3F                   mov r15, qword ptr [r15]
+XDIS 100000eaa: LOGICAL   BASE       4D85FF                   test r15, r15
+XDIS 100000ead: COND_BR   BASE       0F854DFFFFFF             jnz 0x100000e00 <__Z6insertIiEvNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEERNS0_4listIS2_S8_EE+0x20>
+XDIS 100000eb3: UNCOND_BR BASE       EB05                     jmp 0x100000eba <__Z6insertIiEvNSt3__113unordered_setIT_NS0_4hashIS2_EENS0_8equal_toIS2_EENS0_9allocatorIS2_EEEERNS0_4listIS2_S8_EE+0xda>
+XDIS 100000eb5: DATAXFER  BASE       498B742410               mov rsi, qword ptr [r12+0x10]
+XDIS 100000eba: DATAXFER  BASE       488B3D57110000           mov rdi, qword ptr [rip+0x1157] <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x578>
+XDIS 100000ec1: POP       BASE       5B                       pop rbx
+XDIS 100000ec2: POP       BASE       415C                     pop r12
+XDIS 100000ec4: POP       BASE       415E                     pop r14
+XDIS 100000ec6: POP       BASE       415F                     pop r15
+XDIS 100000ec8: POP       BASE       5D                       pop rbp
+XDIS 100000ec9: UNCOND_BR BASE       E95A0D0000               jmp 0x100001c28 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x188>
+XDIS 100000ece: NOP       BASE       6690                     data16 nop
+
+SYM __Z5eraseIiEvRNSt3__14listIT_NS0_9allocatorIS2_EEEE:
+XDIS 100000ed0: PUSH      BASE       55                       push rbp
+XDIS 100000ed1: DATAXFER  BASE       4889E5                   mov rbp, rsp
+XDIS 100000ed4: PUSH      BASE       4157                     push r15
+XDIS 100000ed6: PUSH      BASE       4156                     push r14
+XDIS 100000ed8: PUSH      BASE       4155                     push r13
+XDIS 100000eda: PUSH      BASE       4154                     push r12
+XDIS 100000edc: PUSH      BASE       53                       push rbx
+XDIS 100000edd: BINARY    BASE       4883EC38                 sub rsp, 0x38
+XDIS 100000ee1: DATAXFER  BASE       4989FF                   mov r15, rdi
+XDIS 100000ee4: LOGICAL_FP SSE        0F57C0                   xorps xmm0, xmm0
+XDIS 100000ee7: DATAXFER  SSE        0F2945B0                 movaps xmmword ptr [rbp-0x50], xmm0
+XDIS 100000eeb: DATAXFER  BASE       48C745C000000000         mov qword ptr [rbp-0x40], 0x0
+XDIS 100000ef3: DATAXFER  BASE       C645B018                 mov byte ptr [rbp-0x50], 0x18
+XDIS 100000ef7: DATAXFER  BASE       48B82F6465762F757261     mov rax, 0x6172752f7665642f
+XDIS 100000f01: DATAXFER  BASE       488945B1                 mov qword ptr [rbp-0x4f], rax
+XDIS 100000f05: DATAXFER  BASE       C745B96E646F6D           mov dword ptr [rbp-0x47], 0x6d6f646e
+XDIS 100000f0c: DATAXFER  BASE       C645BD00                 mov byte ptr [rbp-0x43], 0x0
+XDIS 100000f10: MISC      BASE       488D7DD0                 lea rdi, ptr [rbp-0x30]
+XDIS 100000f14: MISC      BASE       488D75B0                 lea rsi, ptr [rbp-0x50]
+XDIS 100000f18: CALL      BASE       E8170D0000               call 0x100001c34 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x194>
+XDIS 100000f1d: LOGICAL   BASE       F645B001                 test byte ptr [rbp-0x50], 0x1
+XDIS 100000f21: COND_BR   BASE       7409                     jz 0x100000f2c <__Z5eraseIiEvRNSt3__14listIT_NS0_9allocatorIS2_EEEE+0x5c>
+XDIS 100000f23: DATAXFER  BASE       488B7DC0                 mov rdi, qword ptr [rbp-0x40]
+XDIS 100000f27: CALL      BASE       E8380D0000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 100000f2c: MISC      BASE       488D7DD0                 lea rdi, ptr [rbp-0x30]
+XDIS 100000f30: CALL      BASE       E80B0D0000               call 0x100001c40 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1a0>
+XDIS 100000f35: DATAXFER  BASE       89C1                     mov ecx, eax
+XDIS 100000f37: MISC      BASE       488D0C49                 lea rcx, ptr [rcx+rcx*2]
+XDIS 100000f3b: SHIFT     BASE       48C1E920                 shr rcx, 0x20
+XDIS 100000f3f: DATAXFER  BASE       89C2                     mov edx, eax
+XDIS 100000f41: BINARY    BASE       29CA                     sub edx, ecx
+XDIS 100000f43: SHIFT     BASE       D1EA                     shr edx, 0x1
+XDIS 100000f45: BINARY    BASE       01CA                     add edx, ecx
+XDIS 100000f47: SHIFT     BASE       C1EA1E                   shr edx, 0x1e
+XDIS 100000f4a: DATAXFER  BASE       89D1                     mov ecx, edx
+XDIS 100000f4c: SHIFT     BASE       C1E11F                   shl ecx, 0x1f
+XDIS 100000f4f: BINARY    BASE       29CA                     sub edx, ecx
+XDIS 100000f51: BINARY    BASE       01C2                     add edx, eax
+XDIS 100000f53: DATAXFER  BASE       B801000000               mov eax, 0x1
+XDIS 100000f58: CMOV      BASE       0F45C2                   cmovnz eax, edx
+XDIS 100000f5b: DATAXFER  BASE       8945A8                   mov dword ptr [rbp-0x58], eax
+XDIS 100000f5e: DATAXFER  BASE       498B7710                 mov rsi, qword ptr [r15+0x10]
+XDIS 100000f62: DATAXFER  BASE       89F3                     mov ebx, esi
+XDIS 100000f64: BINARY    BASE       FFCB                     dec ebx
+XDIS 100000f66: COND_BR   BASE       0F887C000000             js 0x100000fe8 <__Z5eraseIiEvRNSt3__14listIT_NS0_9allocatorIS2_EEEE+0x118>
+XDIS 100000f6c: MISC      BASE       448D76FE                 lea r14d, ptr [rsi-0x2]
+XDIS 100000f70: MISC      BASE       4D8D6F08                 lea r13, ptr [r15+0x8]
+XDIS 100000f74: MISC      BASE       4C8D65B0                 lea r12, ptr [rbp-0x50]
+XDIS 100000f78: WIDENOP   BASE       0F1F840000000000         nop dword ptr [rax+rax*1], eax
+XDIS 100000f80: DATAXFER  BASE       C745B000000000           mov dword ptr [rbp-0x50], 0x0
+XDIS 100000f87: DATAXFER  BASE       895DB4                   mov dword ptr [rbp-0x4c], ebx
+XDIS 100000f8a: DATAXFER  BASE       4C89E7                   mov rdi, r12
+XDIS 100000f8d: MISC      BASE       488D75A8                 lea rsi, ptr [rbp-0x58]
+XDIS 100000f91: DATAXFER  BASE       4C89E2                   mov rdx, r12
+XDIS 100000f94: CALL      BASE       E837010000               call 0x1000010d0 <__ZNSt3__124uniform_int_distributionIiEclINS_26linear_congruential_engineIjLj48271ELj0ELj2147483647EEEEEiRT_RKNS1_10param_typeE>
+XDIS 100000f99: DATAXFER  BASE       89C1                     mov ecx, eax
+XDIS 100000f9b: BINARY    BASE       FFCB                     dec ebx
+XDIS 100000f9d: BINARY    BASE       FFC1                     inc ecx
+XDIS 100000f9f: DATAXFER  BASE       4C89EE                   mov rsi, r13
+XDIS 100000fa2: WIDENOP   BASE       662E0F1F840000000000     nop word ptr [rax+rax*1], ax
+XDIS 100000fac: WIDENOP   BASE       0F1F4000                 nop dword ptr [rax], eax
+XDIS 100000fb0: DATAXFER  BASE       488B3E                   mov rdi, qword ptr [rsi]
+XDIS 100000fb3: MISC      BASE       488D7708                 lea rsi, ptr [rdi+0x8]
+XDIS 100000fb7: BINARY    BASE       FFC9                     dec ecx
+XDIS 100000fb9: LOGICAL   BASE       85C9                     test ecx, ecx
+XDIS 100000fbb: COND_BR   BASE       7FF3                     jnle 0x100000fb0 <__Z5eraseIiEvRNSt3__14listIT_NS0_9allocatorIS2_EEEE+0xe0>
+XDIS 100000fbd: DATAXFER  BASE       488B07                   mov rax, qword ptr [rdi]
+XDIS 100000fc0: DATAXFER  BASE       488B4F08                 mov rcx, qword ptr [rdi+0x8]
+XDIS 100000fc4: DATAXFER  BASE       48894808                 mov qword ptr [rax+0x8], rcx
+XDIS 100000fc8: DATAXFER  BASE       488B4F08                 mov rcx, qword ptr [rdi+0x8]
+XDIS 100000fcc: DATAXFER  BASE       488901                   mov qword ptr [rcx], rax
+XDIS 100000fcf: BINARY    BASE       49FF4F10                 dec qword ptr [r15+0x10]
+XDIS 100000fd3: CALL      BASE       E88C0C0000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 100000fd8: MISC      BASE       418D46FF                 lea eax, ptr [r14-0x1]
+XDIS 100000fdc: LOGICAL   BASE       4585F6                   test r14d, r14d
+XDIS 100000fdf: DATAXFER  BASE       4189C6                   mov r14d, eax
+XDIS 100000fe2: COND_BR   BASE       799C                     jns 0x100000f80 <__Z5eraseIiEvRNSt3__14listIT_NS0_9allocatorIS2_EEEE+0xb0>
+XDIS 100000fe4: DATAXFER  BASE       498B7710                 mov rsi, qword ptr [r15+0x10]
+XDIS 100000fe8: DATAXFER  BASE       488B3D29100000           mov rdi, qword ptr [rip+0x1029] <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x578>
+XDIS 100000fef: CALL      BASE       E8340C0000               call 0x100001c28 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x188>
+XDIS 100000ff4: MISC      BASE       488D7DD0                 lea rdi, ptr [rbp-0x30]
+XDIS 100000ff8: CALL      BASE       E83D0C0000               call 0x100001c3a <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x19a>
+XDIS 100000ffd: BINARY    BASE       4883C438                 add rsp, 0x38
+XDIS 100001001: POP       BASE       5B                       pop rbx
+XDIS 100001002: POP       BASE       415C                     pop r12
+XDIS 100001004: POP       BASE       415D                     pop r13
+XDIS 100001006: POP       BASE       415E                     pop r14
+XDIS 100001008: POP       BASE       415F                     pop r15
+XDIS 10000100a: POP       BASE       5D                       pop rbp
+XDIS 10000100b: RET       BASE       C3                       ret 
+XDIS 10000100c: UNCOND_BR BASE       EB16                     jmp 0x100001024 <__Z5eraseIiEvRNSt3__14listIT_NS0_9allocatorIS2_EEEE+0x154>
+XDIS 10000100e: UNCOND_BR BASE       EB14                     jmp 0x100001024 <__Z5eraseIiEvRNSt3__14listIT_NS0_9allocatorIS2_EEEE+0x154>
+XDIS 100001010: DATAXFER  BASE       4889C3                   mov rbx, rax
+XDIS 100001013: LOGICAL   BASE       F645B001                 test byte ptr [rbp-0x50], 0x1
+XDIS 100001017: COND_BR   BASE       7417                     jz 0x100001030 <__Z5eraseIiEvRNSt3__14listIT_NS0_9allocatorIS2_EEEE+0x160>
+XDIS 100001019: DATAXFER  BASE       488B7DC0                 mov rdi, qword ptr [rbp-0x40]
+XDIS 10000101d: CALL      BASE       E8420C0000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 100001022: UNCOND_BR BASE       EB0C                     jmp 0x100001030 <__Z5eraseIiEvRNSt3__14listIT_NS0_9allocatorIS2_EEEE+0x160>
+XDIS 100001024: DATAXFER  BASE       4889C3                   mov rbx, rax
+XDIS 100001027: MISC      BASE       488D7DD0                 lea rdi, ptr [rbp-0x30]
+XDIS 10000102b: CALL      BASE       E80A0C0000               call 0x100001c3a <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x19a>
+XDIS 100001030: DATAXFER  BASE       4889DF                   mov rdi, rbx
+XDIS 100001033: CALL      BASE       E8C60B0000               call 0x100001bfe <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x15e>
+XDIS 100001038: MISC      BASE       0F0B                     ud2
+XDIS 10000103a: WIDENOP   BASE       660F1F440000             nop word ptr [rax+rax*1], ax
+
+SYM ___clang_call_terminate:
+XDIS 100001040: PUSH      BASE       50                       push rax
+XDIS 100001041: CALL      BASE       E8300C0000               call 0x100001c76 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1d6>
+XDIS 100001046: CALL      BASE       E8130C0000               call 0x100001c5e <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1be>
+XDIS 10000104b: WIDENOP   BASE       0F1F440000               nop dword ptr [rax+rax*1], eax
+
+SYM __ZNSt3__1L20__throw_length_errorEPKc:
+XDIS 100001050: PUSH      BASE       55                       push rbp
+XDIS 100001051: DATAXFER  BASE       4889E5                   mov rbp, rsp
+XDIS 100001054: PUSH      BASE       4156                     push r14
+XDIS 100001056: PUSH      BASE       53                       push rbx
+XDIS 100001057: DATAXFER  BASE       BF10000000               mov edi, 0x10
+XDIS 10000105c: CALL      BASE       E80F0C0000               call 0x100001c70 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1d0>
+XDIS 100001061: DATAXFER  BASE       4889C3                   mov rbx, rax
+XDIS 100001064: DATAXFER  BASE       4889C7                   mov rdi, rax
+XDIS 100001067: CALL      BASE       E834000000               call 0x1000010a0 <__ZNSt12length_errorC1EPKc>
+XDIS 10000106c: DATAXFER  BASE       488B35BD0F0000           mov rsi, qword ptr [rip+0xfbd] <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x590>
+XDIS 100001073: DATAXFER  BASE       488B15960F0000           mov rdx, qword ptr [rip+0xf96] <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x570>
+XDIS 10000107a: DATAXFER  BASE       4889DF                   mov rdi, rbx
+XDIS 10000107d: CALL      BASE       E8060C0000               call 0x100001c88 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1e8>
+XDIS 100001082: DATAXFER  BASE       4989C6                   mov r14, rax
+XDIS 100001085: DATAXFER  BASE       4889DF                   mov rdi, rbx
+XDIS 100001088: CALL      BASE       E8F50B0000               call 0x100001c82 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1e2>
+XDIS 10000108d: DATAXFER  BASE       4C89F7                   mov rdi, r14
+XDIS 100001090: CALL      BASE       E8690B0000               call 0x100001bfe <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x15e>
+XDIS 100001095: MISC      BASE       0F0B                     ud2
+XDIS 100001097: WIDENOP   BASE       660F1F840000000000       nop word ptr [rax+rax*1], ax
+
+SYM __ZNSt12length_errorC1EPKc:
+XDIS 1000010a0: PUSH      BASE       55                       push rbp
+XDIS 1000010a1: DATAXFER  BASE       4889E5                   mov rbp, rsp
+XDIS 1000010a4: PUSH      BASE       53                       push rbx
+XDIS 1000010a5: PUSH      BASE       50                       push rax
+XDIS 1000010a6: DATAXFER  BASE       4889FB                   mov rbx, rdi
+XDIS 1000010a9: MISC      BASE       488D352D0E0000           lea rsi, ptr [rip+0xe2d] <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x43d>
+XDIS 1000010b0: CALL      BASE       E85B0B0000               call 0x100001c10 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x170>
+XDIS 1000010b5: DATAXFER  BASE       488B057C0F0000           mov rax, qword ptr [rip+0xf7c] <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x598>
+XDIS 1000010bc: BINARY    BASE       4883C010                 add rax, 0x10
+XDIS 1000010c0: DATAXFER  BASE       488903                   mov qword ptr [rbx], rax
+XDIS 1000010c3: BINARY    BASE       4883C408                 add rsp, 0x8
+XDIS 1000010c7: POP       BASE       5B                       pop rbx
+XDIS 1000010c8: POP       BASE       5D                       pop rbp
+XDIS 1000010c9: RET       BASE       C3                       ret 
+XDIS 1000010ca: WIDENOP   BASE       660F1F440000             nop word ptr [rax+rax*1], ax
+
+SYM __ZNSt3__124uniform_int_distributionIiEclINS_26linear_congruential_engineIjLj48271ELj0ELj2147483647EEEEEiRT_RKNS1_10param_typeE:
+XDIS 1000010d0: PUSH      BASE       55                       push rbp
+XDIS 1000010d1: DATAXFER  BASE       4889E5                   mov rbp, rsp
+XDIS 1000010d4: PUSH      BASE       4157                     push r15
+XDIS 1000010d6: PUSH      BASE       4156                     push r14
+XDIS 1000010d8: PUSH      BASE       4155                     push r13
+XDIS 1000010da: PUSH      BASE       4154                     push r12
+XDIS 1000010dc: PUSH      BASE       53                       push rbx
+XDIS 1000010dd: DATAXFER  BASE       8B1A                     mov ebx, dword ptr [rdx]
+XDIS 1000010df: DATAXFER  BASE       448B7A04                 mov r15d, dword ptr [rdx+0x4]
+XDIS 1000010e3: BINARY    BASE       4129DF                   sub r15d, ebx
+XDIS 1000010e6: COND_BR   BASE       0F8427030000             jz 0x100001413 <__ZNSt3__124uniform_int_distributionIiEclINS_26linear_congruential_engineIjLj48271ELj0ELj2147483647EEEEEiRT_RKNS1_10param_typeE+0x343>
+XDIS 1000010ec: DATAXFER  BASE       4989F6                   mov r14, rsi
+XDIS 1000010ef: BINARY    BASE       41FFC7                   inc r15d
+XDIS 1000010f2: COND_BR   BASE       0F8411010000             jz 0x100001209 <__ZNSt3__124uniform_int_distributionIiEclINS_26linear_congruential_engineIjLj48271ELj0ELj2147483647EEEEEiRT_RKNS1_10param_typeE+0x139>
+XDIS 1000010f8: BITBYTE   BASE       410FBDC7                 bsr eax, r15d
+XDIS 1000010fc: LOGICAL   BASE       83F01F                   xor eax, 0x1f
+XDIS 1000010ff: DATAXFER  BASE       41BA20000000             mov r10d, 0x20
+XDIS 100001105: BINARY    BASE       4929C2                   sub r10, rax
+XDIS 100001108: DATAXFER  BASE       B921000000               mov ecx, 0x21
+XDIS 10000110d: BINARY    BASE       4429D1                   sub ecx, r10d
+XDIS 100001110: DATAXFER  BASE       4489F8                   mov eax, r15d
+XDIS 100001113: SHIFT     BASE       D3E0                     shl eax, cl
+XDIS 100001115: SHIFT     BASE       D3E8                     shr eax, cl
+XDIS 100001117: BINARY    BASE       83F801                   cmp eax, 0x1
+XDIS 10000111a: BINARY    BASE       4983DA00                 sbb r10, 0x0
+XDIS 10000111e: DATAXFER  BASE       48B98988888888888888     mov rcx, 0x8888888888888889
+XDIS 100001128: DATAXFER  BASE       4C89D0                   mov rax, r10
+XDIS 10000112b: BINARY    BASE       48F7E1                   mul rcx
+XDIS 10000112e: SHIFT     BASE       48C1EA04                 shr rdx, 0x4
+XDIS 100001132: DATAXFER  BASE       4889D0                   mov rax, rdx
+XDIS 100001135: SHIFT     BASE       48C1E005                 shl rax, 0x5
+XDIS 100001139: DATAXFER  BASE       4889D1                   mov rcx, rdx
+XDIS 10000113c: BINARY    BASE       4829C1                   sub rcx, rax
+XDIS 10000113f: BINARY    BASE       4801D1                   add rcx, rdx
+XDIS 100001142: LOGICAL   BASE       31F6                     xor esi, esi
+XDIS 100001144: BINARY    BASE       4C01D1                   add rcx, r10
+XDIS 100001147: SETCC     BASE       400F95C6                 setnz sil
+XDIS 10000114b: BINARY    BASE       4801D6                   add rsi, rdx
+XDIS 10000114e: LOGICAL   BASE       31D2                     xor edx, edx
+XDIS 100001150: DATAXFER  BASE       4C89D0                   mov rax, r10
+XDIS 100001153: BINARY    BASE       48F7F6                   div rsi
+XDIS 100001156: DATAXFER  BASE       4989C1                   mov r9, rax
+XDIS 100001159: DATAXFER  BASE       BFFEFFFF7F               mov edi, 0x7ffffffe
+XDIS 10000115e: DATAXFER  BASE       4489C9                   mov ecx, r9d
+XDIS 100001161: SHIFT     BASE       D3EF                     shr edi, cl
+XDIS 100001163: LOGICAL   BASE       31C0                     xor eax, eax
+XDIS 100001165: SHIFT     BASE       D3E7                     shl edi, cl
+XDIS 100001167: DATAXFER  BASE       B9FEFFFF7F               mov ecx, 0x7ffffffe
+XDIS 10000116c: BINARY    BASE       4983F920                 cmp r9, 0x20
+XDIS 100001170: CMOV      BASE       0F43F8                   cmovnb edi, eax
+XDIS 100001173: BINARY    BASE       29F9                     sub ecx, edi
+XDIS 100001175: LOGICAL   BASE       31D2                     xor edx, edx
+XDIS 100001177: DATAXFER  BASE       4889F8                   mov rax, rdi
+XDIS 10000117a: BINARY    BASE       48F7F6                   div rsi
+XDIS 10000117d: BINARY    BASE       4839C8                   cmp rax, rcx
+XDIS 100001180: DATAXFER  BASE       895DC8                   mov dword ptr [rbp-0x38], ebx
+XDIS 100001183: COND_BR   BASE       7326                     jnb 0x1000011ab <__ZNSt3__124uniform_int_distributionIiEclINS_26linear_congruential_engineIjLj48271ELj0ELj2147483647EEEEEiRT_RKNS1_10param_typeE+0xdb>
+XDIS 100001185: BINARY    BASE       48FFC6                   inc rsi
+XDIS 100001188: LOGICAL   BASE       31FF                     xor edi, edi
+XDIS 10000118a: LOGICAL   BASE       31D2                     xor edx, edx
+XDIS 10000118c: DATAXFER  BASE       4C89D0                   mov rax, r10
+XDIS 10000118f: BINARY    BASE       48F7F6                   div rsi
+XDIS 100001192: DATAXFER  BASE       4989C1                   mov r9, rax
+XDIS 100001195: BINARY    BASE       4883F81F                 cmp rax, 0x1f
+XDIS 100001199: COND_BR   BASE       0F8718010000             jnbe 0x1000012b7 <__ZNSt3__124uniform_int_distributionIiEclINS_26linear_congruential_engineIjLj48271ELj0ELj2147483647EEEEEiRT_RKNS1_10param_typeE+0x1e7>
+XDIS 10000119f: DATAXFER  BASE       BFFEFFFF7F               mov edi, 0x7ffffffe
+XDIS 1000011a4: DATAXFER  BASE       4489C9                   mov ecx, r9d
+XDIS 1000011a7: SHIFT     BASE       D3EF                     shr edi, cl
+XDIS 1000011a9: SHIFT     BASE       D3E7                     shl edi, cl
+XDIS 1000011ab: LOGICAL   BASE       4531C0                   xor r8d, r8d
+XDIS 1000011ae: LOGICAL   BASE       31D2                     xor edx, edx
+XDIS 1000011b0: DATAXFER  BASE       4C89D0                   mov rax, r10
+XDIS 1000011b3: BINARY    BASE       48F7F6                   div rsi
+XDIS 1000011b6: DATAXFER  BASE       4889F0                   mov rax, rsi
+XDIS 1000011b9: BINARY    BASE       4829D0                   sub rax, rdx
+XDIS 1000011bc: BINARY    BASE       4983F91F                 cmp r9, 0x1f
+XDIS 1000011c0: COND_BR   BASE       0F83F7000000             jnb 0x1000012bd <__ZNSt3__124uniform_int_distributionIiEclINS_26linear_congruential_engineIjLj48271ELj0ELj2147483647EEEEEiRT_RKNS1_10param_typeE+0x1ed>
+XDIS 1000011c6: MISC      BASE       418D4901                 lea ecx, ptr [r9+0x1]
+XDIS 1000011ca: DATAXFER  BASE       BAFEFFFF7F               mov edx, 0x7ffffffe
+XDIS 1000011cf: SHIFT     BASE       D3EA                     shr edx, cl
+XDIS 1000011d1: DATAXFER  BASE       894DD0                   mov dword ptr [rbp-0x30], ecx
+XDIS 1000011d4: SHIFT     BASE       D3E2                     shl edx, cl
+XDIS 1000011d6: DATAXFER  BASE       B920000000               mov ecx, 0x20
+XDIS 1000011db: BINARY    BASE       4429C9                   sub ecx, r9d
+XDIS 1000011de: DATAXFER  BASE       41BAFFFFFFFF             mov r10d, 0xffffffff
+XDIS 1000011e4: DATAXFER  BASE       BBFFFFFFFF               mov ebx, 0xffffffff
+XDIS 1000011e9: SHIFT     BASE       D3EB                     shr ebx, cl
+XDIS 1000011eb: LOGICAL   BASE       4D85C9                   test r9, r9
+XDIS 1000011ee: CMOV      BASE       410F44D8                 cmovz ebx, r8d
+XDIS 1000011f2: DATAXFER  BASE       895DCC                   mov dword ptr [rbp-0x34], ebx
+XDIS 1000011f5: DATAXFER  BASE       B91F000000               mov ecx, 0x1f
+XDIS 1000011fa: BINARY    BASE       4429C9                   sub ecx, r9d
+XDIS 1000011fd: SHIFT     BASE       41D3EA                   shr r10d, cl
+XDIS 100001200: DATAXFER  BASE       448955D4                 mov dword ptr [rbp-0x2c], r10d
+XDIS 100001204: UNCOND_BR BASE       E9DC000000               jmp 0x1000012e5 <__ZNSt3__124uniform_int_distributionIiEclINS_26linear_congruential_engineIjLj48271ELj0ELj2147483647EEEEEiRT_RKNS1_10param_typeE+0x215>
+XDIS 100001209: DATAXFER  BASE       418B06                   mov eax, dword ptr [r14]
+XDIS 10000120c: DATAXFER  BASE       BA91138FBC               mov edx, 0xbc8f1391
+XDIS 100001211: DATAXFER  BASE       BBFFFFFF7F               mov ebx, 0x7fffffff
+XDIS 100001216: WIDENOP   BASE       662E0F1F840000000000     nop word ptr [rax+rax*1], ax
+XDIS 100001220: DATAXFER  BASE       89C1                     mov ecx, eax
+XDIS 100001222: BINARY    BASE       480FAFCA                 imul rcx, rdx
+XDIS 100001226: SHIFT     BASE       48C1E92F                 shr rcx, 0x2f
+XDIS 10000122a: BINARY    BASE       69F9C8AD0000             imul edi, ecx, 0xadc8
+XDIS 100001230: BINARY    BASE       29F8                     sub eax, edi
+XDIS 100001232: BINARY    BASE       69F88FBC0000             imul edi, eax, 0xbc8f
+XDIS 100001238: BINARY    BASE       69C1470D0000             imul eax, ecx, 0xd47
+XDIS 10000123e: BINARY    BASE       29C7                     sub edi, eax
+XDIS 100001240: DATAXFER  BASE       B900000000               mov ecx, 0x0
+XDIS 100001245: CMOV      BASE       0F42CB                   cmovb ecx, ebx
+XDIS 100001248: MISC      BASE       8D0439                   lea eax, ptr [rcx+rdi*1]
+XDIS 10000124b: MISC      BASE       8D4C39FF                 lea ecx, ptr [rcx+rdi*1-0x1]
+XDIS 10000124f: BINARY    BASE       81F9FFFFFE7F             cmp ecx, 0x7ffeffff
+XDIS 100001255: COND_BR   BASE       77C9                     jnbe 0x100001220 <__ZNSt3__124uniform_int_distributionIiEclINS_26linear_congruential_engineIjLj48271ELj0ELj2147483647EEEEEiRT_RKNS1_10param_typeE+0x150>
+XDIS 100001257: DATAXFER  BASE       41B891138FBC             mov r8d, 0xbc8f1391
+XDIS 10000125d: DATAXFER  BASE       BAFFFFFF7F               mov edx, 0x7fffffff
+XDIS 100001262: WIDENOP   BASE       662E0F1F840000000000     nop word ptr [rax+rax*1], ax
+XDIS 10000126c: WIDENOP   BASE       0F1F4000                 nop dword ptr [rax], eax
+XDIS 100001270: DATAXFER  BASE       89C7                     mov edi, eax
+XDIS 100001272: BINARY    BASE       490FAFF8                 imul rdi, r8
+XDIS 100001276: SHIFT     BASE       48C1EF2F                 shr rdi, 0x2f
+XDIS 10000127a: BINARY    BASE       69DFC8AD0000             imul ebx, edi, 0xadc8
+XDIS 100001280: BINARY    BASE       29D8                     sub eax, ebx
+XDIS 100001282: BINARY    BASE       69D88FBC0000             imul ebx, eax, 0xbc8f
+XDIS 100001288: BINARY    BASE       69C7470D0000             imul eax, edi, 0xd47
+XDIS 10000128e: BINARY    BASE       29C3                     sub ebx, eax
+XDIS 100001290: DATAXFER  BASE       BF00000000               mov edi, 0x0
+XDIS 100001295: CMOV      BASE       0F42FA                   cmovb edi, edx
+XDIS 100001298: MISC      BASE       8D041F                   lea eax, ptr [rdi+rbx*1]
+XDIS 10000129b: MISC      BASE       8D7C1FFF                 lea edi, ptr [rdi+rbx*1-0x1]
+XDIS 10000129f: BINARY    BASE       81FFFFFFFE7F             cmp edi, 0x7ffeffff
+XDIS 1000012a5: COND_BR   BASE       77C9                     jnbe 0x100001270 <__ZNSt3__124uniform_int_distributionIiEclINS_26linear_congruential_engineIjLj48271ELj0ELj2147483647EEEEEiRT_RKNS1_10param_typeE+0x1a0>
+XDIS 1000012a7: SHIFT     BASE       C1E110                   shl ecx, 0x10
+XDIS 1000012aa: DATAXFER  BASE       0FB7DF                   movzx ebx, di
+XDIS 1000012ad: LOGICAL   BASE       09CB                     or ebx, ecx
+XDIS 1000012af: DATAXFER  BASE       418906                   mov dword ptr [r14], eax
+XDIS 1000012b2: UNCOND_BR BASE       E95C010000               jmp 0x100001413 <__ZNSt3__124uniform_int_distributionIiEclINS_26linear_congruential_engineIjLj48271ELj0ELj2147483647EEEEEiRT_RKNS1_10param_typeE+0x343>
+XDIS 1000012b7: DATAXFER  BASE       4889F0                   mov rax, rsi
+XDIS 1000012ba: BINARY    BASE       4829D0                   sub rax, rdx
+XDIS 1000012bd: DATAXFER  BASE       B920000000               mov ecx, 0x20
+XDIS 1000012c2: BINARY    BASE       4429C9                   sub ecx, r9d
+XDIS 1000012c5: DATAXFER  BASE       C745D4FFFFFFFF           mov dword ptr [rbp-0x2c], 0xffffffff
+XDIS 1000012cc: DATAXFER  BASE       BBFFFFFFFF               mov ebx, 0xffffffff
+XDIS 1000012d1: SHIFT     BASE       D3EB                     shr ebx, cl
+XDIS 1000012d3: LOGICAL   BASE       31D2                     xor edx, edx
+XDIS 1000012d5: LOGICAL   BASE       4D85C9                   test r9, r9
+XDIS 1000012d8: CMOV      BASE       0F44DA                   cmovz ebx, edx
+XDIS 1000012db: DATAXFER  BASE       895DCC                   mov dword ptr [rbp-0x34], ebx
+XDIS 1000012de: MISC      BASE       418D4901                 lea ecx, ptr [r9+0x1]
+XDIS 1000012e2: DATAXFER  BASE       894DD0                   mov dword ptr [rbp-0x30], ecx
+XDIS 1000012e5: DATAXFER  BASE       4889C1                   mov rcx, rax
+XDIS 1000012e8: DATAXFER  BASE       BB91138FBC               mov ebx, 0xbc8f1391
+XDIS 1000012ed: LOGICAL   BASE       4531D2                   xor r10d, r10d
+XDIS 1000012f0: DATAXFER  BASE       41B8FFFFFF7F             mov r8d, 0x7fffffff
+XDIS 1000012f6: DATAXFER  BASE       4C8975C0                 mov qword ptr [rbp-0x40], r14
+XDIS 1000012fa: DATAXFER  BASE       4989F4                   mov r12, rsi
+XDIS 1000012fd: DATAXFER  BASE       4989C5                   mov r13, rax
+XDIS 100001300: DATAXFER  BASE       41BB00000000             mov r11d, 0x0
+XDIS 100001306: LOGICAL   BASE       4885C9                   test rcx, rcx
+XDIS 100001309: COND_BR   BASE       0F8480000000             jz 0x10000138f <__ZNSt3__124uniform_int_distributionIiEclINS_26linear_congruential_engineIjLj48271ELj0ELj2147483647EEEEEiRT_RKNS1_10param_typeE+0x2bf>
+XDIS 10000130f: DATAXFER  BASE       4489FE                   mov esi, r15d
+XDIS 100001312: DATAXFER  BASE       458B3E                   mov r15d, dword ptr [r14]
+XDIS 100001315: LOGICAL   BASE       4531DB                   xor r11d, r11d
+XDIS 100001318: LOGICAL   BASE       4531F6                   xor r14d, r14d
+XDIS 10000131b: WIDENOP   BASE       0F1F440000               nop dword ptr [rax+rax*1], eax
+XDIS 100001320: DATAXFER  BASE       4489F8                   mov eax, r15d
+XDIS 100001323: DATAXFER  BASE       B991138FBC               mov ecx, 0xbc8f1391
+XDIS 100001328: BINARY    BASE       480FAFC8                 imul rcx, rax
+XDIS 10000132c: SHIFT     BASE       48C1E92F                 shr rcx, 0x2f
+XDIS 100001330: BINARY    BASE       69C1C8AD0000             imul eax, ecx, 0xadc8
+XDIS 100001336: BINARY    BASE       4129C7                   sub r15d, eax
+XDIS 100001339: BINARY    BASE       4169C78FBC0000           imul eax, r15d, 0xbc8f
+XDIS 100001340: BINARY    BASE       69C9470D0000             imul ecx, ecx, 0xd47
+XDIS 100001346: BINARY    BASE       29C8                     sub eax, ecx
+XDIS 100001348: DATAXFER  BASE       B900000000               mov ecx, 0x0
+XDIS 10000134d: CMOV      BASE       410F42C8                 cmovb ecx, r8d
+XDIS 100001351: MISC      BASE       448D3C01                 lea r15d, ptr [rcx+rax*1]
+XDIS 100001355: MISC      BASE       8D4401FF                 lea eax, ptr [rcx+rax*1-0x1]
+XDIS 100001359: BINARY    BASE       39F8                     cmp eax, edi
+XDIS 10000135b: COND_BR   BASE       73C3                     jnb 0x100001320 <__ZNSt3__124uniform_int_distributionIiEclINS_26linear_congruential_engineIjLj48271ELj0ELj2147483647EEEEEiRT_RKNS1_10param_typeE+0x250>
+XDIS 10000135d: DATAXFER  BASE       4489C9                   mov ecx, r9d
+XDIS 100001360: SHIFT     BASE       41D3E3                   shl r11d, cl
+XDIS 100001363: BINARY    BASE       4983F920                 cmp r9, 0x20
+XDIS 100001367: DATAXFER  BASE       4489D9                   mov ecx, r11d
+XDIS 10000136a: CMOV      BASE       410F43CA                 cmovnb ecx, r10d
+XDIS 10000136e: LOGICAL   BASE       2345CC                   and eax, dword ptr [rbp-0x34]
+XDIS 100001371: DATAXFER  BASE       4189C3                   mov r11d, eax
+XDIS 100001374: BINARY    BASE       4101CB                   add r11d, ecx
+XDIS 100001377: BINARY    BASE       49FFC6                   inc r14
+XDIS 10000137a: BINARY    BASE       4D39EE                   cmp r14, r13
+XDIS 10000137d: COND_BR   BASE       75A1                     jnz 0x100001320 <__ZNSt3__124uniform_int_distributionIiEclINS_26linear_congruential_engineIjLj48271ELj0ELj2147483647EEEEEiRT_RKNS1_10param_typeE+0x250>
+XDIS 10000137f: DATAXFER  BASE       4C89E9                   mov rcx, r13
+XDIS 100001382: DATAXFER  BASE       4C8B75C0                 mov r14, qword ptr [rbp-0x40]
+XDIS 100001386: DATAXFER  BASE       45893E                   mov dword ptr [r14], r15d
+XDIS 100001389: DATAXFER  BASE       4189F7                   mov r15d, esi
+XDIS 10000138c: DATAXFER  BASE       4C89E6                   mov rsi, r12
+XDIS 10000138f: BINARY    BASE       4839F1                   cmp rcx, rsi
+XDIS 100001392: COND_BR   BASE       736F                     jnb 0x100001403 <__ZNSt3__124uniform_int_distributionIiEclINS_26linear_congruential_engineIjLj48271ELj0ELj2147483647EEEEEiRT_RKNS1_10param_typeE+0x333>
+XDIS 100001394: DATAXFER  BASE       418B06                   mov eax, dword ptr [r14]
+XDIS 100001397: DATAXFER  BASE       4989CE                   mov r14, rcx
+XDIS 10000139a: WIDENOP   BASE       660F1F440000             nop word ptr [rax+rax*1], ax
+XDIS 1000013a0: DATAXFER  BASE       89C1                     mov ecx, eax
+XDIS 1000013a2: BINARY    BASE       480FAFCB                 imul rcx, rbx
+XDIS 1000013a6: SHIFT     BASE       48C1E92F                 shr rcx, 0x2f
+XDIS 1000013aa: BINARY    BASE       69F1C8AD0000             imul esi, ecx, 0xadc8
+XDIS 1000013b0: BINARY    BASE       29F0                     sub eax, esi
+XDIS 1000013b2: BINARY    BASE       69F08FBC0000             imul esi, eax, 0xbc8f
+XDIS 1000013b8: BINARY    BASE       69C1470D0000             imul eax, ecx, 0xd47
+XDIS 1000013be: BINARY    BASE       29C6                     sub esi, eax
+XDIS 1000013c0: DATAXFER  BASE       B900000000               mov ecx, 0x0
+XDIS 1000013c5: CMOV      BASE       410F42C8                 cmovb ecx, r8d
+XDIS 1000013c9: MISC      BASE       8D0431                   lea eax, ptr [rcx+rsi*1]
+XDIS 1000013cc: MISC      BASE       8D7431FF                 lea esi, ptr [rcx+rsi*1-0x1]
+XDIS 1000013d0: BINARY    BASE       39D6                     cmp esi, edx
+XDIS 1000013d2: COND_BR   BASE       73CC                     jnb 0x1000013a0 <__ZNSt3__124uniform_int_distributionIiEclINS_26linear_congruential_engineIjLj48271ELj0ELj2147483647EEEEEiRT_RKNS1_10param_typeE+0x2d0>
+XDIS 1000013d4: DATAXFER  BASE       8B4DD0                   mov ecx, dword ptr [rbp-0x30]
+XDIS 1000013d7: SHIFT     BASE       41D3E3                   shl r11d, cl
+XDIS 1000013da: BINARY    BASE       4983F91F                 cmp r9, 0x1f
+XDIS 1000013de: DATAXFER  BASE       4489D9                   mov ecx, r11d
+XDIS 1000013e1: CMOV      BASE       410F43CA                 cmovnb ecx, r10d
+XDIS 1000013e5: LOGICAL   BASE       2375D4                   and esi, dword ptr [rbp-0x2c]
+XDIS 1000013e8: DATAXFER  BASE       4189F3                   mov r11d, esi
+XDIS 1000013eb: BINARY    BASE       4101CB                   add r11d, ecx
+XDIS 1000013ee: BINARY    BASE       49FFC6                   inc r14
+XDIS 1000013f1: BINARY    BASE       4D39E6                   cmp r14, r12
+XDIS 1000013f4: COND_BR   BASE       75AA                     jnz 0x1000013a0 <__ZNSt3__124uniform_int_distributionIiEclINS_26linear_congruential_engineIjLj48271ELj0ELj2147483647EEEEEiRT_RKNS1_10param_typeE+0x2d0>
+XDIS 1000013f6: DATAXFER  BASE       4C89E6                   mov rsi, r12
+XDIS 1000013f9: DATAXFER  BASE       4C8B75C0                 mov r14, qword ptr [rbp-0x40]
+XDIS 1000013fd: DATAXFER  BASE       418906                   mov dword ptr [r14], eax
+XDIS 100001400: DATAXFER  BASE       4C89E9                   mov rcx, r13
+XDIS 100001403: BINARY    BASE       4539FB                   cmp r11d, r15d
+XDIS 100001406: COND_BR   BASE       0F83F4FEFFFF             jnb 0x100001300 <__ZNSt3__124uniform_int_distributionIiEclINS_26linear_congruential_engineIjLj48271ELj0ELj2147483647EEEEEiRT_RKNS1_10param_typeE+0x230>
+XDIS 10000140c: BINARY    BASE       44035DC8                 add r11d, dword ptr [rbp-0x38]
+XDIS 100001410: DATAXFER  BASE       4489DB                   mov ebx, r11d
+XDIS 100001413: DATAXFER  BASE       89D8                     mov eax, ebx
+XDIS 100001415: POP       BASE       5B                       pop rbx
+XDIS 100001416: POP       BASE       415C                     pop r12
+XDIS 100001418: POP       BASE       415D                     pop r13
+XDIS 10000141a: POP       BASE       415E                     pop r14
+XDIS 10000141c: POP       BASE       415F                     pop r15
+XDIS 10000141e: POP       BASE       5D                       pop rbp
+XDIS 10000141f: RET       BASE       C3                       ret 
+
+SYM __ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi:
+XDIS 100001420: PUSH      BASE       55                       push rbp
+XDIS 100001421: DATAXFER  BASE       4889E5                   mov rbp, rsp
+XDIS 100001424: PUSH      BASE       4157                     push r15
+XDIS 100001426: PUSH      BASE       4156                     push r14
+XDIS 100001428: PUSH      BASE       4155                     push r13
+XDIS 10000142a: PUSH      BASE       4154                     push r12
+XDIS 10000142c: PUSH      BASE       53                       push rbx
+XDIS 10000142d: PUSH      BASE       50                       push rax
+XDIS 10000142e: DATAXFER  BASE       448B36                   mov r14d, dword ptr [rsi]
+XDIS 100001431: DATAXFER  LONGMODE   4D63FE                   movsxd r15, r14d
+XDIS 100001434: DATAXFER  BASE       4C8B6F08                 mov r13, qword ptr [rdi+0x8]
+XDIS 100001438: LOGICAL   BASE       4D85ED                   test r13, r13
+XDIS 10000143b: COND_BR   BASE       741E                     jz 0x10000145b <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x3b>
+XDIS 10000143d: MISC      BASE       498D4DFF                 lea rcx, ptr [r13-0x1]
+XDIS 100001441: LOGICAL   BASE       4C85E9                   test rcx, r13
+XDIS 100001444: COND_BR   BASE       741A                     jz 0x100001460 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x40>
+XDIS 100001446: DATAXFER  BASE       4C89FE                   mov rsi, r15
+XDIS 100001449: BINARY    BASE       4D39FD                   cmp r13, r15
+XDIS 10000144c: COND_BR   BASE       7718                     jnbe 0x100001466 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x46>
+XDIS 10000144e: LOGICAL   BASE       31D2                     xor edx, edx
+XDIS 100001450: DATAXFER  BASE       4C89F8                   mov rax, r15
+XDIS 100001453: BINARY    BASE       49F7F5                   div r13
+XDIS 100001456: DATAXFER  BASE       4889D6                   mov rsi, rdx
+XDIS 100001459: UNCOND_BR BASE       EB0B                     jmp 0x100001466 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x46>
+XDIS 10000145b: DATAXFER  BASE       4989FC                   mov r12, rdi
+XDIS 10000145e: UNCOND_BR BASE       EB66                     jmp 0x1000014c6 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0xa6>
+XDIS 100001460: DATAXFER  BASE       4889CE                   mov rsi, rcx
+XDIS 100001463: LOGICAL   BASE       4C21FE                   and rsi, r15
+XDIS 100001466: DATAXFER  BASE       488B07                   mov rax, qword ptr [rdi]
+XDIS 100001469: DATAXFER  BASE       488B1CF0                 mov rbx, qword ptr [rax+rsi*8]
+XDIS 10000146d: LOGICAL   BASE       4885DB                   test rbx, rbx
+XDIS 100001470: COND_BR   BASE       744D                     jz 0x1000014bf <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x9f>
+XDIS 100001472: WIDENOP   BASE       662E0F1F840000000000     nop word ptr [rax+rax*1], ax
+XDIS 10000147c: WIDENOP   BASE       0F1F4000                 nop dword ptr [rax], eax
+XDIS 100001480: DATAXFER  BASE       488B1B                   mov rbx, qword ptr [rbx]
+XDIS 100001483: LOGICAL   BASE       4885DB                   test rbx, rbx
+XDIS 100001486: COND_BR   BASE       7437                     jz 0x1000014bf <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x9f>
+XDIS 100001488: DATAXFER  BASE       488B4308                 mov rax, qword ptr [rbx+0x8]
+XDIS 10000148c: BINARY    BASE       4C39F8                   cmp rax, r15
+XDIS 10000148f: COND_BR   BASE       7421                     jz 0x1000014b2 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x92>
+XDIS 100001491: LOGICAL   BASE       4C85E9                   test rcx, r13
+XDIS 100001494: COND_BR   BASE       7414                     jz 0x1000014aa <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x8a>
+XDIS 100001496: BINARY    BASE       4C39E8                   cmp rax, r13
+XDIS 100001499: COND_BR   BASE       7212                     jb 0x1000014ad <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x8d>
+XDIS 10000149b: LOGICAL   BASE       31D2                     xor edx, edx
+XDIS 10000149d: BINARY    BASE       49F7F5                   div r13
+XDIS 1000014a0: DATAXFER  BASE       4889D0                   mov rax, rdx
+XDIS 1000014a3: BINARY    BASE       4839F0                   cmp rax, rsi
+XDIS 1000014a6: COND_BR   BASE       740A                     jz 0x1000014b2 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x92>
+XDIS 1000014a8: UNCOND_BR BASE       EB15                     jmp 0x1000014bf <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x9f>
+XDIS 1000014aa: LOGICAL   BASE       4821C8                   and rax, rcx
+XDIS 1000014ad: BINARY    BASE       4839F0                   cmp rax, rsi
+XDIS 1000014b0: COND_BR   BASE       750D                     jnz 0x1000014bf <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x9f>
+XDIS 1000014b2: BINARY    BASE       44397310                 cmp dword ptr [rbx+0x10], r14d
+XDIS 1000014b6: COND_BR   BASE       75C8                     jnz 0x100001480 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x60>
+XDIS 1000014b8: LOGICAL   BASE       31D2                     xor edx, edx
+XDIS 1000014ba: UNCOND_BR BASE       E97E010000               jmp 0x10000163d <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x21d>
+XDIS 1000014bf: DATAXFER  BASE       488975D0                 mov qword ptr [rbp-0x30], rsi
+XDIS 1000014c3: DATAXFER  BASE       4989FC                   mov r12, rdi
+XDIS 1000014c6: DATAXFER  BASE       BF18000000               mov edi, 0x18
+XDIS 1000014cb: CALL      BASE       E89A070000               call 0x100001c6a <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1ca>
+XDIS 1000014d0: DATAXFER  BASE       4889C3                   mov rbx, rax
+XDIS 1000014d3: DATAXFER  BASE       44897010                 mov dword ptr [rax+0x10], r14d
+XDIS 1000014d7: DATAXFER  BASE       4C897808                 mov qword ptr [rax+0x8], r15
+XDIS 1000014db: DATAXFER  BASE       48C70000000000           mov qword ptr [rax], 0x0
+XDIS 1000014e2: DATAXFER  BASE       498B442418               mov rax, qword ptr [r12+0x18]
+XDIS 1000014e7: BINARY    BASE       48FFC0                   inc rax
+XDIS 1000014ea: COND_BR   BASE       7807                     js 0x1000014f3 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0xd3>
+XDIS 1000014ec: CONVERT   SSE        F3480F2AC0               cvtsi2ss xmm0, rax
+XDIS 1000014f1: UNCOND_BR BASE       EB15                     jmp 0x100001508 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0xe8>
+XDIS 1000014f3: DATAXFER  BASE       4889C1                   mov rcx, rax
+XDIS 1000014f6: SHIFT     BASE       48D1E9                   shr rcx, 0x1
+XDIS 1000014f9: LOGICAL   BASE       83E001                   and eax, 0x1
+XDIS 1000014fc: LOGICAL   BASE       4809C8                   or rax, rcx
+XDIS 1000014ff: CONVERT   SSE        F3480F2AC0               cvtsi2ss xmm0, rax
+XDIS 100001504: SSE       SSE        F30F58C0                 addss xmm0, xmm0
+XDIS 100001508: DATAXFER  BASE       488B55D0                 mov rdx, qword ptr [rbp-0x30]
+XDIS 10000150c: DATAXFER  BASE       4C89E9                   mov rcx, r13
+XDIS 10000150f: SHIFT     BASE       48D1E9                   shr rcx, 0x1
+XDIS 100001512: DATAXFER  BASE       4489E8                   mov eax, r13d
+XDIS 100001515: LOGICAL   BASE       83E001                   and eax, 0x1
+XDIS 100001518: LOGICAL   BASE       4809C8                   or rax, rcx
+XDIS 10000151b: LOGICAL   BASE       4D85ED                   test r13, r13
+XDIS 10000151e: COND_BR   BASE       7810                     js 0x100001530 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x110>
+XDIS 100001520: CONVERT   SSE        F3490F2AD5               cvtsi2ss xmm2, r13
+XDIS 100001525: DATAXFER  SSE        F3410F104C2420           movss xmm1, dword ptr [r12+0x20]
+XDIS 10000152c: COND_BR   BASE       7514                     jnz 0x100001542 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x122>
+XDIS 10000152e: UNCOND_BR BASE       EB1F                     jmp 0x10000154f <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x12f>
+XDIS 100001530: CONVERT   SSE        F3480F2AD0               cvtsi2ss xmm2, rax
+XDIS 100001535: SSE       SSE        F30F58D2                 addss xmm2, xmm2
+XDIS 100001539: DATAXFER  SSE        F3410F104C2420           movss xmm1, dword ptr [r12+0x20]
+XDIS 100001540: COND_BR   BASE       740D                     jz 0x10000154f <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x12f>
+XDIS 100001542: SSE       SSE        F30F59D1                 mulss xmm2, xmm1
+XDIS 100001546: SSE       SSE        0F2EC2                   ucomiss xmm0, xmm2
+XDIS 100001549: COND_BR   BASE       0F8682000000             jbe 0x1000015d1 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x1b1>
+XDIS 10000154f: MISC      BASE       4B8D4C2D00               lea rcx, ptr [r13+r13*1]
+XDIS 100001554: BINARY    BASE       4983FD03                 cmp r13, 0x3
+XDIS 100001558: COND_BR   BASE       720E                     jb 0x100001568 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x148>
+XDIS 10000155a: MISC      BASE       498D55FF                 lea rdx, ptr [r13-0x1]
+XDIS 10000155e: LOGICAL   BASE       31C0                     xor eax, eax
+XDIS 100001560: LOGICAL   BASE       4C85EA                   test rdx, r13
+XDIS 100001563: SETCC     BASE       0F95C0                   setnz al
+XDIS 100001566: UNCOND_BR BASE       EB05                     jmp 0x10000156d <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x14d>
+XDIS 100001568: DATAXFER  BASE       B801000000               mov eax, 0x1
+XDIS 10000156d: LOGICAL   BASE       4809C8                   or rax, rcx
+XDIS 100001570: SSE       SSE        F30F5EC1                 divss xmm0, xmm1
+XDIS 100001574: SSE       SSE4       660F3A0AC00A             roundss xmm0, xmm0, 0xa
+XDIS 10000157a: DATAXFER  SSE        F30F100D22090000         movss xmm1, dword ptr [rip+0x922] <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x404>
+XDIS 100001582: DATAXFER  SSE        0F28D0                   movaps xmm2, xmm0
+XDIS 100001585: SSE       SSE        F30F5CD1                 subss xmm2, xmm1
+XDIS 100001589: CONVERT   SSE        F3480F2CCA               cvttss2si rcx, xmm2
+XDIS 10000158e: DATAXFER  BASE       48BA0000000000000080     mov rdx, 0x8000000000000000
+XDIS 100001598: LOGICAL   BASE       4831CA                   xor rdx, rcx
+XDIS 10000159b: CONVERT   SSE        F3480F2CF0               cvttss2si rsi, xmm0
+XDIS 1000015a0: SSE       SSE        0F2EC1                   ucomiss xmm0, xmm1
+XDIS 1000015a3: CMOV      BASE       480F43F2                 cmovnb rsi, rdx
+XDIS 1000015a7: BINARY    BASE       4839F0                   cmp rax, rsi
+XDIS 1000015aa: CMOV      BASE       480F43F0                 cmovnb rsi, rax
+XDIS 1000015ae: DATAXFER  BASE       4C89E7                   mov rdi, r12
+XDIS 1000015b1: CALL      BASE       E8BA000000               call 0x100001670 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE6rehashEm>
+XDIS 1000015b6: DATAXFER  BASE       4D8B6C2408               mov r13, qword ptr [r12+0x8]
+XDIS 1000015bb: MISC      BASE       498D45FF                 lea rax, ptr [r13-0x1]
+XDIS 1000015bf: LOGICAL   BASE       4C85E8                   test rax, r13
+XDIS 1000015c2: COND_BR   BASE       7412                     jz 0x1000015d6 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x1b6>
+XDIS 1000015c4: BINARY    BASE       4D39FD                   cmp r13, r15
+XDIS 1000015c7: COND_BR   BASE       7710                     jnbe 0x1000015d9 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x1b9>
+XDIS 1000015c9: LOGICAL   BASE       31D2                     xor edx, edx
+XDIS 1000015cb: DATAXFER  BASE       4C89F8                   mov rax, r15
+XDIS 1000015ce: BINARY    BASE       49F7F5                   div r13
+XDIS 1000015d1: DATAXFER  BASE       4989D7                   mov r15, rdx
+XDIS 1000015d4: UNCOND_BR BASE       EB03                     jmp 0x1000015d9 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x1b9>
+XDIS 1000015d6: LOGICAL   BASE       4921C7                   and r15, rax
+XDIS 1000015d9: DATAXFER  BASE       498B0C24                 mov rcx, qword ptr [r12]
+XDIS 1000015dd: DATAXFER  BASE       4A8B04F9                 mov rax, qword ptr [rcx+r15*8]
+XDIS 1000015e1: LOGICAL   BASE       4885C0                   test rax, rax
+XDIS 1000015e4: COND_BR   BASE       7408                     jz 0x1000015ee <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x1ce>
+XDIS 1000015e6: DATAXFER  BASE       488B08                   mov rcx, qword ptr [rax]
+XDIS 1000015e9: DATAXFER  BASE       48890B                   mov qword ptr [rbx], rcx
+XDIS 1000015ec: UNCOND_BR BASE       EB45                     jmp 0x100001633 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x213>
+XDIS 1000015ee: MISC      BASE       498D442410               lea rax, ptr [r12+0x10]
+XDIS 1000015f3: DATAXFER  BASE       498B542410               mov rdx, qword ptr [r12+0x10]
+XDIS 1000015f8: DATAXFER  BASE       488913                   mov qword ptr [rbx], rdx
+XDIS 1000015fb: DATAXFER  BASE       49895C2410               mov qword ptr [r12+0x10], rbx
+XDIS 100001600: DATAXFER  BASE       4A8904F9                 mov qword ptr [rcx+r15*8], rax
+XDIS 100001604: DATAXFER  BASE       488B03                   mov rax, qword ptr [rbx]
+XDIS 100001607: LOGICAL   BASE       4885C0                   test rax, rax
+XDIS 10000160a: COND_BR   BASE       742A                     jz 0x100001636 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x216>
+XDIS 10000160c: DATAXFER  BASE       488B4008                 mov rax, qword ptr [rax+0x8]
+XDIS 100001610: MISC      BASE       498D4DFF                 lea rcx, ptr [r13-0x1]
+XDIS 100001614: LOGICAL   BASE       4C85E9                   test rcx, r13
+XDIS 100001617: COND_BR   BASE       740F                     jz 0x100001628 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x208>
+XDIS 100001619: BINARY    BASE       4C39E8                   cmp rax, r13
+XDIS 10000161c: COND_BR   BASE       720D                     jb 0x10000162b <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x20b>
+XDIS 10000161e: LOGICAL   BASE       31D2                     xor edx, edx
+XDIS 100001620: BINARY    BASE       49F7F5                   div r13
+XDIS 100001623: DATAXFER  BASE       4889D0                   mov rax, rdx
+XDIS 100001626: UNCOND_BR BASE       EB03                     jmp 0x10000162b <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE15__insert_uniqueERKi+0x20b>
+XDIS 100001628: LOGICAL   BASE       4821C8                   and rax, rcx
+XDIS 10000162b: SHIFT     BASE       48C1E003                 shl rax, 0x3
+XDIS 10000162f: BINARY    BASE       49030424                 add rax, qword ptr [r12]
+XDIS 100001633: DATAXFER  BASE       488918                   mov qword ptr [rax], rbx
+XDIS 100001636: BINARY    BASE       49FF442418               inc qword ptr [r12+0x18]
+XDIS 10000163b: DATAXFER  BASE       B201                     mov dl, 0x1
+XDIS 10000163d: DATAXFER  BASE       4889D8                   mov rax, rbx
+XDIS 100001640: BINARY    BASE       4883C408                 add rsp, 0x8
+XDIS 100001644: POP       BASE       5B                       pop rbx
+XDIS 100001645: POP       BASE       415C                     pop r12
+XDIS 100001647: POP       BASE       415D                     pop r13
+XDIS 100001649: POP       BASE       415E                     pop r14
+XDIS 10000164b: POP       BASE       415F                     pop r15
+XDIS 10000164d: POP       BASE       5D                       pop rbp
+XDIS 10000164e: RET       BASE       C3                       ret 
+XDIS 10000164f: DATAXFER  BASE       4989C6                   mov r14, rax
+XDIS 100001652: DATAXFER  BASE       4889DF                   mov rdi, rbx
+XDIS 100001655: CALL      BASE       E80A060000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 10000165a: DATAXFER  BASE       4C89F7                   mov rdi, r14
+XDIS 10000165d: CALL      BASE       E89C050000               call 0x100001bfe <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x15e>
+XDIS 100001662: MISC      BASE       0F0B                     ud2
+XDIS 100001664: WIDENOP   BASE       662E0F1F840000000000     nop word ptr [rax+rax*1], ax
+XDIS 10000166e: NOP       BASE       6690                     data16 nop
+
+SYM __ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE6rehashEm:
+XDIS 100001670: PUSH      BASE       55                       push rbp
+XDIS 100001671: DATAXFER  BASE       4889E5                   mov rbp, rsp
+XDIS 100001674: PUSH      BASE       4157                     push r15
+XDIS 100001676: PUSH      BASE       4156                     push r14
+XDIS 100001678: PUSH      BASE       53                       push rbx
+XDIS 100001679: PUSH      BASE       50                       push rax
+XDIS 10000167a: DATAXFER  BASE       4989FE                   mov r14, rdi
+XDIS 10000167d: BINARY    BASE       4883FE01                 cmp rsi, 0x1
+XDIS 100001681: COND_BR   BASE       7507                     jnz 0x10000168a <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE6rehashEm+0x1a>
+XDIS 100001683: DATAXFER  BASE       BB02000000               mov ebx, 0x2
+XDIS 100001688: UNCOND_BR BASE       EB17                     jmp 0x1000016a1 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE6rehashEm+0x31>
+XDIS 10000168a: DATAXFER  BASE       4889F3                   mov rbx, rsi
+XDIS 10000168d: MISC      BASE       488D46FF                 lea rax, ptr [rsi-0x1]
+XDIS 100001691: LOGICAL   BASE       4885F0                   test rax, rsi
+XDIS 100001694: COND_BR   BASE       740B                     jz 0x1000016a1 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE6rehashEm+0x31>
+XDIS 100001696: DATAXFER  BASE       4889DF                   mov rdi, rbx
+XDIS 100001699: CALL      BASE       E878050000               call 0x100001c16 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x176>
+XDIS 10000169e: DATAXFER  BASE       4889C3                   mov rbx, rax
+XDIS 1000016a1: DATAXFER  BASE       4D8B7E08                 mov r15, qword ptr [r14+0x8]
+XDIS 1000016a5: BINARY    BASE       4C39FB                   cmp rbx, r15
+XDIS 1000016a8: COND_BR   BASE       7615                     jbe 0x1000016bf <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE6rehashEm+0x4f>
+XDIS 1000016aa: DATAXFER  BASE       4C89F7                   mov rdi, r14
+XDIS 1000016ad: DATAXFER  BASE       4889DE                   mov rsi, rbx
+XDIS 1000016b0: BINARY    BASE       4883C408                 add rsp, 0x8
+XDIS 1000016b4: POP       BASE       5B                       pop rbx
+XDIS 1000016b5: POP       BASE       415E                     pop r14
+XDIS 1000016b7: POP       BASE       415F                     pop r15
+XDIS 1000016b9: POP       BASE       5D                       pop rbp
+XDIS 1000016ba: UNCOND_BR BASE       E9C1000000               jmp 0x100001780 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm>
+XDIS 1000016bf: COND_BR   BASE       0F83AE000000             jnb 0x100001773 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE6rehashEm+0x103>
+XDIS 1000016c5: BINARY    BASE       4983FF03                 cmp r15, 0x3
+XDIS 1000016c9: COND_BR   BASE       720C                     jb 0x1000016d7 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE6rehashEm+0x67>
+XDIS 1000016cb: MISC      BASE       498D47FF                 lea rax, ptr [r15-0x1]
+XDIS 1000016cf: LOGICAL   BASE       4C85F8                   test rax, r15
+XDIS 1000016d2: SETCC     BASE       0F94C1                   setz cl
+XDIS 1000016d5: UNCOND_BR BASE       EB02                     jmp 0x1000016d9 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE6rehashEm+0x69>
+XDIS 1000016d7: LOGICAL   BASE       31C9                     xor ecx, ecx
+XDIS 1000016d9: DATAXFER  BASE       498B4618                 mov rax, qword ptr [r14+0x18]
+XDIS 1000016dd: LOGICAL   BASE       4885C0                   test rax, rax
+XDIS 1000016e0: COND_BR   BASE       7807                     js 0x1000016e9 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE6rehashEm+0x79>
+XDIS 1000016e2: CONVERT   SSE        F3480F2AC0               cvtsi2ss xmm0, rax
+XDIS 1000016e7: UNCOND_BR BASE       EB15                     jmp 0x1000016fe <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE6rehashEm+0x8e>
+XDIS 1000016e9: DATAXFER  BASE       4889C2                   mov rdx, rax
+XDIS 1000016ec: SHIFT     BASE       48D1EA                   shr rdx, 0x1
+XDIS 1000016ef: LOGICAL   BASE       83E001                   and eax, 0x1
+XDIS 1000016f2: LOGICAL   BASE       4809D0                   or rax, rdx
+XDIS 1000016f5: CONVERT   SSE        F3480F2AC0               cvtsi2ss xmm0, rax
+XDIS 1000016fa: SSE       SSE        F30F58C0                 addss xmm0, xmm0
+XDIS 1000016fe: SSE       SSE        F3410F5E4620             divss xmm0, dword ptr [r14+0x20]
+XDIS 100001704: SSE       SSE4       660F3A0AC00A             roundss xmm0, xmm0, 0xa
+XDIS 10000170a: DATAXFER  SSE        F30F100D92070000         movss xmm1, dword ptr [rip+0x792] <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x404>
+XDIS 100001712: DATAXFER  SSE        0F28D0                   movaps xmm2, xmm0
+XDIS 100001715: SSE       SSE        F30F5CD1                 subss xmm2, xmm1
+XDIS 100001719: CONVERT   SSE        F3480F2CC2               cvttss2si rax, xmm2
+XDIS 10000171e: DATAXFER  BASE       48BA0000000000000080     mov rdx, 0x8000000000000000
+XDIS 100001728: LOGICAL   BASE       4831C2                   xor rdx, rax
+XDIS 10000172b: CONVERT   SSE        F3480F2CC0               cvttss2si rax, xmm0
+XDIS 100001730: SSE       SSE        0F2EC1                   ucomiss xmm0, xmm1
+XDIS 100001733: CMOV      BASE       480F43C2                 cmovnb rax, rdx
+XDIS 100001737: LOGICAL   BASE       84C9                     test cl, cl
+XDIS 100001739: COND_BR   BASE       7420                     jz 0x10000175b <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE6rehashEm+0xeb>
+XDIS 10000173b: BINARY    BASE       4883F802                 cmp rax, 0x2
+XDIS 10000173f: COND_BR   BASE       7222                     jb 0x100001763 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE6rehashEm+0xf3>
+XDIS 100001741: BINARY    BASE       48FFC8                   dec rax
+XDIS 100001744: BITBYTE   BASE       480FBDC8                 bsr rcx, rax
+XDIS 100001748: LOGICAL   BASE       81F1C0000000             xor ecx, 0xc0
+XDIS 10000174e: BINARY    BASE       83C141                   add ecx, 0x41
+XDIS 100001751: DATAXFER  BASE       B801000000               mov eax, 0x1
+XDIS 100001756: SHIFT     BASE       48D3E0                   shl rax, cl
+XDIS 100001759: UNCOND_BR BASE       EB08                     jmp 0x100001763 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE6rehashEm+0xf3>
+XDIS 10000175b: DATAXFER  BASE       4889C7                   mov rdi, rax
+XDIS 10000175e: CALL      BASE       E8B3040000               call 0x100001c16 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x176>
+XDIS 100001763: BINARY    BASE       4839C3                   cmp rbx, rax
+XDIS 100001766: CMOV      BASE       480F42D8                 cmovb rbx, rax
+XDIS 10000176a: BINARY    BASE       4C39FB                   cmp rbx, r15
+XDIS 10000176d: COND_BR   BASE       0F8237FFFFFF             jb 0x1000016aa <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE6rehashEm+0x3a>
+XDIS 100001773: BINARY    BASE       4883C408                 add rsp, 0x8
+XDIS 100001777: POP       BASE       5B                       pop rbx
+XDIS 100001778: POP       BASE       415E                     pop r14
+XDIS 10000177a: POP       BASE       415F                     pop r15
+XDIS 10000177c: POP       BASE       5D                       pop rbp
+XDIS 10000177d: RET       BASE       C3                       ret 
+XDIS 10000177e: NOP       BASE       6690                     data16 nop
+
+SYM __ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm:
+XDIS 100001780: PUSH      BASE       55                       push rbp
+XDIS 100001781: DATAXFER  BASE       4889E5                   mov rbp, rsp
+XDIS 100001784: PUSH      BASE       4156                     push r14
+XDIS 100001786: PUSH      BASE       53                       push rbx
+XDIS 100001787: DATAXFER  BASE       4889FB                   mov rbx, rdi
+XDIS 10000178a: LOGICAL   BASE       4885F6                   test rsi, rsi
+XDIS 10000178d: COND_BR   BASE       744D                     jz 0x1000017dc <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x5c>
+XDIS 10000178f: DATAXFER  BASE       4989F6                   mov r14, rsi
+XDIS 100001792: DATAXFER  BASE       4889F0                   mov rax, rsi
+XDIS 100001795: SHIFT     BASE       48C1E83D                 shr rax, 0x3d
+XDIS 100001799: COND_BR   BASE       0F8594010000             jnz 0x100001933 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x1b3>
+XDIS 10000179f: MISC      BASE       4A8D3CF500000000         lea rdi, ptr [r14*8]
+XDIS 1000017a7: CALL      BASE       E8BE040000               call 0x100001c6a <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1ca>
+XDIS 1000017ac: DATAXFER  BASE       488B3B                   mov rdi, qword ptr [rbx]
+XDIS 1000017af: DATAXFER  BASE       488903                   mov qword ptr [rbx], rax
+XDIS 1000017b2: LOGICAL   BASE       4885FF                   test rdi, rdi
+XDIS 1000017b5: COND_BR   BASE       7405                     jz 0x1000017bc <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x3c>
+XDIS 1000017b7: CALL      BASE       E8A8040000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 1000017bc: DATAXFER  BASE       4C897308                 mov qword ptr [rbx+0x8], r14
+XDIS 1000017c0: MISC      BASE       4D8D46FF                 lea r8, ptr [r14-0x1]
+XDIS 1000017c4: DATAXFER  BASE       4489F0                   mov eax, r14d
+XDIS 1000017c7: LOGICAL   BASE       83E003                   and eax, 0x3
+XDIS 1000017ca: BINARY    BASE       4983F803                 cmp r8, 0x3
+XDIS 1000017ce: COND_BR   BASE       732D                     jnb 0x1000017fd <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x7d>
+XDIS 1000017d0: LOGICAL   BASE       31C9                     xor ecx, ecx
+XDIS 1000017d2: LOGICAL   BASE       4885C0                   test rax, rax
+XDIS 1000017d5: COND_BR   BASE       7576                     jnz 0x10000184d <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0xcd>
+XDIS 1000017d7: UNCOND_BR BASE       E987000000               jmp 0x100001863 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0xe3>
+XDIS 1000017dc: DATAXFER  BASE       488B3B                   mov rdi, qword ptr [rbx]
+XDIS 1000017df: DATAXFER  BASE       48C70300000000           mov qword ptr [rbx], 0x0
+XDIS 1000017e6: LOGICAL   BASE       4885FF                   test rdi, rdi
+XDIS 1000017e9: COND_BR   BASE       7405                     jz 0x1000017f0 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x70>
+XDIS 1000017eb: CALL      BASE       E874040000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 1000017f0: DATAXFER  BASE       48C7430800000000         mov qword ptr [rbx+0x8], 0x0
+XDIS 1000017f8: UNCOND_BR BASE       E931010000               jmp 0x10000192e <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x1ae>
+XDIS 1000017fd: DATAXFER  BASE       4C89F2                   mov rdx, r14
+XDIS 100001800: BINARY    BASE       4829C2                   sub rdx, rax
+XDIS 100001803: LOGICAL   BASE       31C9                     xor ecx, ecx
+XDIS 100001805: WIDENOP   BASE       662E0F1F840000000000     nop word ptr [rax+rax*1], ax
+XDIS 10000180f: NOP       BASE       90                       nop
+XDIS 100001810: DATAXFER  BASE       488B33                   mov rsi, qword ptr [rbx]
+XDIS 100001813: DATAXFER  BASE       48C704CE00000000         mov qword ptr [rsi+rcx*8], 0x0
+XDIS 10000181b: DATAXFER  BASE       488B33                   mov rsi, qword ptr [rbx]
+XDIS 10000181e: DATAXFER  BASE       48C744CE0800000000       mov qword ptr [rsi+rcx*8+0x8], 0x0
+XDIS 100001827: DATAXFER  BASE       488B33                   mov rsi, qword ptr [rbx]
+XDIS 10000182a: DATAXFER  BASE       48C744CE1000000000       mov qword ptr [rsi+rcx*8+0x10], 0x0
+XDIS 100001833: DATAXFER  BASE       488B33                   mov rsi, qword ptr [rbx]
+XDIS 100001836: DATAXFER  BASE       48C744CE1800000000       mov qword ptr [rsi+rcx*8+0x18], 0x0
+XDIS 10000183f: BINARY    BASE       4883C104                 add rcx, 0x4
+XDIS 100001843: BINARY    BASE       4839CA                   cmp rdx, rcx
+XDIS 100001846: COND_BR   BASE       75C8                     jnz 0x100001810 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x90>
+XDIS 100001848: LOGICAL   BASE       4885C0                   test rax, rax
+XDIS 10000184b: COND_BR   BASE       7416                     jz 0x100001863 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0xe3>
+XDIS 10000184d: BINARY    BASE       48F7D8                   neg rax
+XDIS 100001850: DATAXFER  BASE       488B13                   mov rdx, qword ptr [rbx]
+XDIS 100001853: DATAXFER  BASE       48C704CA00000000         mov qword ptr [rdx+rcx*8], 0x0
+XDIS 10000185b: BINARY    BASE       48FFC1                   inc rcx
+XDIS 10000185e: BINARY    BASE       48FFC0                   inc rax
+XDIS 100001861: COND_BR   BASE       75ED                     jnz 0x100001850 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0xd0>
+XDIS 100001863: DATAXFER  BASE       4C8B5310                 mov r10, qword ptr [rbx+0x10]
+XDIS 100001867: LOGICAL   BASE       4D85D2                   test r10, r10
+XDIS 10000186a: COND_BR   BASE       0F84BE000000             jz 0x10000192e <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x1ae>
+XDIS 100001870: MISC      BASE       488D7B10                 lea rdi, ptr [rbx+0x10]
+XDIS 100001874: DATAXFER  BASE       4D8B4A08                 mov r9, qword ptr [r10+0x8]
+XDIS 100001878: LOGICAL   BASE       4D85F0                   test r8, r14
+XDIS 10000187b: COND_BR   BASE       7412                     jz 0x10000188f <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x10f>
+XDIS 10000187d: BINARY    BASE       4D39F1                   cmp r9, r14
+XDIS 100001880: COND_BR   BASE       7210                     jb 0x100001892 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x112>
+XDIS 100001882: LOGICAL   BASE       31D2                     xor edx, edx
+XDIS 100001884: DATAXFER  BASE       4C89C8                   mov rax, r9
+XDIS 100001887: BINARY    BASE       49F7F6                   div r14
+XDIS 10000188a: DATAXFER  BASE       4989D1                   mov r9, rdx
+XDIS 10000188d: UNCOND_BR BASE       EB03                     jmp 0x100001892 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x112>
+XDIS 10000188f: LOGICAL   BASE       4D21C1                   and r9, r8
+XDIS 100001892: DATAXFER  BASE       488B03                   mov rax, qword ptr [rbx]
+XDIS 100001895: DATAXFER  BASE       4A893CC8                 mov qword ptr [rax+r9*8], rdi
+XDIS 100001899: UNCOND_BR BASE       EB08                     jmp 0x1000018a3 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x123>
+XDIS 10000189b: WIDENOP   BASE       0F1F440000               nop dword ptr [rax+rax*1], eax
+XDIS 1000018a0: DATAXFER  BASE       4989FA                   mov r10, rdi
+XDIS 1000018a3: DATAXFER  BASE       498B3A                   mov rdi, qword ptr [r10]
+XDIS 1000018a6: LOGICAL   BASE       4885FF                   test rdi, rdi
+XDIS 1000018a9: COND_BR   BASE       0F847F000000             jz 0x10000192e <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x1ae>
+XDIS 1000018af: DATAXFER  BASE       488B4708                 mov rax, qword ptr [rdi+0x8]
+XDIS 1000018b3: LOGICAL   BASE       4D85F0                   test r8, r14
+XDIS 1000018b6: COND_BR   BASE       7418                     jz 0x1000018d0 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x150>
+XDIS 1000018b8: BINARY    BASE       4C39F0                   cmp rax, r14
+XDIS 1000018bb: COND_BR   BASE       7208                     jb 0x1000018c5 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x145>
+XDIS 1000018bd: LOGICAL   BASE       31D2                     xor edx, edx
+XDIS 1000018bf: BINARY    BASE       49F7F6                   div r14
+XDIS 1000018c2: DATAXFER  BASE       4889D0                   mov rax, rdx
+XDIS 1000018c5: BINARY    BASE       4C39C8                   cmp rax, r9
+XDIS 1000018c8: COND_BR   BASE       74D6                     jz 0x1000018a0 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x120>
+XDIS 1000018ca: UNCOND_BR BASE       EB0C                     jmp 0x1000018d8 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x158>
+XDIS 1000018cc: WIDENOP   BASE       0F1F4000                 nop dword ptr [rax], eax
+XDIS 1000018d0: LOGICAL   BASE       4C21C0                   and rax, r8
+XDIS 1000018d3: BINARY    BASE       4C39C8                   cmp rax, r9
+XDIS 1000018d6: COND_BR   BASE       74C8                     jz 0x1000018a0 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x120>
+XDIS 1000018d8: DATAXFER  BASE       488B0B                   mov rcx, qword ptr [rbx]
+XDIS 1000018db: BINARY    BASE       48833CC100               cmp qword ptr [rcx+rax*8], 0x0
+XDIS 1000018e0: DATAXFER  BASE       4889FA                   mov rdx, rdi
+XDIS 1000018e3: COND_BR   BASE       743A                     jz 0x10000191f <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x19f>
+XDIS 1000018e5: WIDENOP   BASE       662E0F1F840000000000     nop word ptr [rax+rax*1], ax
+XDIS 1000018ef: NOP       BASE       90                       nop
+XDIS 1000018f0: DATAXFER  BASE       4889D1                   mov rcx, rdx
+XDIS 1000018f3: DATAXFER  BASE       488B12                   mov rdx, qword ptr [rdx]
+XDIS 1000018f6: LOGICAL   BASE       4885D2                   test rdx, rdx
+XDIS 1000018f9: COND_BR   BASE       7408                     jz 0x100001903 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x183>
+XDIS 1000018fb: DATAXFER  BASE       8B7710                   mov esi, dword ptr [rdi+0x10]
+XDIS 1000018fe: BINARY    BASE       3B7210                   cmp esi, dword ptr [rdx+0x10]
+XDIS 100001901: COND_BR   BASE       74ED                     jz 0x1000018f0 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x170>
+XDIS 100001903: DATAXFER  BASE       498912                   mov qword ptr [r10], rdx
+XDIS 100001906: DATAXFER  BASE       488B13                   mov rdx, qword ptr [rbx]
+XDIS 100001909: DATAXFER  BASE       488B14C2                 mov rdx, qword ptr [rdx+rax*8]
+XDIS 10000190d: DATAXFER  BASE       488B12                   mov rdx, qword ptr [rdx]
+XDIS 100001910: DATAXFER  BASE       488911                   mov qword ptr [rcx], rdx
+XDIS 100001913: DATAXFER  BASE       488B0B                   mov rcx, qword ptr [rbx]
+XDIS 100001916: DATAXFER  BASE       488B04C1                 mov rax, qword ptr [rcx+rax*8]
+XDIS 10000191a: DATAXFER  BASE       488938                   mov qword ptr [rax], rdi
+XDIS 10000191d: UNCOND_BR BASE       EB84                     jmp 0x1000018a3 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x123>
+XDIS 10000191f: DATAXFER  BASE       4C8914C1                 mov qword ptr [rcx+rax*8], r10
+XDIS 100001923: DATAXFER  BASE       4989FA                   mov r10, rdi
+XDIS 100001926: DATAXFER  BASE       4989C1                   mov r9, rax
+XDIS 100001929: UNCOND_BR BASE       E975FFFFFF               jmp 0x1000018a3 <__ZNSt3__112__hash_tableIiNS_4hashIiEENS_8equal_toIiEENS_9allocatorIiEEE8__rehashEm+0x123>
+XDIS 10000192e: POP       BASE       5B                       pop rbx
+XDIS 10000192f: POP       BASE       415E                     pop r14
+XDIS 100001931: POP       BASE       5D                       pop rbp
+XDIS 100001932: RET       BASE       C3                       ret 
+XDIS 100001933: CALL      BASE       E818F7FFFF               call 0x100001050 <__ZNSt3__1L20__throw_length_errorEPKc>
+XDIS 100001938: WIDENOP   BASE       0F1F840000000000         nop dword ptr [rax+rax*1], eax
+
+SYM __ZNSt3__124__put_character_sequenceIcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m:
+XDIS 100001940: PUSH      BASE       55                       push rbp
+XDIS 100001941: DATAXFER  BASE       4889E5                   mov rbp, rsp
+XDIS 100001944: PUSH      BASE       4157                     push r15
+XDIS 100001946: PUSH      BASE       4156                     push r14
+XDIS 100001948: PUSH      BASE       4155                     push r13
+XDIS 10000194a: PUSH      BASE       4154                     push r12
+XDIS 10000194c: PUSH      BASE       53                       push rbx
+XDIS 10000194d: BINARY    BASE       4883EC28                 sub rsp, 0x28
+XDIS 100001951: DATAXFER  BASE       4989D6                   mov r14, rdx
+XDIS 100001954: DATAXFER  BASE       4989F7                   mov r15, rsi
+XDIS 100001957: DATAXFER  BASE       4889FB                   mov rbx, rdi
+XDIS 10000195a: MISC      BASE       488D7DB0                 lea rdi, ptr [rbp-0x50]
+XDIS 10000195e: DATAXFER  BASE       4889DE                   mov rsi, rbx
+XDIS 100001961: CALL      BASE       E8B6020000               call 0x100001c1c <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x17c>
+XDIS 100001966: BINARY    BASE       807DB000                 cmp byte ptr [rbp-0x50], 0x0
+XDIS 10000196a: COND_BR   BASE       0F84AE000000             jz 0x100001a1e <__ZNSt3__124__put_character_sequenceIcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m+0xde>
+XDIS 100001970: DATAXFER  BASE       488B03                   mov rax, qword ptr [rbx]
+XDIS 100001973: DATAXFER  BASE       488B40E8                 mov rax, qword ptr [rax-0x18]
+XDIS 100001977: MISC      BASE       4C8D2403                 lea r12, ptr [rbx+rax*1]
+XDIS 10000197b: DATAXFER  BASE       488B7C0328               mov rdi, qword ptr [rbx+rax*1+0x28]
+XDIS 100001980: DATAXFER  BASE       448B6C0308               mov r13d, dword ptr [rbx+rax*1+0x8]
+XDIS 100001985: DATAXFER  BASE       8B840390000000           mov eax, dword ptr [rbx+rax*1+0x90]
+XDIS 10000198c: BINARY    BASE       83F8FF                   cmp eax, 0xffffffff
+XDIS 10000198f: COND_BR   BASE       754A                     jnz 0x1000019db <__ZNSt3__124__put_character_sequenceIcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m+0x9b>
+XDIS 100001991: DATAXFER  BASE       48897DC0                 mov qword ptr [rbp-0x40], rdi
+XDIS 100001995: MISC      BASE       488D7DC8                 lea rdi, ptr [rbp-0x38]
+XDIS 100001999: DATAXFER  BASE       4C89E6                   mov rsi, r12
+XDIS 10000199c: CALL      BASE       E869020000               call 0x100001c0a <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x16a>
+XDIS 1000019a1: DATAXFER  BASE       488B3580060000           mov rsi, qword ptr [rip+0x680] <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x588>
+XDIS 1000019a8: MISC      BASE       488D7DC8                 lea rdi, ptr [rbp-0x38]
+XDIS 1000019ac: CALL      BASE       E853020000               call 0x100001c04 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x164>
+XDIS 1000019b1: DATAXFER  BASE       488B08                   mov rcx, qword ptr [rax]
+XDIS 1000019b4: DATAXFER  BASE       BE20000000               mov esi, 0x20
+XDIS 1000019b9: DATAXFER  BASE       4889C7                   mov rdi, rax
+XDIS 1000019bc: CALL      BASE       FF5138                   call qword ptr [rcx+0x38]
+XDIS 1000019bf: DATAXFER  BASE       8845D7                   mov byte ptr [rbp-0x29], al
+XDIS 1000019c2: MISC      BASE       488D7DC8                 lea rdi, ptr [rbp-0x38]
+XDIS 1000019c6: CALL      BASE       E881020000               call 0x100001c4c <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1ac>
+XDIS 1000019cb: DATAXFER  BASE       0FBE45D7                 movsx eax, byte ptr [rbp-0x29]
+XDIS 1000019cf: DATAXFER  BASE       4189842490000000         mov dword ptr [r12+0x90], eax
+XDIS 1000019d7: DATAXFER  BASE       488B7DC0                 mov rdi, qword ptr [rbp-0x40]
+XDIS 1000019db: BINARY    BASE       4D01FE                   add r14, r15
+XDIS 1000019de: LOGICAL   BASE       4181E5B0000000           and r13d, 0xb0
+XDIS 1000019e5: BINARY    BASE       4183FD20                 cmp r13d, 0x20
+XDIS 1000019e9: DATAXFER  BASE       4C89FA                   mov rdx, r15
+XDIS 1000019ec: CMOV      BASE       490F44D6                 cmovz rdx, r14
+XDIS 1000019f0: DATAXFER  BASE       440FBEC8                 movsx r9d, al
+XDIS 1000019f4: DATAXFER  BASE       4C89FE                   mov rsi, r15
+XDIS 1000019f7: DATAXFER  BASE       4C89F1                   mov rcx, r14
+XDIS 1000019fa: DATAXFER  BASE       4D89E0                   mov r8, r12
+XDIS 1000019fd: CALL      BASE       E89E000000               call 0x100001aa0 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_>
+XDIS 100001a02: LOGICAL   BASE       4885C0                   test rax, rax
+XDIS 100001a05: COND_BR   BASE       7517                     jnz 0x100001a1e <__ZNSt3__124__put_character_sequenceIcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m+0xde>
+XDIS 100001a07: DATAXFER  BASE       488B03                   mov rax, qword ptr [rbx]
+XDIS 100001a0a: DATAXFER  BASE       488B40E8                 mov rax, qword ptr [rax-0x18]
+XDIS 100001a0e: MISC      BASE       488D3C03                 lea rdi, ptr [rbx+rax*1]
+XDIS 100001a12: DATAXFER  BASE       8B740320                 mov esi, dword ptr [rbx+rax*1+0x20]
+XDIS 100001a16: LOGICAL   BASE       83CE05                   or esi, 0x5
+XDIS 100001a19: CALL      BASE       E83A020000               call 0x100001c58 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1b8>
+XDIS 100001a1e: MISC      BASE       488D7DB0                 lea rdi, ptr [rbp-0x50]
+XDIS 100001a22: CALL      BASE       E8FB010000               call 0x100001c22 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x182>
+XDIS 100001a27: DATAXFER  BASE       4889D8                   mov rax, rbx
+XDIS 100001a2a: BINARY    BASE       4883C428                 add rsp, 0x28
+XDIS 100001a2e: POP       BASE       5B                       pop rbx
+XDIS 100001a2f: POP       BASE       415C                     pop r12
+XDIS 100001a31: POP       BASE       415D                     pop r13
+XDIS 100001a33: POP       BASE       415E                     pop r14
+XDIS 100001a35: POP       BASE       415F                     pop r15
+XDIS 100001a37: POP       BASE       5D                       pop rbp
+XDIS 100001a38: RET       BASE       C3                       ret 
+XDIS 100001a39: UNCOND_BR BASE       EB0E                     jmp 0x100001a49 <__ZNSt3__124__put_character_sequenceIcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m+0x109>
+XDIS 100001a3b: DATAXFER  BASE       4989C6                   mov r14, rax
+XDIS 100001a3e: MISC      BASE       488D7DC8                 lea rdi, ptr [rbp-0x38]
+XDIS 100001a42: CALL      BASE       E805020000               call 0x100001c4c <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1ac>
+XDIS 100001a47: UNCOND_BR BASE       EB03                     jmp 0x100001a4c <__ZNSt3__124__put_character_sequenceIcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m+0x10c>
+XDIS 100001a49: DATAXFER  BASE       4989C6                   mov r14, rax
+XDIS 100001a4c: MISC      BASE       488D7DB0                 lea rdi, ptr [rbp-0x50]
+XDIS 100001a50: CALL      BASE       E8CD010000               call 0x100001c22 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x182>
+XDIS 100001a55: UNCOND_BR BASE       EB03                     jmp 0x100001a5a <__ZNSt3__124__put_character_sequenceIcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m+0x11a>
+XDIS 100001a57: DATAXFER  BASE       4989C6                   mov r14, rax
+XDIS 100001a5a: DATAXFER  BASE       4C89F7                   mov rdi, r14
+XDIS 100001a5d: CALL      BASE       E814020000               call 0x100001c76 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1d6>
+XDIS 100001a62: DATAXFER  BASE       488B03                   mov rax, qword ptr [rbx]
+XDIS 100001a65: DATAXFER  BASE       4889DF                   mov rdi, rbx
+XDIS 100001a68: BINARY    BASE       480378E8                 add rdi, qword ptr [rax-0x18]
+XDIS 100001a6c: CALL      BASE       E8E1010000               call 0x100001c52 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1b2>
+XDIS 100001a71: CALL      BASE       E806020000               call 0x100001c7c <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1dc>
+XDIS 100001a76: UNCOND_BR BASE       EBAF                     jmp 0x100001a27 <__ZNSt3__124__put_character_sequenceIcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m+0xe7>
+XDIS 100001a78: DATAXFER  BASE       4889C3                   mov rbx, rax
+XDIS 100001a7b: CALL      BASE       E8FC010000               call 0x100001c7c <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1dc>
+XDIS 100001a80: DATAXFER  BASE       4889DF                   mov rdi, rbx
+XDIS 100001a83: CALL      BASE       E876010000               call 0x100001bfe <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x15e>
+XDIS 100001a88: MISC      BASE       0F0B                     ud2
+XDIS 100001a8a: DATAXFER  BASE       4889C7                   mov rdi, rax
+XDIS 100001a8d: CALL      BASE       E8AEF5FFFF               call 0x100001040 <___clang_call_terminate>
+XDIS 100001a92: WIDENOP   BASE       662E0F1F840000000000     nop word ptr [rax+rax*1], ax
+XDIS 100001a9c: WIDENOP   BASE       0F1F4000                 nop dword ptr [rax], eax
+
+SYM __ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_:
+XDIS 100001aa0: PUSH      BASE       55                       push rbp
+XDIS 100001aa1: DATAXFER  BASE       4889E5                   mov rbp, rsp
+XDIS 100001aa4: PUSH      BASE       4157                     push r15
+XDIS 100001aa6: PUSH      BASE       4156                     push r14
+XDIS 100001aa8: PUSH      BASE       4155                     push r13
+XDIS 100001aaa: PUSH      BASE       4154                     push r12
+XDIS 100001aac: PUSH      BASE       53                       push rbx
+XDIS 100001aad: BINARY    BASE       4883EC38                 sub rsp, 0x38
+XDIS 100001ab1: LOGICAL   BASE       4885FF                   test rdi, rdi
+XDIS 100001ab4: COND_BR   BASE       0F8413010000             jz 0x100001bcd <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x12d>
+XDIS 100001aba: DATAXFER  BASE       4D89C4                   mov r12, r8
+XDIS 100001abd: DATAXFER  BASE       4989CF                   mov r15, rcx
+XDIS 100001ac0: DATAXFER  BASE       4989FD                   mov r13, rdi
+XDIS 100001ac3: DATAXFER  BASE       44894DBC                 mov dword ptr [rbp-0x44], r9d
+XDIS 100001ac7: DATAXFER  BASE       4889C8                   mov rax, rcx
+XDIS 100001aca: BINARY    BASE       4829F0                   sub rax, rsi
+XDIS 100001acd: DATAXFER  BASE       498B4818                 mov rcx, qword ptr [r8+0x18]
+XDIS 100001ad1: LOGICAL   BASE       4531F6                   xor r14d, r14d
+XDIS 100001ad4: BINARY    BASE       4829C1                   sub rcx, rax
+XDIS 100001ad7: CMOV      BASE       4C0F4FF1                 cmovnle r14, rcx
+XDIS 100001adb: DATAXFER  BASE       488955A8                 mov qword ptr [rbp-0x58], rdx
+XDIS 100001adf: DATAXFER  BASE       4889D3                   mov rbx, rdx
+XDIS 100001ae2: BINARY    BASE       4829F3                   sub rbx, rsi
+XDIS 100001ae5: LOGICAL   BASE       4885DB                   test rbx, rbx
+XDIS 100001ae8: COND_BR   BASE       7E16                     jle 0x100001b00 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x60>
+XDIS 100001aea: DATAXFER  BASE       498B4500                 mov rax, qword ptr [r13]
+XDIS 100001aee: DATAXFER  BASE       4C89EF                   mov rdi, r13
+XDIS 100001af1: DATAXFER  BASE       4889DA                   mov rdx, rbx
+XDIS 100001af4: CALL      BASE       FF5060                   call qword ptr [rax+0x60]
+XDIS 100001af7: BINARY    BASE       4839D8                   cmp rax, rbx
+XDIS 100001afa: COND_BR   BASE       0F85CD000000             jnz 0x100001bcd <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x12d>
+XDIS 100001b00: LOGICAL   BASE       4D85F6                   test r14, r14
+XDIS 100001b03: COND_BR   BASE       0F8E9B000000             jle 0x100001ba4 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x104>
+XDIS 100001b09: DATAXFER  BASE       4C8965B0                 mov qword ptr [rbp-0x50], r12
+XDIS 100001b0d: LOGICAL_FP SSE        0F57C0                   xorps xmm0, xmm0
+XDIS 100001b10: DATAXFER  SSE        0F2945C0                 movaps xmmword ptr [rbp-0x40], xmm0
+XDIS 100001b14: DATAXFER  BASE       48C745D000000000         mov qword ptr [rbp-0x30], 0x0
+XDIS 100001b1c: BINARY    BASE       4983FE17                 cmp r14, 0x17
+XDIS 100001b20: COND_BR   BASE       7312                     jnb 0x100001b34 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x94>
+XDIS 100001b22: DATAXFER  BASE       4489F0                   mov eax, r14d
+XDIS 100001b25: BINARY    BASE       4400F0                   add al, r14b
+XDIS 100001b28: DATAXFER  BASE       8845C0                   mov byte ptr [rbp-0x40], al
+XDIS 100001b2b: MISC      BASE       488D5DC1                 lea rbx, ptr [rbp-0x3f]
+XDIS 100001b2f: DATAXFER  BASE       4989DC                   mov r12, rbx
+XDIS 100001b32: UNCOND_BR BASE       EB27                     jmp 0x100001b5b <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0xbb>
+XDIS 100001b34: MISC      BASE       498D5E10                 lea rbx, ptr [r14+0x10]
+XDIS 100001b38: LOGICAL   BASE       4883E3F0                 and rbx, 0xfffffffffffffff0
+XDIS 100001b3c: DATAXFER  BASE       4889DF                   mov rdi, rbx
+XDIS 100001b3f: CALL      BASE       E826010000               call 0x100001c6a <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1ca>
+XDIS 100001b44: DATAXFER  BASE       4989C4                   mov r12, rax
+XDIS 100001b47: DATAXFER  BASE       488945D0                 mov qword ptr [rbp-0x30], rax
+XDIS 100001b4b: LOGICAL   BASE       4883CB01                 or rbx, 0x1
+XDIS 100001b4f: DATAXFER  BASE       48895DC0                 mov qword ptr [rbp-0x40], rbx
+XDIS 100001b53: DATAXFER  BASE       4C8975C8                 mov qword ptr [rbp-0x38], r14
+XDIS 100001b57: MISC      BASE       488D5DC1                 lea rbx, ptr [rbp-0x3f]
+XDIS 100001b5b: DATAXFER  BASE       0FB675BC                 movzx esi, byte ptr [rbp-0x44]
+XDIS 100001b5f: DATAXFER  BASE       4C89E7                   mov rdi, r12
+XDIS 100001b62: DATAXFER  BASE       4C89F2                   mov rdx, r14
+XDIS 100001b65: CALL      BASE       E824010000               call 0x100001c8e <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1ee>
+XDIS 100001b6a: DATAXFER  BASE       43C6043400               mov byte ptr [r12+r14*1], 0x0
+XDIS 100001b6f: LOGICAL   BASE       F645C001                 test byte ptr [rbp-0x40], 0x1
+XDIS 100001b73: COND_BR   BASE       7404                     jz 0x100001b79 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0xd9>
+XDIS 100001b75: DATAXFER  BASE       488B5DD0                 mov rbx, qword ptr [rbp-0x30]
+XDIS 100001b79: DATAXFER  BASE       498B4500                 mov rax, qword ptr [r13]
+XDIS 100001b7d: DATAXFER  BASE       4C89EF                   mov rdi, r13
+XDIS 100001b80: DATAXFER  BASE       4889DE                   mov rsi, rbx
+XDIS 100001b83: DATAXFER  BASE       4C89F2                   mov rdx, r14
+XDIS 100001b86: CALL      BASE       FF5060                   call qword ptr [rax+0x60]
+XDIS 100001b89: DATAXFER  BASE       4C8B65B0                 mov r12, qword ptr [rbp-0x50]
+XDIS 100001b8d: DATAXFER  BASE       4889C3                   mov rbx, rax
+XDIS 100001b90: LOGICAL   BASE       F645C001                 test byte ptr [rbp-0x40], 0x1
+XDIS 100001b94: COND_BR   BASE       7409                     jz 0x100001b9f <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0xff>
+XDIS 100001b96: DATAXFER  BASE       488B7DD0                 mov rdi, qword ptr [rbp-0x30]
+XDIS 100001b9a: CALL      BASE       E8C5000000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 100001b9f: BINARY    BASE       4C39F3                   cmp rbx, r14
+XDIS 100001ba2: COND_BR   BASE       7529                     jnz 0x100001bcd <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x12d>
+XDIS 100001ba4: DATAXFER  BASE       488B75A8                 mov rsi, qword ptr [rbp-0x58]
+XDIS 100001ba8: BINARY    BASE       4929F7                   sub r15, rsi
+XDIS 100001bab: LOGICAL   BASE       4D85FF                   test r15, r15
+XDIS 100001bae: COND_BR   BASE       7E12                     jle 0x100001bc2 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x122>
+XDIS 100001bb0: DATAXFER  BASE       498B4500                 mov rax, qword ptr [r13]
+XDIS 100001bb4: DATAXFER  BASE       4C89EF                   mov rdi, r13
+XDIS 100001bb7: DATAXFER  BASE       4C89FA                   mov rdx, r15
+XDIS 100001bba: CALL      BASE       FF5060                   call qword ptr [rax+0x60]
+XDIS 100001bbd: BINARY    BASE       4C39F8                   cmp rax, r15
+XDIS 100001bc0: COND_BR   BASE       750B                     jnz 0x100001bcd <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x12d>
+XDIS 100001bc2: DATAXFER  BASE       49C744241800000000       mov qword ptr [r12+0x18], 0x0
+XDIS 100001bcb: UNCOND_BR BASE       EB03                     jmp 0x100001bd0 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x130>
+XDIS 100001bcd: LOGICAL   BASE       4531ED                   xor r13d, r13d
+XDIS 100001bd0: DATAXFER  BASE       4C89E8                   mov rax, r13
+XDIS 100001bd3: BINARY    BASE       4883C438                 add rsp, 0x38
+XDIS 100001bd7: POP       BASE       5B                       pop rbx
+XDIS 100001bd8: POP       BASE       415C                     pop r12
+XDIS 100001bda: POP       BASE       415D                     pop r13
+XDIS 100001bdc: POP       BASE       415E                     pop r14
+XDIS 100001bde: POP       BASE       415F                     pop r15
+XDIS 100001be0: POP       BASE       5D                       pop rbp
+XDIS 100001be1: RET       BASE       C3                       ret 
+XDIS 100001be2: DATAXFER  BASE       4889C3                   mov rbx, rax
+XDIS 100001be5: LOGICAL   BASE       F645C001                 test byte ptr [rbp-0x40], 0x1
+XDIS 100001be9: COND_BR   BASE       7409                     jz 0x100001bf4 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x154>
+XDIS 100001beb: DATAXFER  BASE       488B7DD0                 mov rdi, qword ptr [rbp-0x30]
+XDIS 100001bef: CALL      BASE       E870000000               call 0x100001c64 <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x1c4>
+XDIS 100001bf4: DATAXFER  BASE       4889DF                   mov rdi, rbx
+XDIS 100001bf7: CALL      BASE       E802000000               call 0x100001bfe <__ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_+0x15e>
+XDIS 100001bfc: MISC      BASE       0F0B                     ud2
+# end of text section.
+# Errors: 0
+XDIS 100001bfe: UNCOND_BR BASE       FF2544040000             jmp qword ptr [rip+0x444]
+XDIS 100001c04: UNCOND_BR BASE       FF2546040000             jmp qword ptr [rip+0x446]
+XDIS 100001c0a: UNCOND_BR BASE       FF2548040000             jmp qword ptr [rip+0x448]
+XDIS 100001c10: UNCOND_BR BASE       FF254A040000             jmp qword ptr [rip+0x44a]
+XDIS 100001c16: UNCOND_BR BASE       FF254C040000             jmp qword ptr [rip+0x44c]
+XDIS 100001c1c: UNCOND_BR BASE       FF254E040000             jmp qword ptr [rip+0x44e]
+XDIS 100001c22: UNCOND_BR BASE       FF2550040000             jmp qword ptr [rip+0x450]
+XDIS 100001c28: UNCOND_BR BASE       FF2552040000             jmp qword ptr [rip+0x452]
+XDIS 100001c2e: UNCOND_BR BASE       FF2554040000             jmp qword ptr [rip+0x454]
+XDIS 100001c34: UNCOND_BR BASE       FF2556040000             jmp qword ptr [rip+0x456]
+XDIS 100001c3a: UNCOND_BR BASE       FF2558040000             jmp qword ptr [rip+0x458]
+XDIS 100001c40: UNCOND_BR BASE       FF255A040000             jmp qword ptr [rip+0x45a]
+XDIS 100001c46: UNCOND_BR BASE       FF255C040000             jmp qword ptr [rip+0x45c]
+XDIS 100001c4c: UNCOND_BR BASE       FF255E040000             jmp qword ptr [rip+0x45e]
+XDIS 100001c52: UNCOND_BR BASE       FF2560040000             jmp qword ptr [rip+0x460]
+XDIS 100001c58: UNCOND_BR BASE       FF2562040000             jmp qword ptr [rip+0x462]
+XDIS 100001c5e: UNCOND_BR BASE       FF2564040000             jmp qword ptr [rip+0x464]
+XDIS 100001c64: UNCOND_BR BASE       FF2566040000             jmp qword ptr [rip+0x466]
+XDIS 100001c6a: UNCOND_BR BASE       FF2568040000             jmp qword ptr [rip+0x468]
+XDIS 100001c70: UNCOND_BR BASE       FF256A040000             jmp qword ptr [rip+0x46a]
+XDIS 100001c76: UNCOND_BR BASE       FF256C040000             jmp qword ptr [rip+0x46c]
+XDIS 100001c7c: UNCOND_BR BASE       FF256E040000             jmp qword ptr [rip+0x46e]
+XDIS 100001c82: UNCOND_BR BASE       FF2570040000             jmp qword ptr [rip+0x470]
+XDIS 100001c88: UNCOND_BR BASE       FF2572040000             jmp qword ptr [rip+0x472]
+XDIS 100001c8e: UNCOND_BR BASE       FF2574040000             jmp qword ptr [rip+0x474]
+# end of text section.
+# Errors: 0
+XDIS 100001c94: MISC      BASE       4C8D1D6D030000           lea r11, ptr [rip+0x36d]
+XDIS 100001c9b: PUSH      BASE       4153                     push r11
+XDIS 100001c9d: UNCOND_BR BASE       FF255D030000             jmp qword ptr [rip+0x35d]
+XDIS 100001ca3: NOP       BASE       90                       nop
+XDIS 100001ca4: PUSH      BASE       6816000000               push 0x16
+XDIS 100001ca9: UNCOND_BR BASE       E9E6FFFFFF               jmp 0x100001c94
+XDIS 100001cae: PUSH      BASE       6843000000               push 0x43
+XDIS 100001cb3: UNCOND_BR BASE       E9DCFFFFFF               jmp 0x100001c94
+XDIS 100001cb8: PUSH      BASE       6867000000               push 0x67
+XDIS 100001cbd: UNCOND_BR BASE       E9D2FFFFFF               jmp 0x100001c94
+XDIS 100001cc2: PUSH      BASE       6887000000               push 0x87
+XDIS 100001cc7: UNCOND_BR BASE       E9C8FFFFFF               jmp 0x100001c94
+XDIS 100001ccc: PUSH      BASE       68A8000000               push 0xa8
+XDIS 100001cd1: UNCOND_BR BASE       E9BEFFFFFF               jmp 0x100001c94
+XDIS 100001cd6: PUSH      BASE       68ED000000               push 0xed
+XDIS 100001cdb: UNCOND_BR BASE       E9B4FFFFFF               jmp 0x100001c94
+XDIS 100001ce0: PUSH      BASE       682F010000               push 0x12f
+XDIS 100001ce5: UNCOND_BR BASE       E9AAFFFFFF               jmp 0x100001c94
+XDIS 100001cea: PUSH      BASE       686B010000               push 0x16b
+XDIS 100001cef: UNCOND_BR BASE       E9A0FFFFFF               jmp 0x100001c94
+XDIS 100001cf4: PUSH      BASE       68A7010000               push 0x1a7
+XDIS 100001cf9: UNCOND_BR BASE       E996FFFFFF               jmp 0x100001c94
+XDIS 100001cfe: PUSH      BASE       6807020000               push 0x207
+XDIS 100001d03: UNCOND_BR BASE       E98CFFFFFF               jmp 0x100001c94
+XDIS 100001d08: PUSH      BASE       682C020000               push 0x22c
+XDIS 100001d0d: UNCOND_BR BASE       E982FFFFFF               jmp 0x100001c94
+XDIS 100001d12: PUSH      BASE       6851020000               push 0x251
+XDIS 100001d17: UNCOND_BR BASE       E978FFFFFF               jmp 0x100001c94
+XDIS 100001d1c: PUSH      BASE       687E020000               push 0x27e
+XDIS 100001d21: UNCOND_BR BASE       E96EFFFFFF               jmp 0x100001c94
+XDIS 100001d26: PUSH      BASE       689B020000               push 0x29b
+XDIS 100001d2b: UNCOND_BR BASE       E964FFFFFF               jmp 0x100001c94
+XDIS 100001d30: PUSH      BASE       68DB020000               push 0x2db
+XDIS 100001d35: UNCOND_BR BASE       E95AFFFFFF               jmp 0x100001c94
+XDIS 100001d3a: PUSH      BASE       68FE020000               push 0x2fe
+XDIS 100001d3f: UNCOND_BR BASE       E950FFFFFF               jmp 0x100001c94
+XDIS 100001d44: PUSH      BASE       6816030000               push 0x316
+XDIS 100001d49: UNCOND_BR BASE       E946FFFFFF               jmp 0x100001c94
+XDIS 100001d4e: PUSH      BASE       6837030000               push 0x337
+XDIS 100001d53: UNCOND_BR BASE       E93CFFFFFF               jmp 0x100001c94
+XDIS 100001d58: PUSH      BASE       6851030000               push 0x351
+XDIS 100001d5d: UNCOND_BR BASE       E932FFFFFF               jmp 0x100001c94
+XDIS 100001d62: PUSH      BASE       6869030000               push 0x369
+XDIS 100001d67: UNCOND_BR BASE       E928FFFFFF               jmp 0x100001c94
+XDIS 100001d6c: PUSH      BASE       6886030000               push 0x386
+XDIS 100001d71: UNCOND_BR BASE       E91EFFFFFF               jmp 0x100001c94
+XDIS 100001d76: PUSH      BASE       6800000000               push 0x0
+XDIS 100001d7b: UNCOND_BR BASE       E914FFFFFF               jmp 0x100001c94
+XDIS 100001d80: PUSH      BASE       689A030000               push 0x39a
+XDIS 100001d85: UNCOND_BR BASE       E90AFFFFFF               jmp 0x100001c94
+# end of text section.
+# Errors: 0
+#XED3 DECODE STATS
+#Total DECODE cycles:        7983646
+#Total instructions DECODE: 1578
+#Total tail DECODE cycles:        10239748
+#Total tail instructions DECODE: 1628
+#Total cycles/instruction DECODE: 5059.34
+#Total tail cycles/instruction DECODE: 6289.77
+# Total Errors: 0

@@ -806,6 +806,7 @@ EXTRN	_memset:PROC
 EXTRN	??_7type_info@@6B@:QWORD			; type_info::`vftable'
 EXTRN	?_Id_cnt@id@locale@std@@0HA:DWORD		; std::locale::id::_Id_cnt
 EXTRN	?id@?$ctype@D@std@@2V0locale@2@A:DWORD		; std::ctype<char>::id
+EXTRN	?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A:BYTE ; std::cout
 EXTRN	?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A:BYTE ; std::cerr
 EXTRN	___security_cookie:DWORD
 EXTRN	__fltused:DWORD
@@ -19340,7 +19341,7 @@ $LN770@main:
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\list\list.cpp
 ; Line 153
 	push	OFFSET ??_C@_0BC@JILKFDGB@Cold?5Cache?5Time?3?5@
-	push	OFFSET ?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A ; std::cerr
+	push	OFFSET ?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A ; std::cout
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\chrono
 ; Line 372
 	mov	edi, eax
@@ -19426,7 +19427,7 @@ $LN771@main:
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\list\list.cpp
 ; Line 163
 	push	OFFSET ??_C@_0BC@EMECPPLD@Warm?5Cache?5Time?3?5@
-	push	OFFSET ?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A ; std::cerr
+	push	OFFSET ?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A ; std::cout
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\chrono
 ; Line 372
 	mov	edi, eax
