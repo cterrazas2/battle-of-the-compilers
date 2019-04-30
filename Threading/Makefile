@@ -1,24 +1,24 @@
-executables = threading1 threading2 threading3
+executables = threading_gcc threading_clang threading_intel
 
 .PHONY: default
 default: $(executables)
 
-threading1: threading.cpp
-	time g++ -std=c++17 -O2 threading.cpp -o threading1
-	g++ -std=c++17 -O2 -S threading.cpp -o threading1.s
-threading2: threading.cpp
-	time clang++ -std=c++17 -O2 threading.cpp -o threading2
-	clang++ -std=c++17 -O2 -S threading.cpp -o threading2.s
-threading3: threading.cpp
-	time icpc -std=c++17 -O2 threading.cpp -o threading3
-	icpc -std=c++17 -O2 -S threading.cpp -o threading3.s
+threading_gcc: threading.cpp
+	time g++ -std=c++17 -O2 threading.cpp -o threading_gcc
+	g++ -std=c++17 -O2 -S threading.cpp -o threading_gcc.s
+threading_clang: threading.cpp
+	time clang++ -std=c++17 -O2 threading.cpp -o threading_clang
+	clang++ -std=c++17 -O2 -S threading.cpp -o threading_clang.s
+threading_intel: threading.cpp
+	time icpc -std=c++17 -O2 threading.cpp -o threading_intel
+	icpc -std=c++17 -O2 -S threading.cpp -o threading_intel.s
 .PHONY: clean
 clean:
-	rm -f *.s threading1 threading2 threading3 buf.txt
+	rm -f threading_gcc* threading_clang* threading_intel* buf.txt
 
 .PHONY: suites
 suites:
-	sh threadingTestSuite.sh
+	sh ThreadingTestSuite.sh
 
 .PHONY: all
 all: clean default

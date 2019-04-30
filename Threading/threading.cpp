@@ -145,7 +145,7 @@ int main() {
   auto end = system_clock::now();
   auto time_trial = duration_cast<milliseconds>(end-start).count();
 
-  cerr << "Multiple Threads Time: " << time_trial << "ms\n";
+  cout << "Multiple Threads Time: " << time_trial << "ms\n";
 
 
 	return 0;
