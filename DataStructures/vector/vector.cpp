@@ -2,7 +2,6 @@
 #include <chrono>
 #include <vector>
 #include <random>
-#include <cmath>
 
 using namespace::std;
 using namespace std::chrono;
@@ -40,36 +39,34 @@ void testVec(int* a, int* x, int n) {
 
 //main function
 int main() {
-    static const int n = 10000;
-
     //run twice: once for warm, once for cold cache
     for (int seed=0; seed<2; seed++) {
         default_random_engine re(seed);
         uniform_real_distribution<double> dist(0.0, 100000000); //reduce chance of collision
 
-		int a[n];
-		for (int i = 0; i < n; i++) {
+		int a[10000];
+		for (int i = 0; i < 10000; i++) {
 			a[i] = dist(re);
 		}
 
         //construct array of random indices to remove
-		int x[n];
-        for (int i=0; i<n; i++) {
-            uniform_real_distribution<double> dist2(0,n-i);
+		int x[10000];
+        for (int i=0; i<10000; i++) {
+            uniform_real_distribution<double> dist2(0,10000-i);
             x[i] = dist2(re);
         }
     
         auto start = system_clock::now();
-        testVec(a,x,n);
+        testVec(a,x,10000);
         auto end = system_clock::now();
         auto dur = duration_cast<milliseconds>(end-start).count();
+        cerr << dur << endl;
         
         if (seed == 0)
-            cout << "runtime(cold):" << dur << endl;
+            cout << "runtime (cold):" << dur << endl;
         else if (seed == 1)
-            cout << "runtime(warm):" << dur << endl;
+            cout << "runtime (warm):" << dur << endl;
     }
-		
 	return 0;
 }
 
