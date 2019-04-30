@@ -450,8 +450,8 @@ PUBLIC	??_R0?AVruntime_error@std@@@8			; std::runtime_error `RTTI Type Descripto
 PUBLIC	__CT??_R0?AVruntime_error@std@@@8??0runtime_error@std@@QAE@ABV01@@Z12
 PUBLIC	??_R0?AVexception@std@@@8			; std::exception `RTTI Type Descriptor'
 PUBLIC	__CT??_R0?AVexception@std@@@8??0exception@std@@QAE@ABV01@@Z12
-PUBLIC	??_C@_0P@LBMLAOOE@runtime?$CIcold?$CJ?3@	; `string'
-PUBLIC	??_C@_0P@LKIILBCA@runtime?$CIwarm?$CJ?3@	; `string'
+PUBLIC	??_C@_0BA@ELAKIBGH@runtime?5?$CIcold?$CJ?3@	; `string'
+PUBLIC	??_C@_0BA@EAEJDOKD@runtime?5?$CIwarm?$CJ?3@	; `string'
 PUBLIC	?id@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@2V0locale@2@A ; std::num_put<char,std::ostreambuf_iterator<char,std::char_traits<char> > >::id
 PUBLIC	??_7?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@6B@ ; std::num_put<char,std::ostreambuf_iterator<char,std::char_traits<char> > >::`vftable'
 PUBLIC	??_C@_02BBAHNLBA@?$CFp@				; `string'
@@ -1304,13 +1304,13 @@ CONST	SEGMENT
 	DD	FLAT:?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DJ@Z
 	DD	FLAT:?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@D_N@Z
 CONST	ENDS
-;	COMDAT ??_C@_0P@LKIILBCA@runtime?$CIwarm?$CJ?3@
+;	COMDAT ??_C@_0BA@EAEJDOKD@runtime?5?$CIwarm?$CJ?3@
 CONST	SEGMENT
-??_C@_0P@LKIILBCA@runtime?$CIwarm?$CJ?3@ DB 'runtime(warm):', 00H ; `string'
+??_C@_0BA@EAEJDOKD@runtime?5?$CIwarm?$CJ?3@ DB 'runtime (warm):', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@LBMLAOOE@runtime?$CIcold?$CJ?3@
+;	COMDAT ??_C@_0BA@ELAKIBGH@runtime?5?$CIcold?$CJ?3@
 CONST	SEGMENT
-??_C@_0P@LBMLAOOE@runtime?$CIcold?$CJ?3@ DB 'runtime(cold):', 00H ; `string'
+??_C@_0BA@ELAKIBGH@runtime?5?$CIcold?$CJ?3@ DB 'runtime (cold):', 00H ; `string'
 CONST	ENDS
 ;	COMDAT __CT??_R0?AVexception@std@@@8??0exception@std@@QAE@ABV01@@Z12
 xdata$x	SEGMENT
@@ -9894,16 +9894,16 @@ _TEXT	ENDS
 ; Function compile flags: /Ogtpy
 ;	COMDAT _main
 _TEXT	SEGMENT
-tv520 = -85016						; size = 8
-tv515 = -85016						; size = 8
-tv513 = -85016						; size = 8
+tv521 = -85016						; size = 8
+tv516 = -85016						; size = 8
+tv514 = -85016						; size = 8
 _re$2 = -85008						; size = 5000
 _x$3 = -80008						; size = 40000
 _a$4 = -40008						; size = 40000
 __$ArrayPad$ = -4					; size = 4
 _main	PROC						; COMDAT
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 42
+; Line 41
 	push	ebp
 	mov	ebp, esp
 	and	esp, -8					; fffffff8H
@@ -9915,7 +9915,7 @@ _main	PROC						; COMDAT
 	push	ebx
 	push	esi
 	push	edi
-; Line 46
+; Line 43
 	xor	ebx, ebx
 $LL4@main:
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\random
@@ -9950,15 +9950,15 @@ $LL7@main:
 	add	esp, 4
 	fldz
 	faddp	ST(1), ST(0)
-	fstp	QWORD PTR tv520[esp+85032]
+	fstp	QWORD PTR tv521[esp+85032]
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 52
-	cvttsd2si eax, QWORD PTR tv520[esp+85032]
+; Line 49
+	cvttsd2si eax, QWORD PTR tv521[esp+85032]
 	mov	DWORD PTR _a$4[esp+esi*4+85032], eax
 	inc	esi
 	cmp	esi, 10000				; 00002710H
 	jl	SHORT $LL7@main
-; Line 57
+; Line 54
 	lea	edi, DWORD PTR _x$3[esp+85032]
 	mov	esi, 10000				; 00002710H
 $LL10@main:
@@ -9970,21 +9970,21 @@ $LL10@main:
 	movd	xmm0, esi
 	xorps	xmm1, xmm1
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 58
+; Line 55
 	cvtdq2pd xmm0, xmm0
 	dec	esi
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\random
 ; Line 2678
 	add	esp, 4
 	subsd	xmm0, xmm1
-	movsd	QWORD PTR tv515[esp+85032], xmm0
-	fmul	QWORD PTR tv515[esp+85032]
+	movsd	QWORD PTR tv516[esp+85032], xmm0
+	fmul	QWORD PTR tv516[esp+85032]
 	fldz
 	faddp	ST(1), ST(0)
-	fstp	QWORD PTR tv513[esp+85032]
+	fstp	QWORD PTR tv514[esp+85032]
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 59
-	cvttsd2si eax, QWORD PTR tv513[esp+85032]
+; Line 56
+	cvttsd2si eax, QWORD PTR tv514[esp+85032]
 	mov	DWORD PTR [edi], eax
 	add	edi, 4
 	test	esi, esi
@@ -9995,7 +9995,7 @@ $LL10@main:
 	mov	esi, eax
 	mov	edi, edx
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 63
+; Line 60
 	push	10000					; 00002710H
 	lea	eax, DWORD PTR _x$3[esp+85036]
 	push	eax
@@ -10018,26 +10018,37 @@ $LL10@main:
 	push	eax
 	call	__alldiv
 ; Line 88
-	mov	esi, eax
 	mov	edi, edx
+	mov	esi, eax
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 67
+; Line 63
+	push	edi
+	push	esi
+	mov	ecx, OFFSET ?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A ; std::cerr
+	call	??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@_J@Z ; std::basic_ostream<char,std::char_traits<char> >::operator<<
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\ostream
+; Line 172
+	push	eax
+	call	??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ; std::endl<char,std::char_traits<char> >
+	add	esp, 4
+; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
+; Line 65
 	test	ebx, ebx
 	jne	SHORT $LN11@main
-; Line 68
-	push	OFFSET ??_C@_0P@LBMLAOOE@runtime?$CIcold?$CJ?3@
+; Line 66
+	push	OFFSET ??_C@_0BA@ELAKIBGH@runtime?5?$CIcold?$CJ?3@
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\ostream
 ; Line 173
-	jmp	SHORT $LN120@main
+	jmp	SHORT $LN122@main
 $LN11@main:
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 69
+; Line 67
 	cmp	ebx, 1
 	jne	SHORT $LN2@main
-; Line 70
-	push	OFFSET ??_C@_0P@LKIILBCA@runtime?$CIwarm?$CJ?3@
-$LN120@main:
-; Line 46
+; Line 68
+	push	OFFSET ??_C@_0BA@EAEJDOKD@runtime?5?$CIwarm?$CJ?3@
+$LN122@main:
+; Line 43
 	push	OFFSET ?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A ; std::cout
 	call	??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z ; std::operator<<<std::char_traits<char> >
 	add	esp, 8
@@ -10052,7 +10063,7 @@ $LN2@main:
 	inc	ebx
 	cmp	ebx, 2
 	jl	$LL4@main
-; Line 74
+; Line 71
 	mov	ecx, DWORD PTR __$ArrayPad$[esp+85032]
 	xor	eax, eax
 	pop	edi
@@ -12404,7 +12415,7 @@ _x$ = 12						; size = 4
 _n$ = 16						; size = 4
 ?testVec@@YAXPAH0H@Z PROC				; testVec, COMDAT
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 11
+; Line 10
 	sub	esp, 28					; 0000001cH
 	push	ebx
 	push	ebp
@@ -12416,7 +12427,7 @@ _n$ = 16						; size = 4
 ; Line 1527
 	xor	eax, eax
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 11
+; Line 10
 	push	edi
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\vector
 ; Line 318
@@ -12430,7 +12441,7 @@ _n$ = 16						; size = 4
 ; Line 1527
 	mov	DWORD PTR _i$1$[esp+44], eax
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 13
+; Line 12
 	cmp	DWORD PTR _n$[esp+40], eax
 	jle	$LN3@testVec
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\vector
@@ -12440,10 +12451,10 @@ $LL4@testVec:
 ; Line 35
 	mov	esi, ebx
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 15
+; Line 14
 	test	eax, eax
 	je	SHORT $LN367@testVec
-; Line 16
+; Line 15
 	mov	eax, DWORD PTR [ebp]
 	cmp	DWORD PTR [ebx], eax
 	jge	SHORT $LN367@testVec
@@ -12453,13 +12464,13 @@ $LL5@testVec:
 ; Line 142
 	cmp	esi, edi
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 17
+; Line 16
 	je	SHORT $LN367@testVec
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\vector
 ; Line 68
 	add	esi, 4
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 16
+; Line 15
 	cmp	DWORD PTR [esi], eax
 	jl	SHORT $LL5@testVec
 $LN367@testVec:
@@ -12537,7 +12548,7 @@ $LN86@testVec:
 	mov	DWORD PTR __Bytes$1$[esp+44], esi
 $LN383@testVec:
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 13
+; Line 12
 	mov	eax, DWORD PTR _i$1$[esp+44]
 $LN2@testVec:
 	inc	eax
@@ -12550,32 +12561,32 @@ $LN3@testVec:
 ; Line 1339
 	mov	eax, edi
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 25
+; Line 24
 	mov	ecx, OFFSET ?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A ; std::cerr
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\vector
 ; Line 1339
 	sub	eax, ebx
 	sar	eax, 2
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 25
+; Line 24
 	push	eax
 	call	??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@I@Z ; std::basic_ostream<char,std::char_traits<char> >::operator<<
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\vector
 ; Line 1339
 	xor	ebp, ebp
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 27
+; Line 26
 	cmp	DWORD PTR _n$[esp+40], ebp
 	jle	SHORT $LN8@testVec
 	mov	esi, DWORD PTR _x$[esp+40]
 $LL9@testVec:
-; Line 30
+; Line 29
 	mov	ecx, DWORD PTR [esi+ebp*4]
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\vector
 ; Line 35
 	mov	eax, ebx
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 30
+; Line 29
 	test	ecx, ecx
 	jle	SHORT $LN10@testVec
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\vector
@@ -12594,7 +12605,7 @@ $LN10@testVec:
 	push	eax
 	call	_memmove
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 27
+; Line 26
 	inc	ebp
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\xutility
 ; Line 1766
@@ -12603,7 +12614,7 @@ $LN10@testVec:
 ; Line 1214
 	sub	edi, 4
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 27
+; Line 26
 	cmp	ebp, DWORD PTR _n$[esp+40]
 	jl	SHORT $LL9@testVec
 	mov	esi, DWORD PTR __Bytes$1$[esp+44]
@@ -12612,13 +12623,13 @@ $LN8@testVec:
 ; Line 1339
 	sub	edi, ebx
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 37
+; Line 36
 	mov	ecx, OFFSET ?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A ; std::cerr
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\vector
 ; Line 1339
 	sar	edi, 2
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 37
+; Line 36
 	push	edi
 	call	??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@I@Z ; std::basic_ostream<char,std::char_traits<char> >::operator<<
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\vector
@@ -12651,7 +12662,7 @@ $LN357@testVec:
 $LN317@testVec:
 	pop	edi
 ; File C:\Users\Emily Jin\Documents\cpp-class-project-master\DataStructures\vector\vector.cpp
-; Line 38
+; Line 37
 	pop	esi
 	pop	ebp
 	pop	ebx
