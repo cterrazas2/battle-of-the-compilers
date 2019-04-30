@@ -1,0 +1,1421 @@
+# Mix output version 10
+# Intel(R) SDE version: 8.35.0 external
+# Starting tid 0,  OS-TID 775
+# FINI: end of program
+
+# EMIT_IMAGE_ADDRESSES 
+# 
+#    IMAGE NAME                                                                              LOW ADDRESS   HIGH ADDRESS  
+# 
+/Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel                00010c0e9000  00010c0fafff
+/usr/lib/dyld                                                                                00011169a000  000111764fff
+/usr/lib/libSystem.B.dylib                                                                   7fff66cb0000  7fff66cb1fff
+/usr/lib/libc++.1.dylib                                                                      7fff66ef3000  7fff66f46fff
+/usr/lib/libc++abi.dylib                                                                     7fff66f47000  7fff66f5cfff
+/usr/lib/libobjc.A.dylib                                                                     7fff686aa000  7fff68e2ffff
+/usr/lib/system/libcache.dylib                                                               7fff69d6f000  7fff69d73fff
+/usr/lib/system/libcommonCrypto.dylib                                                        7fff69d74000  7fff69d7efff
+/usr/lib/system/libcompiler_rt.dylib                                                         7fff69d7f000  7fff69d86fff
+/usr/lib/system/libcopyfile.dylib                                                            7fff69d87000  7fff69d90fff
+/usr/lib/system/libcorecrypto.dylib                                                          7fff69d91000  7fff69e15fff
+/usr/lib/system/libdispatch.dylib                                                            7fff69e9c000  7fff69ed5fff
+/usr/lib/system/libdyld.dylib                                                                7fff69ed6000  7fff69f02fff
+/usr/lib/system/libkeymgr.dylib                                                              7fff69f03000  7fff69f03fff
+/usr/lib/system/liblaunch.dylib                                                              7fff69f11000  7fff69f11fff
+/usr/lib/system/libmacho.dylib                                                               7fff69f12000  7fff69f17fff
+/usr/lib/system/libquarantine.dylib                                                          7fff69f18000  7fff69f1afff
+/usr/lib/system/libremovefile.dylib                                                          7fff69f1b000  7fff69f1cfff
+/usr/lib/system/libsystem_asl.dylib                                                          7fff69f1d000  7fff69f34fff
+/usr/lib/system/libsystem_blocks.dylib                                                       7fff69f35000  7fff69f35fff
+/usr/lib/system/libsystem_c.dylib                                                            7fff69f36000  7fff69fbdfff
+/usr/lib/system/libsystem_configuration.dylib                                                7fff69fbe000  7fff69fc1fff
+/usr/lib/system/libsystem_coreservices.dylib                                                 7fff69fc2000  7fff69fc5fff
+/usr/lib/system/libsystem_darwin.dylib                                                       7fff69fc6000  7fff69fccfff
+/usr/lib/system/libsystem_dnssd.dylib                                                        7fff69fcd000  7fff69fd3fff
+/usr/lib/system/libsystem_info.dylib                                                         7fff69fd4000  7fff6a01ffff
+/usr/lib/system/libsystem_kernel.dylib                                                       7fff6a020000  7fff6a048fff
+/usr/lib/system/libsystem_m.dylib                                                            7fff6a049000  7fff6a094fff
+/usr/lib/system/libsystem_malloc.dylib                                                       7fff6a095000  7fff6a0b9fff
+/usr/lib/system/libsystem_networkextension.dylib                                             7fff6a0ba000  7fff6a0c4fff
+/usr/lib/system/libsystem_notify.dylib                                                       7fff6a0c5000  7fff6a0ccfff
+/usr/lib/system/libsystem_platform.dylib                                                     7fff6a0cd000  7fff6a0d6fff
+/usr/lib/system/libsystem_pthread.dylib                                                      7fff6a0d7000  7fff6a0e1fff
+/usr/lib/system/libsystem_sandbox.dylib                                                      7fff6a0e2000  7fff6a0e5fff
+/usr/lib/system/libsystem_secinit.dylib                                                      7fff6a0e6000  7fff6a0e8fff
+/usr/lib/system/libsystem_symptoms.dylib                                                     7fff6a0e9000  7fff6a0f0fff
+/usr/lib/system/libsystem_trace.dylib                                                        7fff6a0f1000  7fff6a106fff
+/usr/lib/system/libunwind.dylib                                                              7fff6a108000  7fff6a10dfff
+/usr/lib/system/libxpc.dylib                                                                 7fff6a10e000  7fff6a13dfff
+# END_IMAGE_ADDRESSES
+
+# ==============================================
+# STATS FOR TID 0  OS-TID  775 EMIT# 1
+# ==============================================
+# EMIT_TOP_BLOCK_STATS FOR TID 0  OS-TID 775 EMIT # 1 EVENT=ICOUNT
+BLOCK:     0   PC: 000000010c0eb0cf   ICOUNT: 227038824   EXECUTIONS:  12613268   #BYTES: 69   %:  10.2   cumltv%:  10.2  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 20cf
+XDIS 000000010c0eb0cf: BASE 4989C2                   mov r10, rax
+XDIS 000000010c0eb0d2: BASE 4D89C6                   mov r14, r8
+XDIS 000000010c0eb0d5: BASE 4C2BD1                   sub r10, rcx
+XDIS 000000010c0eb0d8: BASE 4D89C7                   mov r15, r8
+XDIS 000000010c0eb0db: BASE 49C1FA03                 sar r10, 0x3
+XDIS 000000010c0eb0df: BASE 4981E7FF030000           and r15, 0x3ff
+XDIS 000000010c0eb0e6: BASE 4D89D3                   mov r11, r10
+XDIS 000000010c0eb0e9: BASE 49C1E30A                 shl r11, 0xa
+XDIS 000000010c0eb0ed: BASE 49C1EE0A                 shr r14, 0xa
+XDIS 000000010c0eb0f1: BASE 49FFCB                   dec r11
+XDIS 000000010c0eb0f4: BASE 4D85D2                   test r10, r10
+XDIS 000000010c0eb0f7: BASE 488B742410               mov rsi, qword ptr [rsp+0x10]
+XDIS 000000010c0eb0fc: BASE 4C0F44DB                 cmovz r11, rbx
+XDIS 000000010c0eb100: BASE 4C2BDA                   sub r11, rdx
+XDIS 000000010c0eb103: BASE 4E8B34F6                 mov r14, qword ptr [rsi+r14*8]
+XDIS 000000010c0eb107: BASE 498B7528                 mov rsi, qword ptr [r13+0x28]
+XDIS 000000010c0eb10b: BASE 493BF3                   cmp rsi, r11
+XDIS 000000010c0eb10e: BASE 0F84F1000000             jz 0x10c0eb205
+
+BLOCK:     1   PC: 000000010c0eafc7   ICOUNT: 210409952   EXECUTIONS:  12377056   #BYTES: 65   %:  9.45   cumltv%:  19.7  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1fc7
+XDIS 000000010c0eafc7: BASE 4989F2                   mov r10, rsi
+XDIS 000000010c0eafca: BASE 4989C3                   mov r11, rax
+XDIS 000000010c0eafcd: BASE 49C1EA0A                 shr r10, 0xa
+XDIS 000000010c0eafd1: BASE 4C2BD9                   sub r11, rcx
+XDIS 000000010c0eafd4: BASE 4C8B742440               mov r14, qword ptr [rsp+0x40]
+XDIS 000000010c0eafd9: BASE 4989F7                   mov r15, rsi
+XDIS 000000010c0eafdc: BASE 49C1FB03                 sar r11, 0x3
+XDIS 000000010c0eafe0: BASE 4981E7FF030000           and r15, 0x3ff
+XDIS 000000010c0eafe7: BASE 4F8B34D6                 mov r14, qword ptr [r14+r10*8]
+XDIS 000000010c0eafeb: BASE 4D89DA                   mov r10, r11
+XDIS 000000010c0eafee: BASE 49C1E20A                 shl r10, 0xa
+XDIS 000000010c0eaff2: BASE 49FFCA                   dec r10
+XDIS 000000010c0eaff5: BASE 4D85DB                   test r11, r11
+XDIS 000000010c0eaff8: BASE 4C0F44D3                 cmovz r10, rbx
+XDIS 000000010c0eaffc: BASE 4C2BD2                   sub r10, rdx
+XDIS 000000010c0eafff: BASE 4D3BCA                   cmp r9, r10
+XDIS 000000010c0eb002: BASE 0F84A8010000             jz 0x10c0eb1b0
+
+BLOCK:     2   PC: 000000010c0eae86   ICOUNT: 199922592   EXECUTIONS:  24990324   #BYTES: 30   %:  8.98   cumltv%:  28.6  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1e86
+XDIS 000000010c0eae86: BASE 4989D6                   mov r14, rdx
+XDIS 000000010c0eae89: BASE 4989D7                   mov r15, rdx
+XDIS 000000010c0eae8c: BASE 49C1EE0A                 shr r14, 0xa
+XDIS 000000010c0eae90: BASE 4981E7FF030000           and r15, 0x3ff
+XDIS 000000010c0eae97: BASE 8B4510                   mov eax, dword ptr [rbp+0x10]
+XDIS 000000010c0eae9a: BASE 4E8B34F1                 mov r14, qword ptr [rcx+r14*8]
+XDIS 000000010c0eae9e: BASE 433B04BE                 cmp eax, dword ptr [r14+r15*4]
+XDIS 000000010c0eaea2: BASE 7D6F                     jnl 0x10c0eaf13
+
+BLOCK:     3   PC: 000000010c0eaea4   ICOUNT: 189199020   EXECUTIONS:  12613268   #BYTES: 59   %:   8.5   cumltv%:  37.1  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1ea4
+XDIS 000000010c0eaea4: BASE 4C8B542418               mov r10, qword ptr [rsp+0x18]
+XDIS 000000010c0eaea9: BASE 4C89D6                   mov rsi, r10
+XDIS 000000010c0eaeac: BASE 4C8B5C2410               mov r11, qword ptr [rsp+0x10]
+XDIS 000000010c0eaeb1: BASE 492BF3                   sub rsi, r11
+XDIS 000000010c0eaeb4: BASE 48C1FE03                 sar rsi, 0x3
+XDIS 000000010c0eaeb8: BASE 4989F0                   mov r8, rsi
+XDIS 000000010c0eaebb: BASE 49C1E00A                 shl r8, 0xa
+XDIS 000000010c0eaebf: BASE 49FFC8                   dec r8
+XDIS 000000010c0eaec2: BASE 4885F6                   test rsi, rsi
+XDIS 000000010c0eaec5: BASE 4C8B4C2428               mov r9, qword ptr [rsp+0x28]
+XDIS 000000010c0eaeca: BASE 4C0F44C3                 cmovz r8, rbx
+XDIS 000000010c0eaece: BASE 4D2BC1                   sub r8, r9
+XDIS 000000010c0eaed1: BASE 488B442430               mov rax, qword ptr [rsp+0x30]
+XDIS 000000010c0eaed6: BASE 493BC0                   cmp rax, r8
+XDIS 000000010c0eaed9: BASE 0F846A030000             jz 0x10c0eb249
+
+BLOCK:     4   PC: 000000010c0eaf13   ICOUNT: 185655840   EXECUTIONS:  12377056   #BYTES: 59   %:  8.34   cumltv%:  45.5  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1f13
+XDIS 000000010c0eaf13: BASE 4C8B542448               mov r10, qword ptr [rsp+0x48]
+XDIS 000000010c0eaf18: BASE 4C89D6                   mov rsi, r10
+XDIS 000000010c0eaf1b: BASE 4C8B5C2440               mov r11, qword ptr [rsp+0x40]
+XDIS 000000010c0eaf20: BASE 492BF3                   sub rsi, r11
+XDIS 000000010c0eaf23: BASE 48C1FE03                 sar rsi, 0x3
+XDIS 000000010c0eaf27: BASE 4989F0                   mov r8, rsi
+XDIS 000000010c0eaf2a: BASE 49C1E00A                 shl r8, 0xa
+XDIS 000000010c0eaf2e: BASE 49FFC8                   dec r8
+XDIS 000000010c0eaf31: BASE 4885F6                   test rsi, rsi
+XDIS 000000010c0eaf34: BASE 4C8B4C2458               mov r9, qword ptr [rsp+0x58]
+XDIS 000000010c0eaf39: BASE 4C0F44C3                 cmovz r8, rbx
+XDIS 000000010c0eaf3d: BASE 4D2BC1                   sub r8, r9
+XDIS 000000010c0eaf40: BASE 488B442460               mov rax, qword ptr [rsp+0x60]
+XDIS 000000010c0eaf45: BASE 493BC0                   cmp rax, r8
+XDIS 000000010c0eaf48: BASE 0F8444030000             jz 0x10c0eb292
+
+BLOCK:     5   PC: 000000010c0eb136   ICOUNT: 126132680   EXECUTIONS:  12613268   #BYTES: 38   %:  5.67   cumltv%:  51.1  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 2136
+XDIS 000000010c0eb136: BASE 438B04BE                 mov eax, dword ptr [r14+r15*4]
+XDIS 000000010c0eb13a: BASE 8902                     mov dword ptr [rdx], eax
+XDIS 000000010c0eb13c: BASE 49FFC0                   inc r8
+XDIS 000000010c0eb13f: BASE 48FFC6                   inc rsi
+XDIS 000000010c0eb142: BASE 49FFC9                   dec r9
+XDIS 000000010c0eb145: BASE 49897528                 mov qword ptr [r13+0x28], rsi
+XDIS 000000010c0eb149: BASE 4981F800080000           cmp r8, 0x800
+XDIS 000000010c0eb150: BASE 4C894C2430               mov qword ptr [rsp+0x30], r9
+XDIS 000000010c0eb155: BASE 4C89442428               mov qword ptr [rsp+0x28], r8
+XDIS 000000010c0eb15a: BASE 737B                     jnb 0x10c0eb1d7
+
+BLOCK:     6   PC: 000000010c0eaf80   ICOUNT: 124951620   EXECUTIONS:  24990324   #BYTES: 24   %:  5.61   cumltv%:  56.8  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1f80
+XDIS 000000010c0eaf80: BASE 48FFC2                   inc rdx
+XDIS 000000010c0eaf83: BASE 49FF4D28                 dec qword ptr [r13+0x28]
+XDIS 000000010c0eaf87: BASE 49895520                 mov qword ptr [r13+0x20], rdx
+XDIS 000000010c0eaf8b: BASE 4881FA00080000           cmp rdx, 0x800
+XDIS 000000010c0eaf92: BASE 0F83DC020000             jnb 0x10c0eb274
+
+BLOCK:     7   PC: 000000010c0eb02c   ICOUNT: 123770560   EXECUTIONS:  12377056   #BYTES: 43   %:  5.56   cumltv%:  62.3  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 202c
+XDIS 000000010c0eb02c: BASE 478B14BE                 mov r10d, dword ptr [r14+r15*4]
+XDIS 000000010c0eb030: BASE 458913                   mov dword ptr [r11], r10d
+XDIS 000000010c0eb033: BASE 48FFC6                   inc rsi
+XDIS 000000010c0eb036: BASE 49FFC1                   inc r9
+XDIS 000000010c0eb039: BASE 49FFC8                   dec r8
+XDIS 000000010c0eb03c: BASE 4D894D28                 mov qword ptr [r13+0x28], r9
+XDIS 000000010c0eb040: BASE 4881FE00080000           cmp rsi, 0x800
+XDIS 000000010c0eb047: BASE 4C89442460               mov qword ptr [rsp+0x60], r8
+XDIS 000000010c0eb04c: BASE 4889742458               mov qword ptr [rsp+0x58], rsi
+XDIS 000000010c0eb051: BASE 0F831F010000             jnb 0x10c0eb176
+
+BLOCK:     8   PC: 000000010c0eb11c   ICOUNT:  88292876   EXECUTIONS:  12613268   #BYTES: 26   %:  3.97   cumltv%:  66.3  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 211c
+XDIS 000000010c0eb11c: BASE 4889D0                   mov rax, rdx
+XDIS 000000010c0eb11f: BASE 48C1EA0A                 shr rdx, 0xa
+XDIS 000000010c0eb123: BASE 4825FF030000             and rax, 0x3ff
+XDIS 000000010c0eb129: BASE 488B14D1                 mov rdx, qword ptr [rcx+rdx*8]
+XDIS 000000010c0eb12d: BASE 488D1482                 lea rdx, ptr [rdx+rax*4]
+XDIS 000000010c0eb131: BASE 4885D2                   test rdx, rdx
+XDIS 000000010c0eb134: BASE 7406                     jz 0x10c0eb13c
+
+BLOCK:     9   PC: 000000010c0eaee7   ICOUNT:  88292876   EXECUTIONS:  12613268   #BYTES: 27   %:  3.97   cumltv%:  70.3  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1ee7
+XDIS 000000010c0eaee7: BASE 4D89C8                   mov r8, r9
+XDIS 000000010c0eaeea: BASE 49C1E90A                 shr r9, 0xa
+XDIS 000000010c0eaeee: BASE 4981E0FF030000           and r8, 0x3ff
+XDIS 000000010c0eaef5: BASE 4B8B34CB                 mov rsi, qword ptr [r11+r9*8]
+XDIS 000000010c0eaef9: BASE 4E8D0486                 lea r8, ptr [rsi+r8*4]
+XDIS 000000010c0eaefd: BASE 4D85C0                   test r8, r8
+XDIS 000000010c0eaf00: BASE 7407                     jz 0x10c0eaf09
+
+BLOCK:    10   PC: 000000010c0eaf56   ICOUNT:  86639392   EXECUTIONS:  12377056   #BYTES: 27   %:  3.89   cumltv%:  74.1  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1f56
+XDIS 000000010c0eaf56: BASE 4D89C8                   mov r8, r9
+XDIS 000000010c0eaf59: BASE 49C1E90A                 shr r9, 0xa
+XDIS 000000010c0eaf5d: BASE 4981E0FF030000           and r8, 0x3ff
+XDIS 000000010c0eaf64: BASE 4B8B34CB                 mov rsi, qword ptr [r11+r9*8]
+XDIS 000000010c0eaf68: BASE 4E8D0486                 lea r8, ptr [rsi+r8*4]
+XDIS 000000010c0eaf6c: BASE 4D85C0                   test r8, r8
+XDIS 000000010c0eaf6f: BASE 7407                     jz 0x10c0eaf78
+
+BLOCK:    11   PC: 000000010c0eb011   ICOUNT:  86639392   EXECUTIONS:  12377056   #BYTES: 27   %:  3.89   cumltv%:    78  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 2011
+XDIS 000000010c0eb011: BASE 4D89D3                   mov r11, r10
+XDIS 000000010c0eb014: BASE 49C1EA0A                 shr r10, 0xa
+XDIS 000000010c0eb018: BASE 4981E3FF030000           and r11, 0x3ff
+XDIS 000000010c0eb01f: BASE 4E8B14D1                 mov r10, qword ptr [rcx+r10*8]
+XDIS 000000010c0eb023: BASE 4F8D1C9A                 lea r11, ptr [r10+r11*4]
+XDIS 000000010c0eb027: BASE 4D85DB                   test r11, r11
+XDIS 000000010c0eb02a: BASE 7407                     jz 0x10c0eb033
+
+BLOCK:    12   PC: 000000010c0eaf98   ICOUNT:  74970972   EXECUTIONS:  24990324   #BYTES: 15   %:  3.37   cumltv%:  81.4  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1f98
+XDIS 000000010c0eaf98: BASE 498B5520                 mov rdx, qword ptr [r13+0x20]
+XDIS 000000010c0eaf9c: BASE 49837D2800               cmp qword ptr [r13+0x28], 0x0
+XDIS 000000010c0eafa1: BASE 0F85DFFEFFFF             jnz 0x10c0eae86
+
+BLOCK:    13   PC: 000000010c0eaf02   ICOUNT:  63066340   EXECUTIONS:  12613268   #BYTES: 17   %:  2.83   cumltv%:  84.2  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1f02
+XDIS 000000010c0eaf02: BASE 438B34BE                 mov esi, dword ptr [r14+r15*4]
+XDIS 000000010c0eaf06: BASE 418930                   mov dword ptr [r8], esi
+XDIS 000000010c0eaf09: BASE 48FFC0                   inc rax
+XDIS 000000010c0eaf0c: BASE 4889442430               mov qword ptr [rsp+0x30], rax
+XDIS 000000010c0eaf11: BASE EB6D                     jmp 0x10c0eaf80
+
+BLOCK:    14   PC: 000000010c0eb165   ICOUNT:  50413136   EXECUTIONS:  12603284   #BYTES: 17   %:  2.27   cumltv%:  86.5  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 2165
+XDIS 000000010c0eb165: BASE 498B5520                 mov rdx, qword ptr [r13+0x20]
+XDIS 000000010c0eb169: BASE 498B4D08                 mov rcx, qword ptr [r13+0x8]
+XDIS 000000010c0eb16d: BASE 498B4510                 mov rax, qword ptr [r13+0x10]
+XDIS 000000010c0eb171: BASE E959FFFFFF               jmp 0x10c0eb0cf
+
+BLOCK:    15   PC: 000000010c0eaf71   ICOUNT:  49508224   EXECUTIONS:  12377056   #BYTES: 15   %:  2.22   cumltv%:  88.7  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1f71
+XDIS 000000010c0eaf71: BASE 438B34BE                 mov esi, dword ptr [r14+r15*4]
+XDIS 000000010c0eaf75: BASE 418930                   mov dword ptr [r8], esi
+XDIS 000000010c0eaf78: BASE 48FFC0                   inc rax
+XDIS 000000010c0eaf7b: BASE 4889442460               mov qword ptr [rsp+0x60], rax
+
+BLOCK:    16   PC: 000000010c0eaedf   ICOUNT:  37839804   EXECUTIONS:  12613268   #BYTES:  8   %:   1.7   cumltv%:  90.4  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1edf
+XDIS 000000010c0eaedf: BASE 4C03C8                   add r9, rax
+XDIS 000000010c0eaee2: BASE 4D3BD3                   cmp r10, r11
+XDIS 000000010c0eaee5: BASE 7422                     jz 0x10c0eaf09
+
+BLOCK:    17   PC: 000000010c0eb114   ICOUNT:  37839804   EXECUTIONS:  12613268   #BYTES:  8   %:   1.7   cumltv%:  92.1  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 2114
+XDIS 000000010c0eb114: BASE 4803D6                   add rdx, rsi
+XDIS 000000010c0eb117: BASE 483BC1                   cmp rax, rcx
+XDIS 000000010c0eb11a: BASE 7420                     jz 0x10c0eb13c
+
+BLOCK:    18   PC: 000000010c0eb057   ICOUNT:  37131168   EXECUTIONS:  12377056   #BYTES: 13   %:  1.67   cumltv%:  93.8  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 2057
+XDIS 000000010c0eb057: BASE 4D8B4D28                 mov r9, qword ptr [r13+0x28]
+XDIS 000000010c0eb05b: BASE 4D85C0                   test r8, r8
+XDIS 000000010c0eb05e: BASE 0F8563FFFFFF             jnz 0x10c0eafc7
+
+BLOCK:    19   PC: 000000010c0eb008   ICOUNT:  37131168   EXECUTIONS:  12377056   #BYTES:  9   %:  1.67   cumltv%:  95.5  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 2008
+XDIS 000000010c0eb008: BASE 483BC1                   cmp rax, rcx
+XDIS 000000010c0eb00b: BASE 4E8D140A                 lea r10, ptr [rdx+r9*1]
+XDIS 000000010c0eb00f: BASE 7422                     jz 0x10c0eb033
+
+# END_TOP_BLOCK_STATS
+# EMIT_DYNAMIC_STATS FOR TID 0  OS-TID 775 EMIT #1
+#
+# $dynamic-counts
+#
+# TID 0
+#       iform                  count
+#
+*mem-atomic                                                       166615
+*stack-read                                                    153940968
+*stack-write                                                    78902700
+*iprel-read                                                      1094760
+*iprel-write                                                        1607
+*mem-read-1                                                       159900
+*mem-read-2                                                       265372
+*mem-read-4                                                    101818406
+*mem-read-8                                                    369724474
+*mem-read-16                                                       15472
+*mem-read-32                                                         925
+*mem-write-1                                                       12052
+*mem-write-2                                                      177974
+*mem-write-4                                                    50641706
+*mem-write-8                                                   154414264
+*mem-write-10                                                      41396
+*mem-write-16                                                       6993
+*mem-write-32                                                       1403
+*mem-write-56                                                         30
+*mem-write-512                                                         1
+*mem-read                                                      471984579
+*mem-write                                                     205295804
+*mem                                                           651689727
+*isa-ext-AES                                                         400
+*isa-ext-AVX                                                       20816
+*isa-ext-AVX2                                                        221
+*isa-ext-BASE                                                 2225378197
+*isa-ext-BMI1                                                        107
+*isa-ext-BMI2                                                        108
+*isa-ext-LONGMODE                                                 146328
+*isa-ext-SSE                                                      107171
+*isa-ext-SSE2                                                      33789
+*isa-ext-SSE4                                                         20
+*isa-ext-SSE4A                                                        15
+*isa-ext-SSSE3                                                        50
+*isa-ext-XSAVE                                                        31
+*isa-set-AES                                                         400
+*isa-set-AVX                                                       20816
+*isa-set-AVX2                                                        221
+*isa-set-BMI1                                                        107
+*isa-set-BMI2                                                        108
+*isa-set-CMOV                                                   50161557
+*isa-set-FAT_NOP                                                    1524
+*isa-set-FXSAVE                                                        1
+*isa-set-I186                                                  201650972
+*isa-set-I286REAL                                                  41396
+*isa-set-I386                                                     811735
+*isa-set-I486REAL                                                 166196
+*isa-set-I86                                                  1972544710
+*isa-set-LONGMODE                                                 146328
+*isa-set-PENTIUMREAL                                                 107
+*isa-set-SSE                                                      107164
+*isa-set-SSE2                                                      33789
+*isa-set-SSE4                                                         20
+*isa-set-SSEMXCSR                                                      6
+*isa-set-SSSE3                                                        50
+*isa-set-XSAVE                                                        31
+*category-AES                                                        400
+*category-AVX                                                       3091
+*category-AVX2                                                        63
+*category-BINARY                                               542674067
+*category-BITBYTE                                                 108427
+*category-BMI1                                                       107
+*category-BMI2                                                       108
+*category-BROADCAST                                                  136
+*category-CALL                                                    588808
+*category-CMOV                                                  50161557
+*category-COND_BR                                              279945505
+*category-CONVERT                                                  71430
+*category-DATAXFER                                             825117612
+*category-LOGICAL                                              229308010
+*category-LOGICAL_FP                                               35197
+*category-MISC                                                  63559251
+*category-NOP                                                         93
+*category-POP                                                    2354363
+*category-PUSH                                                   2589636
+*category-RET                                                     588807
+*category-ROTATE                                                   31593
+*category-SEMAPHORE                                               166179
+*category-SETCC                                                    53311
+*category-SHIFT                                                202030909
+*category-SSE                                                      46729
+*category-STRINGOP                                                     8
+*category-SYSCALL                                                    127
+*category-SYSTEM                                                   41503
+*category-UNCOND_BR                                             26208656
+*category-WIDENOP                                                   1524
+*category-XSAVE                                                       31
+*ilen-1                                                          3194064
+*ilen-2                                                        171340701
+*ilen-3                                                        861304694
+*ilen-4                                                        656348567
+*ilen-5                                                        240089088
+*ilen-6                                                        152458722
+*ilen-7                                                        139971908
+*ilen-8                                                           761606
+*ilen-9                                                           121329
+*ilen-10                                                           94313
+*ilen-11                                                            2228
+*ilen-12                                                              10
+*ilen-13                                                               8
+*nop-ilen-1                                                           91
+*nop-ilen-2                                                            2
+*nop-ilen-3                                                            2
+*nop-ilen-4                                                           15
+*nop-ilen-7                                                         1424
+*nop-ilen-8                                                           57
+*nop-ilen-9                                                            2
+*nop-ilen-10                                                          24
+*scalar-simd                                                       75098
+*sse-scalar                                                        75098
+*sse-packed                                                        66331
+*avx128                                                            18495
+*avx256                                                             2542
+*gpr64                                                        1760687111
+*legacy-prefixes-0                                             353016800
+*legacy-prefixes-1                                            1872244915
+*legacy-prefixes-2                                                425523
+*legacy-prefixes-and-escapes-0                                 213948237
+*legacy-prefixes-and-escapes-1                                1960679657
+*legacy-prefixes-and-escapes-2                                  50918836
+*legacy-prefixes-and-escapes-3                                    140306
+*legacy-prefixes-and-escapes-4                                       202
+*segment_prefix                                                   165881
+*lock_prefix                                                      166397
+*rep_prefix                                                            8
+*66_prefix                                                        473706
+*rex_prefix                                                   1872289969
+*rexw_prefix                                                  1754438498
+*rexr_prefix                                                   678582138
+*rexx_prefix                                                   212322757
+*rexb_prefix                                                  1145635594
+*loadop                                                         82832260
+*one-memops                                                    651572079
+*two-memops                                                       119172
+*cond-branch-forward                                           229564583
+*cond-branch-backward                                           50380922
+*disp_only                                                        165872
+*index_disp                                                            9
+*base_only                                                      57141852
+*base_disp                                                     418468741
+*base_index                                                    175170660
+*base_index_disp                                                  744117
+*scale_1                                                       489421612
+*scale_2                                                          107191
+*scale_4                                                       125439176
+*scale_8                                                       100282169
+*memdisp8                                                      417103267
+*memdisp32                                                       3166273
+*elements_fp_single_1                                              30060
+*elements_i1_128                                                   44533
+*elements_i1_256                                                      27
+*elements_i8_16                                                     9872
+*elements_i8_32                                                       38
+*elements_i32_1                                                     6510
+*elements_i32_4                                                      142
+*elements_i128_1                                                     151
+*broadcast_i8_1                                                       15
+*broadcast_fp_single_1                                               121
+*convert_i32_1                                                     71418
+*convert_fp_single_1                                                  12
+*dataxfer_i32_1                                                       12
+*dataxfer_i32_4                                                     7513
+*dataxfer_i32_8                                                       19
+*dataxfer_i64_1                                                      268
+*dataxfer_fp_single_1                                              15014
+*dataxfer_fp_single_4                                              12012
+*dataxfer_fp_single_8                                               2295
+*dataxfer_fp_double_4                                                  2
+ADC_GPRv_GPRv_11                                                       4
+ADD_AL_IMMb                                                           67
+ADD_GPR8_GPR8_00                                                       1
+ADD_GPR8_IMMb_80r0                                                   271
+ADD_GPRv_GPRv_01                                                  632956
+ADD_GPRv_GPRv_03                                                37701988
+ADD_GPRv_IMMb                                                     580365
+ADD_GPRv_IMMz                                                      90124
+ADD_GPRv_MEMv                                                      38084
+ADD_MEMv_GPRv                                                      24814
+ADD_MEMv_IMMb                                                      26598
+ADD_MEMv_IMMz                                                      15433
+ADD_OrAX_IMMz                                                      26005
+AESENC_XMMdq_XMMdq                                                   315
+AESENCLAST_XMMdq_XMMdq                                                35
+AESKEYGENASSIST_XMMdq_XMMdq_IMMb                                      50
+AND_AL_IMMb                                                         9375
+AND_GPR8_GPR8_20                                                     184
+AND_GPR8_IMMb_80r4                                                 12737
+AND_GPRv_GPRv_21                                                   19988
+AND_GPRv_GPRv_23                                                   26699
+AND_GPRv_IMMb                                                     184342
+AND_GPRv_IMMz                                                   87963242
+AND_GPRv_MEMv                                                      49062
+AND_MEMb_IMMb_80r4                                                    17
+AND_MEMv_GPRv                                                      90480
+AND_MEMv_IMMb                                                          4
+AND_OrAX_IMMz                                                   12814683
+BEXTR_VGPR32d_MEMd_VGPR32d                                            88
+BSF_GPRv_GPRv                                                      26743
+BSR_GPRv_GPRv                                                          6
+BSWAP_GPRv                                                             9
+BT_GPRv_GPRv                                                       80807
+BT_GPRv_IMMb                                                         809
+BT_MEMv_IMMb                                                          62
+CALL_NEAR_GPRv                                                       553
+CALL_NEAR_MEMv                                                    119031
+CALL_NEAR_RELBRd                                                  469224
+CDQ                                                                41396
+CDQE                                                                  22
+CMOVB_GPRv_GPRv                                                    32957
+CMOVBE_GPRv_GPRv                                                   30329
+CMOVL_GPRv_GPRv                                                        9
+CMOVLE_GPRv_GPRv                                                      28
+CMOVNB_GPRv_GPRv                                                    6711
+CMOVNBE_GPRv_GPRv                                                    192
+CMOVNL_GPRv_GPRv                                                       9
+CMOVNLE_GPRv_GPRv                                                     72
+CMOVNZ_GPRv_GPRv                                                   98001
+CMOVNZ_GPRv_MEMv                                                       1
+CMOVS_GPRv_GPRv                                                      547
+CMOVZ_GPRv_GPRv                                                 49992701
+CMP_AL_IMMb                                                         3513
+CMP_GPR8_GPR8_38                                                     137
+CMP_GPR8_IMMb_80r7                                                 13220
+CMP_GPR8_MEMb                                                       5097
+CMP_GPRv_GPRv_39                                                  522020
+CMP_GPRv_GPRv_3B                                               100250345
+CMP_GPRv_IMMb                                                     510273
+CMP_GPRv_IMMz                                                   50266092
+CMP_GPRv_MEMv                                                   25102698
+CMP_MEMb_GPR8                                                       3867
+CMP_MEMb_IMMb_80r7                                                 48808
+CMP_MEMv_GPRv                                                     115263
+CMP_MEMv_IMMb                                                   25535467
+CMP_MEMv_IMMz                                                       1222
+CMP_OrAX_IMMz                                                     110350
+CMPSS_XMMss_XMMss_IMMb                                                24
+CMPXCHG_LOCK_MEMv_GPRv                                            166078
+COMISS_XMMss_XMMss                                                 15012
+CPUID                                                                  8
+CVTSI2SS_XMMss_GPR64q                                              30000
+CVTTSS2SI_GPR64q_XMMss                                                12
+DEC_GPR8                                                            1244
+DEC_GPRv_FFr1                                                   75016499
+DEC_MEMv                                                        25013893
+DIV_GPR8                                                               1
+DIV_GPRv                                                           70249
+DIVSS_XMMss_XMMss                                                     12
+FXSAVE_MEMmfpxenv                                                      1
+IDIV_MEMv                                                          41396
+IMUL_GPRv                                                             29
+IMUL_GPRv_GPRv                                                     67872
+IMUL_GPRv_GPRv_IMMb                                                    1
+IMUL_GPRv_GPRv_IMMz                                                21579
+IMUL_GPRv_MEMv                                                       156
+IMUL_GPRv_MEMv_IMMz                                                    4
+IMUL_MEMv                                                              4
+INC_GPR8                                                               2
+INC_GPRv_FFr0                                                  100155568
+INC_MEMb                                                              17
+INC_MEMv                                                           24430
+INC_LOCK_MEMv                                                        112
+JB_RELBRb                                                         373958
+JB_RELBRd                                                          78841
+JBE_RELBRb                                                        156800
+JBE_RELBRd                                                         12761
+JL_RELBRb                                                             95
+JL_RELBRd                                                           9192
+JLE_RELBRb                                                         23897
+JLE_RELBRd                                                         10442
+JMP_GPRv                                                          126859
+JMP_MEMv                                                          237173
+JMP_RELBRb                                                      12882292
+JMP_RELBRd                                                      12962332
+JNB_RELBRb                                                      12735280
+JNB_RELBRd                                                      37511477
+JNBE_RELBRb                                                       289945
+JNBE_RELBRd                                                        69794
+JNL_RELBRb                                                      25005360
+JNL_RELBRd                                                           128
+JNLE_RELBRb                                                         1557
+JNLE_RELBRd                                                          675
+JNS_RELBRb                                                         23103
+JNS_RELBRd                                                            39
+JNZ_RELBRb                                                        943173
+JNZ_RELBRd                                                      37644827
+JO_RELBRb                                                            118
+JS_RELBRb                                                          40400
+JS_RELBRd                                                            962
+JZ_RELBRb                                                      101859949
+JZ_RELBRd                                                       63152732
+LDMXCSR_MEMd                                                           3
+LEA_GPRv_AGEN                                                   63558897
+LEAVE                                                                  5
+LFENCE                                                               214
+MFENCE                                                               127
+MOV_GPR8_GPR8_88                                                      69
+MOV_GPR8_IMMb_B0                                                    8293
+MOV_GPR8_MEMb                                                      44759
+MOV_GPRv_GPRv_89                                               255246069
+MOV_GPRv_IMMv                                                     679000
+MOV_GPRv_IMMz                                                      10747
+MOV_GPRv_MEMv                                                  391746976
+MOV_MEMb_GPR8                                                       6870
+MOV_MEMb_IMMb                                                       2862
+MOV_MEMv_GPRv                                                  176496553
+MOV_MEMv_IMMz                                                      88624
+MOVAPS_MEMps_XMMps                                                  1085
+MOVAPS_XMMps_MEMps                                                    20
+MOVAPS_XMMps_XMMps_0F28                                              198
+MOVD_GPR32_XMMd                                                       12
+MOVDQA_MEMdq_XMMdq                                                    51
+MOVDQA_XMMdq_MEMdq                                                  3413
+MOVDQA_XMMdq_XMMdq_0F6F                                               18
+MOVDQU_MEMdq_XMMdq                                                   129
+MOVDQU_XMMdq_MEMdq                                                  3644
+MOVQ_MEMq_XMMq_0FD6                                                    1
+MOVQ_XMMdq_GPR64                                                     235
+MOVQ_XMMdq_XMMq_0F7E                                                  12
+MOVSS_MEMss_XMMss                                                      1
+MOVSS_XMMdq_MEMss                                                  15013
+MOVSX_GPRv_GPR16                                                       4
+MOVSX_GPRv_GPR8                                                    13714
+MOVSX_GPRv_MEMb                                                      436
+MOVSX_GPRv_MEMw                                                       57
+MOVSXD_GPRv_GPR32                                                  87943
+MOVSXD_GPRv_MEMd                                                   58236
+MOVUPS_MEMps_XMMps                                                   386
+MOVUPS_XMMps_MEMps                                                   219
+MOVZX_GPRv_GPR16                                                  323264
+MOVZX_GPRv_GPR8                                                     8186
+MOVZX_GPRv_MEMb                                                    53245
+MOVZX_GPRv_MEMw                                                   204343
+MUL_GPRv                                                            7357
+MULSS_XMMss_XMMss                                                  15000
+NEG_GPRv                                                           88793
+NOP_90                                                                93
+NOP_MEMv_GPRv_0F1F                                                  1524
+NOT_GPR8                                                              36
+NOT_GPRv                                                           15519
+OR_AL_IMMb                                                             4
+OR_GPR8_GPR8_08                                                    20997
+OR_GPR8_IMMb_80r1                                                     10
+OR_GPR8_MEMb                                                          16
+OR_GPRv_GPRv_09                                                    60370
+OR_GPRv_GPRv_0B                                                       42
+OR_GPRv_IMMb                                                       77284
+OR_GPRv_IMMz                                                       56645
+OR_GPRv_MEMv                                                           5
+OR_MEMb_IMMb_80r1                                                    861
+OR_MEMv_GPRv                                                      108007
+OR_MEMv_IMMz                                                           1
+OR_OrAX_IMMz                                                          29
+OR_LOCK_MEMv_IMMz                                                    106
+PADDQ_XMMdq_MEMdq                                                     18
+PADDQ_XMMdq_XMMdq                                                      8
+PANDN_XMMdq_XMMdq                                                   3387
+PCMPEQB_XMMdq_MEMdq                                                 3088
+PCMPEQB_XMMdq_XMMdq                                                 6784
+PINSRQ_XMMdq_GPR64q_IMMb                                               8
+PMOVMSKB_GPR32_XMMdq                                                6485
+POP_GPRv_58                                                      2354363
+PSHUFB_XMMdq_MEMdq                                                    50
+PSHUFD_XMMdq_XMMdq_IMMb                                               50
+PSLLDQ_XMMdq_IMMb                                                    151
+PUNPCKLQDQ_XMMdq_XMMq                                                  8
+PUSH_GPRv_50                                                     2589341
+PUSH_IMMb                                                            147
+PUSH_IMMz                                                             15
+PUSH_MEMv                                                            133
+PXOR_XMMdq_XMMdq                                                    5954
+RDTSC                                                                107
+REP_MOVSB                                                              8
+RET_NEAR                                                          588807
+ROL_GPRv_CL                                                        31592
+ROL_GPRv_IMMb                                                          1
+ROUNDSS_XMMd_XMMd_IMMb                                                12
+SAR_GPRv_IMMb                                                   50109380
+SAR_GPRv_ONE                                                         105
+SBB_GPRv_GPRv_19                                                     110
+SBB_GPRv_IMMb                                                         12
+SETB_GPR8                                                          15764
+SETB_MEMb                                                             15
+SETBE_GPR8                                                         12319
+SETL_GPR8                                                              1
+SETNB_GPR8                                                          9670
+SETNBE_GPR8                                                        12322
+SETNLE_GPR8                                                          237
+SETNZ_GPR8                                                           552
+SETNZ_MEMb                                                           348
+SETZ_GPR8                                                           1285
+SETZ_MEMb                                                            798
+SHL_GPR8_IMMb_C0r4                                                   121
+SHL_GPRv_CL_D3r4                                                  211484
+SHL_GPRv_IMMb_C1r4                                              50421796
+SHL_MEMv_IMMb_C1r4                                                     1
+SHLD_GPRv_GPRv_IMMb                                                 5245
+SHLX_VGPR32d_VGPR32d_VGPR32d                                           5
+SHR_GPR8_IMMb                                                       8282
+SHR_GPR8_ONE                                                        1749
+SHR_GPRv_CL                                                       132886
+SHR_GPRv_IMMb                                                  101089638
+SHR_GPRv_ONE                                                       50113
+SHR_MEMv_IMMb                                                          2
+SHRD_GPRv_GPRv_IMMb                                                  107
+SHRX_VGPR64q_VGPR64q_VGPR64q                                         103
+SIDT_MEMs64                                                        41396
+STMXCSR_MEMd                                                           3
+SUB_GPRv_GPRv_29                                                  195359
+SUB_GPRv_GPRv_2B                                               100081627
+SUB_GPRv_IMMb                                                     176150
+SUB_GPRv_IMMz                                                       2159
+SUB_GPRv_MEMv                                                      84322
+SUB_MEMv_GPRv                                                         40
+SUBSS_XMMss_XMMss                                                     12
+SYSCALL                                                              127
+TEST_AL_IMMb                                                         618
+TEST_GPR8_GPR8                                                     73461
+TEST_GPR8_IMMb_F6r0                                               105993
+TEST_GPRv_GPRv                                                 126907601
+TEST_GPRv_IMMz_F7r0                                                67437
+TEST_MEMb_IMMb_F6r0                                                 2465
+TEST_MEMv_GPRv                                                     45109
+TEST_MEMv_IMMz_F7r0                                                  187
+TEST_OrAX_IMMz                                                       302
+TZCNT_GPRv_GPRv                                                       19
+VBROADCASTSS_YMMqq_XMMdq                                             121
+VMOVAPS_MEMqq_YMMqq                                                   96
+VMOVDQA_YMMqq_MEMqq                                                   13
+VMOVDQU_MEMdq_XMMdq                                                  258
+VMOVDQU_MEMqq_YMMqq                                                    3
+VMOVDQU_YMMqq_MEMqq                                                    3
+VMOVQ_XMMdq_GPR64q                                                    20
+VMOVUPD_MEMqq_YMMqq                                                    1
+VMOVUPD_YMMqq_MEMqq                                                    1
+VMOVUPS_MEMdq_XMMdq                                                 5084
+VMOVUPS_MEMqq_YMMqq                                                 1303
+VMOVUPS_XMMdq_MEMdq                                                 5020
+VMOVUPS_YMMqq_MEMqq                                                  896
+VPBROADCASTB_YMMqq_XMMb                                               15
+VPCMPEQB_YMMqq_YMMqq_MEMqq                                            12
+VPCMPEQB_YMMqq_YMMqq_YMMqq                                            26
+VPMOVMSKB_GPR32d_YMMqq                                                25
+VPOR_YMMqq_YMMqq_YMMqq                                                13
+VPXOR_YMMqq_YMMqq_YMMqq                                                9
+VXORPS_XMMdq_XMMdq_XMMdq                                            5022
+VXORPS_YMMqq_YMMqq_YMMqq                                               5
+VZEROUPPER                                                          3091
+XADD_LOCK_MEMv_GPRv                                                  101
+XCHG_MEMv_GPRv                                                       218
+XGETBV                                                                 1
+XOR_AL_IMMb                                                            6
+XOR_GPR8_GPR8_32                                                    4999
+XOR_GPR8_IMMb_80r6                                                   402
+XOR_GPR8_MEMb                                                         48
+XOR_GPRv_GPRv_31                                                  476276
+XOR_GPRv_GPRv_33                                                   86809
+XOR_GPRv_IMMb                                                      15268
+XOR_GPRv_IMMz                                                          1
+XOR_GPRv_MEMv                                                        664
+XOR_MEMb_GPR8                                                        256
+XORPS_XMMxud_XMMxud                                                30170
+XRSTOR_MEMmxsave                                                      15
+XSAVE_MEMmxsave                                                       15
+*total                                                        2225687238
+# END_DYNAMIC_STATS
+# FUNCTION TOTALS FOR TID 0  OS-TID 775
+#rank total-icount     %   cumulative%   #times-called    address  function-name    image-name
+           2225687238 TOTAL
+# END FUNCTION TOTALS
+# EMIT_PER_FUNCTION_STATS FOR TID 0  OS-TID 775 EMIT# 1
+# END_PER_FUNCTION_STATS 
+# EMIT_GLOBAL_TOP_BLOCK_STATS EVENT=ICOUNT
+BLOCK:     0   PC: 000000010c0eb0cf   ICOUNT: 227038824   EXECUTIONS:  12613268   #BYTES: 69   %:  10.2   cumltv%:  10.2  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 20cf
+XDIS 000000010c0eb0cf: BASE 4989C2                   mov r10, rax
+XDIS 000000010c0eb0d2: BASE 4D89C6                   mov r14, r8
+XDIS 000000010c0eb0d5: BASE 4C2BD1                   sub r10, rcx
+XDIS 000000010c0eb0d8: BASE 4D89C7                   mov r15, r8
+XDIS 000000010c0eb0db: BASE 49C1FA03                 sar r10, 0x3
+XDIS 000000010c0eb0df: BASE 4981E7FF030000           and r15, 0x3ff
+XDIS 000000010c0eb0e6: BASE 4D89D3                   mov r11, r10
+XDIS 000000010c0eb0e9: BASE 49C1E30A                 shl r11, 0xa
+XDIS 000000010c0eb0ed: BASE 49C1EE0A                 shr r14, 0xa
+XDIS 000000010c0eb0f1: BASE 49FFCB                   dec r11
+XDIS 000000010c0eb0f4: BASE 4D85D2                   test r10, r10
+XDIS 000000010c0eb0f7: BASE 488B742410               mov rsi, qword ptr [rsp+0x10]
+XDIS 000000010c0eb0fc: BASE 4C0F44DB                 cmovz r11, rbx
+XDIS 000000010c0eb100: BASE 4C2BDA                   sub r11, rdx
+XDIS 000000010c0eb103: BASE 4E8B34F6                 mov r14, qword ptr [rsi+r14*8]
+XDIS 000000010c0eb107: BASE 498B7528                 mov rsi, qword ptr [r13+0x28]
+XDIS 000000010c0eb10b: BASE 493BF3                   cmp rsi, r11
+XDIS 000000010c0eb10e: BASE 0F84F1000000             jz 0x10c0eb205
+
+BLOCK:     1   PC: 000000010c0eafc7   ICOUNT: 210409952   EXECUTIONS:  12377056   #BYTES: 65   %:  9.45   cumltv%:  19.7  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1fc7
+XDIS 000000010c0eafc7: BASE 4989F2                   mov r10, rsi
+XDIS 000000010c0eafca: BASE 4989C3                   mov r11, rax
+XDIS 000000010c0eafcd: BASE 49C1EA0A                 shr r10, 0xa
+XDIS 000000010c0eafd1: BASE 4C2BD9                   sub r11, rcx
+XDIS 000000010c0eafd4: BASE 4C8B742440               mov r14, qword ptr [rsp+0x40]
+XDIS 000000010c0eafd9: BASE 4989F7                   mov r15, rsi
+XDIS 000000010c0eafdc: BASE 49C1FB03                 sar r11, 0x3
+XDIS 000000010c0eafe0: BASE 4981E7FF030000           and r15, 0x3ff
+XDIS 000000010c0eafe7: BASE 4F8B34D6                 mov r14, qword ptr [r14+r10*8]
+XDIS 000000010c0eafeb: BASE 4D89DA                   mov r10, r11
+XDIS 000000010c0eafee: BASE 49C1E20A                 shl r10, 0xa
+XDIS 000000010c0eaff2: BASE 49FFCA                   dec r10
+XDIS 000000010c0eaff5: BASE 4D85DB                   test r11, r11
+XDIS 000000010c0eaff8: BASE 4C0F44D3                 cmovz r10, rbx
+XDIS 000000010c0eaffc: BASE 4C2BD2                   sub r10, rdx
+XDIS 000000010c0eafff: BASE 4D3BCA                   cmp r9, r10
+XDIS 000000010c0eb002: BASE 0F84A8010000             jz 0x10c0eb1b0
+
+BLOCK:     2   PC: 000000010c0eae86   ICOUNT: 199922592   EXECUTIONS:  24990324   #BYTES: 30   %:  8.98   cumltv%:  28.6  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1e86
+XDIS 000000010c0eae86: BASE 4989D6                   mov r14, rdx
+XDIS 000000010c0eae89: BASE 4989D7                   mov r15, rdx
+XDIS 000000010c0eae8c: BASE 49C1EE0A                 shr r14, 0xa
+XDIS 000000010c0eae90: BASE 4981E7FF030000           and r15, 0x3ff
+XDIS 000000010c0eae97: BASE 8B4510                   mov eax, dword ptr [rbp+0x10]
+XDIS 000000010c0eae9a: BASE 4E8B34F1                 mov r14, qword ptr [rcx+r14*8]
+XDIS 000000010c0eae9e: BASE 433B04BE                 cmp eax, dword ptr [r14+r15*4]
+XDIS 000000010c0eaea2: BASE 7D6F                     jnl 0x10c0eaf13
+
+BLOCK:     3   PC: 000000010c0eaea4   ICOUNT: 189199020   EXECUTIONS:  12613268   #BYTES: 59   %:   8.5   cumltv%:  37.1  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1ea4
+XDIS 000000010c0eaea4: BASE 4C8B542418               mov r10, qword ptr [rsp+0x18]
+XDIS 000000010c0eaea9: BASE 4C89D6                   mov rsi, r10
+XDIS 000000010c0eaeac: BASE 4C8B5C2410               mov r11, qword ptr [rsp+0x10]
+XDIS 000000010c0eaeb1: BASE 492BF3                   sub rsi, r11
+XDIS 000000010c0eaeb4: BASE 48C1FE03                 sar rsi, 0x3
+XDIS 000000010c0eaeb8: BASE 4989F0                   mov r8, rsi
+XDIS 000000010c0eaebb: BASE 49C1E00A                 shl r8, 0xa
+XDIS 000000010c0eaebf: BASE 49FFC8                   dec r8
+XDIS 000000010c0eaec2: BASE 4885F6                   test rsi, rsi
+XDIS 000000010c0eaec5: BASE 4C8B4C2428               mov r9, qword ptr [rsp+0x28]
+XDIS 000000010c0eaeca: BASE 4C0F44C3                 cmovz r8, rbx
+XDIS 000000010c0eaece: BASE 4D2BC1                   sub r8, r9
+XDIS 000000010c0eaed1: BASE 488B442430               mov rax, qword ptr [rsp+0x30]
+XDIS 000000010c0eaed6: BASE 493BC0                   cmp rax, r8
+XDIS 000000010c0eaed9: BASE 0F846A030000             jz 0x10c0eb249
+
+BLOCK:     4   PC: 000000010c0eaf13   ICOUNT: 185655840   EXECUTIONS:  12377056   #BYTES: 59   %:  8.34   cumltv%:  45.5  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1f13
+XDIS 000000010c0eaf13: BASE 4C8B542448               mov r10, qword ptr [rsp+0x48]
+XDIS 000000010c0eaf18: BASE 4C89D6                   mov rsi, r10
+XDIS 000000010c0eaf1b: BASE 4C8B5C2440               mov r11, qword ptr [rsp+0x40]
+XDIS 000000010c0eaf20: BASE 492BF3                   sub rsi, r11
+XDIS 000000010c0eaf23: BASE 48C1FE03                 sar rsi, 0x3
+XDIS 000000010c0eaf27: BASE 4989F0                   mov r8, rsi
+XDIS 000000010c0eaf2a: BASE 49C1E00A                 shl r8, 0xa
+XDIS 000000010c0eaf2e: BASE 49FFC8                   dec r8
+XDIS 000000010c0eaf31: BASE 4885F6                   test rsi, rsi
+XDIS 000000010c0eaf34: BASE 4C8B4C2458               mov r9, qword ptr [rsp+0x58]
+XDIS 000000010c0eaf39: BASE 4C0F44C3                 cmovz r8, rbx
+XDIS 000000010c0eaf3d: BASE 4D2BC1                   sub r8, r9
+XDIS 000000010c0eaf40: BASE 488B442460               mov rax, qword ptr [rsp+0x60]
+XDIS 000000010c0eaf45: BASE 493BC0                   cmp rax, r8
+XDIS 000000010c0eaf48: BASE 0F8444030000             jz 0x10c0eb292
+
+BLOCK:     5   PC: 000000010c0eb136   ICOUNT: 126132680   EXECUTIONS:  12613268   #BYTES: 38   %:  5.67   cumltv%:  51.1  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 2136
+XDIS 000000010c0eb136: BASE 438B04BE                 mov eax, dword ptr [r14+r15*4]
+XDIS 000000010c0eb13a: BASE 8902                     mov dword ptr [rdx], eax
+XDIS 000000010c0eb13c: BASE 49FFC0                   inc r8
+XDIS 000000010c0eb13f: BASE 48FFC6                   inc rsi
+XDIS 000000010c0eb142: BASE 49FFC9                   dec r9
+XDIS 000000010c0eb145: BASE 49897528                 mov qword ptr [r13+0x28], rsi
+XDIS 000000010c0eb149: BASE 4981F800080000           cmp r8, 0x800
+XDIS 000000010c0eb150: BASE 4C894C2430               mov qword ptr [rsp+0x30], r9
+XDIS 000000010c0eb155: BASE 4C89442428               mov qword ptr [rsp+0x28], r8
+XDIS 000000010c0eb15a: BASE 737B                     jnb 0x10c0eb1d7
+
+BLOCK:     6   PC: 000000010c0eaf80   ICOUNT: 124951620   EXECUTIONS:  24990324   #BYTES: 24   %:  5.61   cumltv%:  56.8  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1f80
+XDIS 000000010c0eaf80: BASE 48FFC2                   inc rdx
+XDIS 000000010c0eaf83: BASE 49FF4D28                 dec qword ptr [r13+0x28]
+XDIS 000000010c0eaf87: BASE 49895520                 mov qword ptr [r13+0x20], rdx
+XDIS 000000010c0eaf8b: BASE 4881FA00080000           cmp rdx, 0x800
+XDIS 000000010c0eaf92: BASE 0F83DC020000             jnb 0x10c0eb274
+
+BLOCK:     7   PC: 000000010c0eb02c   ICOUNT: 123770560   EXECUTIONS:  12377056   #BYTES: 43   %:  5.56   cumltv%:  62.3  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 202c
+XDIS 000000010c0eb02c: BASE 478B14BE                 mov r10d, dword ptr [r14+r15*4]
+XDIS 000000010c0eb030: BASE 458913                   mov dword ptr [r11], r10d
+XDIS 000000010c0eb033: BASE 48FFC6                   inc rsi
+XDIS 000000010c0eb036: BASE 49FFC1                   inc r9
+XDIS 000000010c0eb039: BASE 49FFC8                   dec r8
+XDIS 000000010c0eb03c: BASE 4D894D28                 mov qword ptr [r13+0x28], r9
+XDIS 000000010c0eb040: BASE 4881FE00080000           cmp rsi, 0x800
+XDIS 000000010c0eb047: BASE 4C89442460               mov qword ptr [rsp+0x60], r8
+XDIS 000000010c0eb04c: BASE 4889742458               mov qword ptr [rsp+0x58], rsi
+XDIS 000000010c0eb051: BASE 0F831F010000             jnb 0x10c0eb176
+
+BLOCK:     8   PC: 000000010c0eb11c   ICOUNT:  88292876   EXECUTIONS:  12613268   #BYTES: 26   %:  3.97   cumltv%:  66.3  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 211c
+XDIS 000000010c0eb11c: BASE 4889D0                   mov rax, rdx
+XDIS 000000010c0eb11f: BASE 48C1EA0A                 shr rdx, 0xa
+XDIS 000000010c0eb123: BASE 4825FF030000             and rax, 0x3ff
+XDIS 000000010c0eb129: BASE 488B14D1                 mov rdx, qword ptr [rcx+rdx*8]
+XDIS 000000010c0eb12d: BASE 488D1482                 lea rdx, ptr [rdx+rax*4]
+XDIS 000000010c0eb131: BASE 4885D2                   test rdx, rdx
+XDIS 000000010c0eb134: BASE 7406                     jz 0x10c0eb13c
+
+BLOCK:     9   PC: 000000010c0eaee7   ICOUNT:  88292876   EXECUTIONS:  12613268   #BYTES: 27   %:  3.97   cumltv%:  70.3  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1ee7
+XDIS 000000010c0eaee7: BASE 4D89C8                   mov r8, r9
+XDIS 000000010c0eaeea: BASE 49C1E90A                 shr r9, 0xa
+XDIS 000000010c0eaeee: BASE 4981E0FF030000           and r8, 0x3ff
+XDIS 000000010c0eaef5: BASE 4B8B34CB                 mov rsi, qword ptr [r11+r9*8]
+XDIS 000000010c0eaef9: BASE 4E8D0486                 lea r8, ptr [rsi+r8*4]
+XDIS 000000010c0eaefd: BASE 4D85C0                   test r8, r8
+XDIS 000000010c0eaf00: BASE 7407                     jz 0x10c0eaf09
+
+BLOCK:    10   PC: 000000010c0eaf56   ICOUNT:  86639392   EXECUTIONS:  12377056   #BYTES: 27   %:  3.89   cumltv%:  74.1  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1f56
+XDIS 000000010c0eaf56: BASE 4D89C8                   mov r8, r9
+XDIS 000000010c0eaf59: BASE 49C1E90A                 shr r9, 0xa
+XDIS 000000010c0eaf5d: BASE 4981E0FF030000           and r8, 0x3ff
+XDIS 000000010c0eaf64: BASE 4B8B34CB                 mov rsi, qword ptr [r11+r9*8]
+XDIS 000000010c0eaf68: BASE 4E8D0486                 lea r8, ptr [rsi+r8*4]
+XDIS 000000010c0eaf6c: BASE 4D85C0                   test r8, r8
+XDIS 000000010c0eaf6f: BASE 7407                     jz 0x10c0eaf78
+
+BLOCK:    11   PC: 000000010c0eb011   ICOUNT:  86639392   EXECUTIONS:  12377056   #BYTES: 27   %:  3.89   cumltv%:    78  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 2011
+XDIS 000000010c0eb011: BASE 4D89D3                   mov r11, r10
+XDIS 000000010c0eb014: BASE 49C1EA0A                 shr r10, 0xa
+XDIS 000000010c0eb018: BASE 4981E3FF030000           and r11, 0x3ff
+XDIS 000000010c0eb01f: BASE 4E8B14D1                 mov r10, qword ptr [rcx+r10*8]
+XDIS 000000010c0eb023: BASE 4F8D1C9A                 lea r11, ptr [r10+r11*4]
+XDIS 000000010c0eb027: BASE 4D85DB                   test r11, r11
+XDIS 000000010c0eb02a: BASE 7407                     jz 0x10c0eb033
+
+BLOCK:    12   PC: 000000010c0eaf98   ICOUNT:  74970972   EXECUTIONS:  24990324   #BYTES: 15   %:  3.37   cumltv%:  81.4  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1f98
+XDIS 000000010c0eaf98: BASE 498B5520                 mov rdx, qword ptr [r13+0x20]
+XDIS 000000010c0eaf9c: BASE 49837D2800               cmp qword ptr [r13+0x28], 0x0
+XDIS 000000010c0eafa1: BASE 0F85DFFEFFFF             jnz 0x10c0eae86
+
+BLOCK:    13   PC: 000000010c0eaf02   ICOUNT:  63066340   EXECUTIONS:  12613268   #BYTES: 17   %:  2.83   cumltv%:  84.2  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1f02
+XDIS 000000010c0eaf02: BASE 438B34BE                 mov esi, dword ptr [r14+r15*4]
+XDIS 000000010c0eaf06: BASE 418930                   mov dword ptr [r8], esi
+XDIS 000000010c0eaf09: BASE 48FFC0                   inc rax
+XDIS 000000010c0eaf0c: BASE 4889442430               mov qword ptr [rsp+0x30], rax
+XDIS 000000010c0eaf11: BASE EB6D                     jmp 0x10c0eaf80
+
+BLOCK:    14   PC: 000000010c0eb165   ICOUNT:  50413136   EXECUTIONS:  12603284   #BYTES: 17   %:  2.27   cumltv%:  86.5  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 2165
+XDIS 000000010c0eb165: BASE 498B5520                 mov rdx, qword ptr [r13+0x20]
+XDIS 000000010c0eb169: BASE 498B4D08                 mov rcx, qword ptr [r13+0x8]
+XDIS 000000010c0eb16d: BASE 498B4510                 mov rax, qword ptr [r13+0x10]
+XDIS 000000010c0eb171: BASE E959FFFFFF               jmp 0x10c0eb0cf
+
+BLOCK:    15   PC: 000000010c0eaf71   ICOUNT:  49508224   EXECUTIONS:  12377056   #BYTES: 15   %:  2.22   cumltv%:  88.7  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1f71
+XDIS 000000010c0eaf71: BASE 438B34BE                 mov esi, dword ptr [r14+r15*4]
+XDIS 000000010c0eaf75: BASE 418930                   mov dword ptr [r8], esi
+XDIS 000000010c0eaf78: BASE 48FFC0                   inc rax
+XDIS 000000010c0eaf7b: BASE 4889442460               mov qword ptr [rsp+0x60], rax
+
+BLOCK:    16   PC: 000000010c0eaedf   ICOUNT:  37839804   EXECUTIONS:  12613268   #BYTES:  8   %:   1.7   cumltv%:  90.4  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 1edf
+XDIS 000000010c0eaedf: BASE 4C03C8                   add r9, rax
+XDIS 000000010c0eaee2: BASE 4D3BD3                   cmp r10, r11
+XDIS 000000010c0eaee5: BASE 7422                     jz 0x10c0eaf09
+
+BLOCK:    17   PC: 000000010c0eb114   ICOUNT:  37839804   EXECUTIONS:  12613268   #BYTES:  8   %:   1.7   cumltv%:  92.1  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 2114
+XDIS 000000010c0eb114: BASE 4803D6                   add rdx, rsi
+XDIS 000000010c0eb117: BASE 483BC1                   cmp rax, rcx
+XDIS 000000010c0eb11a: BASE 7420                     jz 0x10c0eb13c
+
+BLOCK:    18   PC: 000000010c0eb057   ICOUNT:  37131168   EXECUTIONS:  12377056   #BYTES: 13   %:  1.67   cumltv%:  93.8  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 2057
+XDIS 000000010c0eb057: BASE 4D8B4D28                 mov r9, qword ptr [r13+0x28]
+XDIS 000000010c0eb05b: BASE 4D85C0                   test r8, r8
+XDIS 000000010c0eb05e: BASE 0F8563FFFFFF             jnz 0x10c0eafc7
+
+BLOCK:    19   PC: 000000010c0eb008   ICOUNT:  37131168   EXECUTIONS:  12377056   #BYTES:  9   %:  1.67   cumltv%:  95.5  FN: void insert<int>(std::__1::unordered_set<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >, std::__1::queue<int, std::__1::deque<int, std::__1::allocator<int> > >&)  IMG: /Users/christopherterrazas/cpp-class-project/DataStructures/queue/queue_intel  OFFSET: 2008
+XDIS 000000010c0eb008: BASE 483BC1                   cmp rax, rcx
+XDIS 000000010c0eb00b: BASE 4E8D140A                 lea r10, ptr [rdx+r9*1]
+XDIS 000000010c0eb00f: BASE 7422                     jz 0x10c0eb033
+
+# END_TOP_BLOCK_STATS
+# EMIT_GLOBAL_DYNAMIC_STATS
+#
+# $dynamic-counts
+#
+# TID 0
+#       iform                  count
+#
+*total                                                                 0
+# END_DYNAMIC_STATS
+#GLOBAL FUNCTION TOTALS
+#rank total-icount     %   cumulative%   #times-called    address  function-name    image-name
+           2225687238 TOTAL
+# END FUNCTION TOTALS
+# EMIT_PER_FUNCTION_STATS FOR TID 0  OS-TID 1 EMIT# 1
+# END_PER_FUNCTION_STATS 
+# EMIT_STATIC_STATS 
+#
+# $static-counts
+#
+#       iform                  count
+#
+*total                                                                 0
+
+# END_STATIC_STATS
+# EMIT_GLOBAL_DYNAMIC_STATS   EMIT# 1
+#
+# $global-dynamic-counts
+#
+#       iform                  count
+#
+*mem-atomic                                                       166615
+*stack-read                                                    153940968
+*stack-write                                                    78902700
+*iprel-read                                                      1094760
+*iprel-write                                                        1607
+*mem-read-1                                                       159900
+*mem-read-2                                                       265372
+*mem-read-4                                                    101818406
+*mem-read-8                                                    369724474
+*mem-read-16                                                       15472
+*mem-read-32                                                         925
+*mem-write-1                                                       12052
+*mem-write-2                                                      177974
+*mem-write-4                                                    50641706
+*mem-write-8                                                   154414264
+*mem-write-10                                                      41396
+*mem-write-16                                                       6993
+*mem-write-32                                                       1403
+*mem-write-56                                                         30
+*mem-write-512                                                         1
+*mem-read                                                      471984579
+*mem-write                                                     205295804
+*mem                                                           651689727
+*isa-ext-AES                                                         400
+*isa-ext-AVX                                                       20816
+*isa-ext-AVX2                                                        221
+*isa-ext-BASE                                                 2225378197
+*isa-ext-BMI1                                                        107
+*isa-ext-BMI2                                                        108
+*isa-ext-LONGMODE                                                 146328
+*isa-ext-SSE                                                      107171
+*isa-ext-SSE2                                                      33789
+*isa-ext-SSE4                                                         20
+*isa-ext-SSE4A                                                        15
+*isa-ext-SSSE3                                                        50
+*isa-ext-XSAVE                                                        31
+*isa-set-AES                                                         400
+*isa-set-AVX                                                       20816
+*isa-set-AVX2                                                        221
+*isa-set-BMI1                                                        107
+*isa-set-BMI2                                                        108
+*isa-set-CMOV                                                   50161557
+*isa-set-FAT_NOP                                                    1524
+*isa-set-FXSAVE                                                        1
+*isa-set-I186                                                  201650972
+*isa-set-I286REAL                                                  41396
+*isa-set-I386                                                     811735
+*isa-set-I486REAL                                                 166196
+*isa-set-I86                                                  1972544710
+*isa-set-LONGMODE                                                 146328
+*isa-set-PENTIUMREAL                                                 107
+*isa-set-SSE                                                      107164
+*isa-set-SSE2                                                      33789
+*isa-set-SSE4                                                         20
+*isa-set-SSEMXCSR                                                      6
+*isa-set-SSSE3                                                        50
+*isa-set-XSAVE                                                        31
+*category-AES                                                        400
+*category-AVX                                                       3091
+*category-AVX2                                                        63
+*category-BINARY                                               542674067
+*category-BITBYTE                                                 108427
+*category-BMI1                                                       107
+*category-BMI2                                                       108
+*category-BROADCAST                                                  136
+*category-CALL                                                    588808
+*category-CMOV                                                  50161557
+*category-COND_BR                                              279945505
+*category-CONVERT                                                  71430
+*category-DATAXFER                                             825117612
+*category-LOGICAL                                              229308010
+*category-LOGICAL_FP                                               35197
+*category-MISC                                                  63559251
+*category-NOP                                                         93
+*category-POP                                                    2354363
+*category-PUSH                                                   2589636
+*category-RET                                                     588807
+*category-ROTATE                                                   31593
+*category-SEMAPHORE                                               166179
+*category-SETCC                                                    53311
+*category-SHIFT                                                202030909
+*category-SSE                                                      46729
+*category-STRINGOP                                                     8
+*category-SYSCALL                                                    127
+*category-SYSTEM                                                   41503
+*category-UNCOND_BR                                             26208656
+*category-WIDENOP                                                   1524
+*category-XSAVE                                                       31
+*ilen-1                                                          3194064
+*ilen-2                                                        171340701
+*ilen-3                                                        861304694
+*ilen-4                                                        656348567
+*ilen-5                                                        240089088
+*ilen-6                                                        152458722
+*ilen-7                                                        139971908
+*ilen-8                                                           761606
+*ilen-9                                                           121329
+*ilen-10                                                           94313
+*ilen-11                                                            2228
+*ilen-12                                                              10
+*ilen-13                                                               8
+*nop-ilen-1                                                           91
+*nop-ilen-2                                                            2
+*nop-ilen-3                                                            2
+*nop-ilen-4                                                           15
+*nop-ilen-7                                                         1424
+*nop-ilen-8                                                           57
+*nop-ilen-9                                                            2
+*nop-ilen-10                                                          24
+*scalar-simd                                                       75098
+*sse-scalar                                                        75098
+*sse-packed                                                        66331
+*avx128                                                            18495
+*avx256                                                             2542
+*gpr64                                                        1760687111
+*legacy-prefixes-0                                             353016800
+*legacy-prefixes-1                                            1872244915
+*legacy-prefixes-2                                                425523
+*legacy-prefixes-and-escapes-0                                 213948237
+*legacy-prefixes-and-escapes-1                                1960679657
+*legacy-prefixes-and-escapes-2                                  50918836
+*legacy-prefixes-and-escapes-3                                    140306
+*legacy-prefixes-and-escapes-4                                       202
+*segment_prefix                                                   165881
+*lock_prefix                                                      166397
+*rep_prefix                                                            8
+*66_prefix                                                        473706
+*rex_prefix                                                   1872289969
+*rexw_prefix                                                  1754438498
+*rexr_prefix                                                   678582138
+*rexx_prefix                                                   212322757
+*rexb_prefix                                                  1145635594
+*loadop                                                         82832260
+*one-memops                                                    651572079
+*two-memops                                                       119172
+*cond-branch-forward                                           229564583
+*cond-branch-backward                                           50380922
+*disp_only                                                        165872
+*index_disp                                                            9
+*base_only                                                      57141852
+*base_disp                                                     418468741
+*base_index                                                    175170660
+*base_index_disp                                                  744117
+*scale_1                                                       489421612
+*scale_2                                                          107191
+*scale_4                                                       125439176
+*scale_8                                                       100282169
+*memdisp8                                                      417103267
+*memdisp32                                                       3166273
+*elements_fp_single_1                                              30060
+*elements_i1_128                                                   44533
+*elements_i1_256                                                      27
+*elements_i8_16                                                     9872
+*elements_i8_32                                                       38
+*elements_i32_1                                                     6510
+*elements_i32_4                                                      142
+*elements_i128_1                                                     151
+*broadcast_i8_1                                                       15
+*broadcast_fp_single_1                                               121
+*convert_i32_1                                                     71418
+*convert_fp_single_1                                                  12
+*dataxfer_i32_1                                                       12
+*dataxfer_i32_4                                                     7513
+*dataxfer_i32_8                                                       19
+*dataxfer_i64_1                                                      268
+*dataxfer_fp_single_1                                              15014
+*dataxfer_fp_single_4                                              12012
+*dataxfer_fp_single_8                                               2295
+*dataxfer_fp_double_4                                                  2
+ADC_GPRv_GPRv_11                                                       4
+ADD_AL_IMMb                                                           67
+ADD_GPR8_GPR8_00                                                       1
+ADD_GPR8_IMMb_80r0                                                   271
+ADD_GPRv_GPRv_01                                                  632956
+ADD_GPRv_GPRv_03                                                37701988
+ADD_GPRv_IMMb                                                     580365
+ADD_GPRv_IMMz                                                      90124
+ADD_GPRv_MEMv                                                      38084
+ADD_MEMv_GPRv                                                      24814
+ADD_MEMv_IMMb                                                      26598
+ADD_MEMv_IMMz                                                      15433
+ADD_OrAX_IMMz                                                      26005
+AESENC_XMMdq_XMMdq                                                   315
+AESENCLAST_XMMdq_XMMdq                                                35
+AESKEYGENASSIST_XMMdq_XMMdq_IMMb                                      50
+AND_AL_IMMb                                                         9375
+AND_GPR8_GPR8_20                                                     184
+AND_GPR8_IMMb_80r4                                                 12737
+AND_GPRv_GPRv_21                                                   19988
+AND_GPRv_GPRv_23                                                   26699
+AND_GPRv_IMMb                                                     184342
+AND_GPRv_IMMz                                                   87963242
+AND_GPRv_MEMv                                                      49062
+AND_MEMb_IMMb_80r4                                                    17
+AND_MEMv_GPRv                                                      90480
+AND_MEMv_IMMb                                                          4
+AND_OrAX_IMMz                                                   12814683
+BEXTR_VGPR32d_MEMd_VGPR32d                                            88
+BSF_GPRv_GPRv                                                      26743
+BSR_GPRv_GPRv                                                          6
+BSWAP_GPRv                                                             9
+BT_GPRv_GPRv                                                       80807
+BT_GPRv_IMMb                                                         809
+BT_MEMv_IMMb                                                          62
+CALL_NEAR_GPRv                                                       553
+CALL_NEAR_MEMv                                                    119031
+CALL_NEAR_RELBRd                                                  469224
+CDQ                                                                41396
+CDQE                                                                  22
+CMOVB_GPRv_GPRv                                                    32957
+CMOVBE_GPRv_GPRv                                                   30329
+CMOVL_GPRv_GPRv                                                        9
+CMOVLE_GPRv_GPRv                                                      28
+CMOVNB_GPRv_GPRv                                                    6711
+CMOVNBE_GPRv_GPRv                                                    192
+CMOVNL_GPRv_GPRv                                                       9
+CMOVNLE_GPRv_GPRv                                                     72
+CMOVNZ_GPRv_GPRv                                                   98001
+CMOVNZ_GPRv_MEMv                                                       1
+CMOVS_GPRv_GPRv                                                      547
+CMOVZ_GPRv_GPRv                                                 49992701
+CMP_AL_IMMb                                                         3513
+CMP_GPR8_GPR8_38                                                     137
+CMP_GPR8_IMMb_80r7                                                 13220
+CMP_GPR8_MEMb                                                       5097
+CMP_GPRv_GPRv_39                                                  522020
+CMP_GPRv_GPRv_3B                                               100250345
+CMP_GPRv_IMMb                                                     510273
+CMP_GPRv_IMMz                                                   50266092
+CMP_GPRv_MEMv                                                   25102698
+CMP_MEMb_GPR8                                                       3867
+CMP_MEMb_IMMb_80r7                                                 48808
+CMP_MEMv_GPRv                                                     115263
+CMP_MEMv_IMMb                                                   25535467
+CMP_MEMv_IMMz                                                       1222
+CMP_OrAX_IMMz                                                     110350
+CMPSS_XMMss_XMMss_IMMb                                                24
+CMPXCHG_LOCK_MEMv_GPRv                                            166078
+COMISS_XMMss_XMMss                                                 15012
+CPUID                                                                  8
+CVTSI2SS_XMMss_GPR64q                                              30000
+CVTTSS2SI_GPR64q_XMMss                                                12
+DEC_GPR8                                                            1244
+DEC_GPRv_FFr1                                                   75016499
+DEC_MEMv                                                        25013893
+DIV_GPR8                                                               1
+DIV_GPRv                                                           70249
+DIVSS_XMMss_XMMss                                                     12
+FXSAVE_MEMmfpxenv                                                      1
+IDIV_MEMv                                                          41396
+IMUL_GPRv                                                             29
+IMUL_GPRv_GPRv                                                     67872
+IMUL_GPRv_GPRv_IMMb                                                    1
+IMUL_GPRv_GPRv_IMMz                                                21579
+IMUL_GPRv_MEMv                                                       156
+IMUL_GPRv_MEMv_IMMz                                                    4
+IMUL_MEMv                                                              4
+INC_GPR8                                                               2
+INC_GPRv_FFr0                                                  100155568
+INC_MEMb                                                              17
+INC_MEMv                                                           24430
+INC_LOCK_MEMv                                                        112
+JB_RELBRb                                                         373958
+JB_RELBRd                                                          78841
+JBE_RELBRb                                                        156800
+JBE_RELBRd                                                         12761
+JL_RELBRb                                                             95
+JL_RELBRd                                                           9192
+JLE_RELBRb                                                         23897
+JLE_RELBRd                                                         10442
+JMP_GPRv                                                          126859
+JMP_MEMv                                                          237173
+JMP_RELBRb                                                      12882292
+JMP_RELBRd                                                      12962332
+JNB_RELBRb                                                      12735280
+JNB_RELBRd                                                      37511477
+JNBE_RELBRb                                                       289945
+JNBE_RELBRd                                                        69794
+JNL_RELBRb                                                      25005360
+JNL_RELBRd                                                           128
+JNLE_RELBRb                                                         1557
+JNLE_RELBRd                                                          675
+JNS_RELBRb                                                         23103
+JNS_RELBRd                                                            39
+JNZ_RELBRb                                                        943173
+JNZ_RELBRd                                                      37644827
+JO_RELBRb                                                            118
+JS_RELBRb                                                          40400
+JS_RELBRd                                                            962
+JZ_RELBRb                                                      101859949
+JZ_RELBRd                                                       63152732
+LDMXCSR_MEMd                                                           3
+LEA_GPRv_AGEN                                                   63558897
+LEAVE                                                                  5
+LFENCE                                                               214
+MFENCE                                                               127
+MOV_GPR8_GPR8_88                                                      69
+MOV_GPR8_IMMb_B0                                                    8293
+MOV_GPR8_MEMb                                                      44759
+MOV_GPRv_GPRv_89                                               255246069
+MOV_GPRv_IMMv                                                     679000
+MOV_GPRv_IMMz                                                      10747
+MOV_GPRv_MEMv                                                  391746976
+MOV_MEMb_GPR8                                                       6870
+MOV_MEMb_IMMb                                                       2862
+MOV_MEMv_GPRv                                                  176496553
+MOV_MEMv_IMMz                                                      88624
+MOVAPS_MEMps_XMMps                                                  1085
+MOVAPS_XMMps_MEMps                                                    20
+MOVAPS_XMMps_XMMps_0F28                                              198
+MOVD_GPR32_XMMd                                                       12
+MOVDQA_MEMdq_XMMdq                                                    51
+MOVDQA_XMMdq_MEMdq                                                  3413
+MOVDQA_XMMdq_XMMdq_0F6F                                               18
+MOVDQU_MEMdq_XMMdq                                                   129
+MOVDQU_XMMdq_MEMdq                                                  3644
+MOVQ_MEMq_XMMq_0FD6                                                    1
+MOVQ_XMMdq_GPR64                                                     235
+MOVQ_XMMdq_XMMq_0F7E                                                  12
+MOVSS_MEMss_XMMss                                                      1
+MOVSS_XMMdq_MEMss                                                  15013
+MOVSX_GPRv_GPR16                                                       4
+MOVSX_GPRv_GPR8                                                    13714
+MOVSX_GPRv_MEMb                                                      436
+MOVSX_GPRv_MEMw                                                       57
+MOVSXD_GPRv_GPR32                                                  87943
+MOVSXD_GPRv_MEMd                                                   58236
+MOVUPS_MEMps_XMMps                                                   386
+MOVUPS_XMMps_MEMps                                                   219
+MOVZX_GPRv_GPR16                                                  323264
+MOVZX_GPRv_GPR8                                                     8186
+MOVZX_GPRv_MEMb                                                    53245
+MOVZX_GPRv_MEMw                                                   204343
+MUL_GPRv                                                            7357
+MULSS_XMMss_XMMss                                                  15000
+NEG_GPRv                                                           88793
+NOP_90                                                                93
+NOP_MEMv_GPRv_0F1F                                                  1524
+NOT_GPR8                                                              36
+NOT_GPRv                                                           15519
+OR_AL_IMMb                                                             4
+OR_GPR8_GPR8_08                                                    20997
+OR_GPR8_IMMb_80r1                                                     10
+OR_GPR8_MEMb                                                          16
+OR_GPRv_GPRv_09                                                    60370
+OR_GPRv_GPRv_0B                                                       42
+OR_GPRv_IMMb                                                       77284
+OR_GPRv_IMMz                                                       56645
+OR_GPRv_MEMv                                                           5
+OR_MEMb_IMMb_80r1                                                    861
+OR_MEMv_GPRv                                                      108007
+OR_MEMv_IMMz                                                           1
+OR_OrAX_IMMz                                                          29
+OR_LOCK_MEMv_IMMz                                                    106
+PADDQ_XMMdq_MEMdq                                                     18
+PADDQ_XMMdq_XMMdq                                                      8
+PANDN_XMMdq_XMMdq                                                   3387
+PCMPEQB_XMMdq_MEMdq                                                 3088
+PCMPEQB_XMMdq_XMMdq                                                 6784
+PINSRQ_XMMdq_GPR64q_IMMb                                               8
+PMOVMSKB_GPR32_XMMdq                                                6485
+POP_GPRv_58                                                      2354363
+PSHUFB_XMMdq_MEMdq                                                    50
+PSHUFD_XMMdq_XMMdq_IMMb                                               50
+PSLLDQ_XMMdq_IMMb                                                    151
+PUNPCKLQDQ_XMMdq_XMMq                                                  8
+PUSH_GPRv_50                                                     2589341
+PUSH_IMMb                                                            147
+PUSH_IMMz                                                             15
+PUSH_MEMv                                                            133
+PXOR_XMMdq_XMMdq                                                    5954
+RDTSC                                                                107
+REP_MOVSB                                                              8
+RET_NEAR                                                          588807
+ROL_GPRv_CL                                                        31592
+ROL_GPRv_IMMb                                                          1
+ROUNDSS_XMMd_XMMd_IMMb                                                12
+SAR_GPRv_IMMb                                                   50109380
+SAR_GPRv_ONE                                                         105
+SBB_GPRv_GPRv_19                                                     110
+SBB_GPRv_IMMb                                                         12
+SETB_GPR8                                                          15764
+SETB_MEMb                                                             15
+SETBE_GPR8                                                         12319
+SETL_GPR8                                                              1
+SETNB_GPR8                                                          9670
+SETNBE_GPR8                                                        12322
+SETNLE_GPR8                                                          237
+SETNZ_GPR8                                                           552
+SETNZ_MEMb                                                           348
+SETZ_GPR8                                                           1285
+SETZ_MEMb                                                            798
+SHL_GPR8_IMMb_C0r4                                                   121
+SHL_GPRv_CL_D3r4                                                  211484
+SHL_GPRv_IMMb_C1r4                                              50421796
+SHL_MEMv_IMMb_C1r4                                                     1
+SHLD_GPRv_GPRv_IMMb                                                 5245
+SHLX_VGPR32d_VGPR32d_VGPR32d                                           5
+SHR_GPR8_IMMb                                                       8282
+SHR_GPR8_ONE                                                        1749
+SHR_GPRv_CL                                                       132886
+SHR_GPRv_IMMb                                                  101089638
+SHR_GPRv_ONE                                                       50113
+SHR_MEMv_IMMb                                                          2
+SHRD_GPRv_GPRv_IMMb                                                  107
+SHRX_VGPR64q_VGPR64q_VGPR64q                                         103
+SIDT_MEMs64                                                        41396
+STMXCSR_MEMd                                                           3
+SUB_GPRv_GPRv_29                                                  195359
+SUB_GPRv_GPRv_2B                                               100081627
+SUB_GPRv_IMMb                                                     176150
+SUB_GPRv_IMMz                                                       2159
+SUB_GPRv_MEMv                                                      84322
+SUB_MEMv_GPRv                                                         40
+SUBSS_XMMss_XMMss                                                     12
+SYSCALL                                                              127
+TEST_AL_IMMb                                                         618
+TEST_GPR8_GPR8                                                     73461
+TEST_GPR8_IMMb_F6r0                                               105993
+TEST_GPRv_GPRv                                                 126907601
+TEST_GPRv_IMMz_F7r0                                                67437
+TEST_MEMb_IMMb_F6r0                                                 2465
+TEST_MEMv_GPRv                                                     45109
+TEST_MEMv_IMMz_F7r0                                                  187
+TEST_OrAX_IMMz                                                       302
+TZCNT_GPRv_GPRv                                                       19
+VBROADCASTSS_YMMqq_XMMdq                                             121
+VMOVAPS_MEMqq_YMMqq                                                   96
+VMOVDQA_YMMqq_MEMqq                                                   13
+VMOVDQU_MEMdq_XMMdq                                                  258
+VMOVDQU_MEMqq_YMMqq                                                    3
+VMOVDQU_YMMqq_MEMqq                                                    3
+VMOVQ_XMMdq_GPR64q                                                    20
+VMOVUPD_MEMqq_YMMqq                                                    1
+VMOVUPD_YMMqq_MEMqq                                                    1
+VMOVUPS_MEMdq_XMMdq                                                 5084
+VMOVUPS_MEMqq_YMMqq                                                 1303
+VMOVUPS_XMMdq_MEMdq                                                 5020
+VMOVUPS_YMMqq_MEMqq                                                  896
+VPBROADCASTB_YMMqq_XMMb                                               15
+VPCMPEQB_YMMqq_YMMqq_MEMqq                                            12
+VPCMPEQB_YMMqq_YMMqq_YMMqq                                            26
+VPMOVMSKB_GPR32d_YMMqq                                                25
+VPOR_YMMqq_YMMqq_YMMqq                                                13
+VPXOR_YMMqq_YMMqq_YMMqq                                                9
+VXORPS_XMMdq_XMMdq_XMMdq                                            5022
+VXORPS_YMMqq_YMMqq_YMMqq                                               5
+VZEROUPPER                                                          3091
+XADD_LOCK_MEMv_GPRv                                                  101
+XCHG_MEMv_GPRv                                                       218
+XGETBV                                                                 1
+XOR_AL_IMMb                                                            6
+XOR_GPR8_GPR8_32                                                    4999
+XOR_GPR8_IMMb_80r6                                                   402
+XOR_GPR8_MEMb                                                         48
+XOR_GPRv_GPRv_31                                                  476276
+XOR_GPRv_GPRv_33                                                   86809
+XOR_GPRv_IMMb                                                      15268
+XOR_GPRv_IMMz                                                          1
+XOR_GPRv_MEMv                                                        664
+XOR_MEMb_GPR8                                                        256
+XORPS_XMMxud_XMMxud                                                30170
+XRSTOR_MEMmxsave                                                      15
+XSAVE_MEMmxsave                                                       15
+*total                                                        2225687238
+
+# END_GLOBAL_DYNAMIC_STATS
