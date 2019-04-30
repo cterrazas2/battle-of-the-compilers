@@ -150,7 +150,7 @@ int main() {
   erase(lis);
   auto end = system_clock::now();
   auto time_trial = duration_cast<milliseconds>(end-start).count();
-  cerr << "Cold Cache Time: " << time_trial << "ms\n";
+  cout << "Cold Cache Time: " << time_trial << "ms\n";
 
 
    // Warm Cache
@@ -160,7 +160,7 @@ int main() {
   erase(lis);
   end = system_clock::now();
   time_trial = duration_cast<milliseconds>(end-start).count();
-  cerr << "Warm Cache Time: " << time_trial << "ms\n";
+  cout << "Warm Cache Time: " << time_trial << "ms\n";
 
 	return 0;
 }

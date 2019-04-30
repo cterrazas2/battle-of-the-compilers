@@ -1,7 +1,7 @@
 #!/bin/bash
->&2 echo "g++ stack file executing..."
-./stack1
->&2 echo "clang++ stack file executing..."
-./stack2
->&2 echo "icpc stack file executing..."
-./stack3
+echo "g++ stack file executing..."
+./stack_gcc 2>buf.txt
+echo "clang++ stack file executing..."
+./stack_clang 2>buf.txt
+echo "icpc stack file executing..."
+./stack_intel 2>buf.txt

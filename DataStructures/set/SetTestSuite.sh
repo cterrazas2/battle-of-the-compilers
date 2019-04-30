@@ -1,7 +1,7 @@
 #!/bin/bash
->&2 echo "g++ set file executing..."
-./set1
->&2 echo "clang++ set file executing..."
-./set2
->&2 echo "icpc set file executing..."
-./set3
+echo "g++ set file executing..."
+./set_gcc 2>buf.txt
+echo "clang++ set file executing..."
+./set_clang 2>buf.txt
+echo "icpc set file executing..."
+./set_intel 2>buf.txt

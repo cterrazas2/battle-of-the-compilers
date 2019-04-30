@@ -1,7 +1,7 @@
 #!/bin/bash
->&2 echo "g++ list file executing..."
-./list1
->&2 echo "clang++ list file executing..."
-./list2
->&2 echo "icpc list file executing..."
-./list3
+echo "g++ list file executing..."
+./list_gcc 2>buf.txt
+echo "clang++ list file executing..."
+./list_clang 2>buf.txt
+echo "icpc list file executing..."
+./list_intel 2>buf.txt

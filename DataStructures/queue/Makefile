@@ -1,20 +1,20 @@
-executables = queue1 queue2 queue3
+executables = queue_gcc queue_clang queue_intel
 
 .PHONY: default
 default: $(executables)
 
-queue1: queue.cpp
-	time g++ -std=c++17 -O2 queue.cpp -o queue1
-	g++ -std=c++17 -O2 -S queue.cpp -o queue1.s
-queue2: queue.cpp
-	time clang++ -std=c++17 -O2 queue.cpp -o queue2
-	clang++ -std=c++17 -O2 -S queue.cpp -o queue2.s
-queue3: queue.cpp
-	time icpc -std=c++17 -O2 queue.cpp -o queue3
-	icpc -std=c++17 -O2 -S queue.cpp -o queue3.s
+queue_gcc: queue.cpp
+	time g++ -std=c++17 -O2 queue.cpp -o queue_gcc
+	g++ -std=c++17 -O2 -S queue.cpp -o queue_gcc.s
+queue_clang: queue.cpp
+	time clang++ -std=c++17 -O2 queue.cpp -o queue_clang
+	clang++ -std=c++17 -O2 -S queue.cpp -o queue_clang.s
+queue_intel: queue.cpp
+	time icpc -std=c++17 -O2 queue.cpp -o queue_intel
+	icpc -std=c++17 -O2 -S queue.cpp -o queue_intel.s
 .PHONY: clean
 clean:
-	rm -f *.s queue1 queue2 queue3 buf.txt
+	rm -f queue_gcc* queue_clang* queue_intel* buf.txt
 
 .PHONY: suites
 suites:

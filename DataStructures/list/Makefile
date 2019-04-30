@@ -1,24 +1,24 @@
-executables = list1 list2 list3
+executables = list_gcc list_clang list_intel
 
 .PHONY: default
 default: $(executables)
 
-list1: list.cpp
-	time g++ -std=c++17 -O2 list.cpp -o list1
-	g++ -std=c++17 -O2 -S list.cpp -o list1.s
-list2: list.cpp
-	time clang++ -std=c++17 -O2 list.cpp -o list2
-	clang++ -std=c++17 -O2 -S list.cpp -o list2.s
-list3: list.cpp
-	time icpc -std=c++17 -O2 list.cpp -o list3
-	icpc -std=c++17 -O2 -S list.cpp -o list3.s
+list_gcc: list.cpp
+	time g++ -std=c++17 -O2 list.cpp -o list_gcc
+	g++ -std=c++17 -O2 -S list.cpp -o list_gcc.s
+list_clang: list.cpp
+	time clang++ -std=c++17 -O2 list.cpp -o list_clang
+	clang++ -std=c++17 -O2 -S list.cpp -o list_clang.s
+list_intel: list.cpp
+	time icpc -std=c++17 -O2 list.cpp -o list_intel
+	icpc -std=c++17 -O2 -S list.cpp -o list_intel.s
 .PHONY: clean
 clean:
-	rm -f *.s list1 list2 list3 buf.txt
+	rm -f list_gcc* list_clang* list_intel* buf.txt
 
 .PHONY: suites
 suites:
 	sh ListTestSuite.sh
 
 .PHONY: all
-all: clean suites default
+all: clean default

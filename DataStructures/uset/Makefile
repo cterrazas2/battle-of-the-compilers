@@ -1,20 +1,20 @@
-executables = uset1 uset2 uset3
+executables = uset_gcc uset_clang uset_intel
 
 .PHONY: default
 default: $(executables)
 
-uset1: unordered_set.cpp
-	time g++ -std=c++17 -O2 unordered_set.cpp -o uset1
-	g++ -std=c++17 -O2 -S unordered_set.cpp -o uset1.s
-uset2: unordered_set.cpp
-	time clang++ -std=c++17 -O2 unordered_set.cpp -o uset2
-	clang++ -std=c++17 -O2 -S unordered_set.cpp -o uset2.s
-uset3: unordered_set.cpp
-	time icpc -std=c++17 -O2 unordered_set.cpp -o uset3
-	icpc -std=c++17 -O2 -S unordered_set.cpp -o uset3.s
+uset_gcc: unordered_set.cpp
+	time g++ -std=c++17 -O2 unordered_set.cpp -o uset_gcc
+	g++ -std=c++17 -O2 -S unordered_set.cpp -o uset_gcc.s
+uset_clang: unordered_set.cpp
+	time clang++ -std=c++17 -O2 unordered_set.cpp -o uset_clang
+	clang++ -std=c++17 -O2 -S unordered_set.cpp -o uset_clang.s
+uset_intel: unordered_set.cpp
+	time icpc -std=c++17 -O2 unordered_set.cpp -o uset_intel
+	icpc -std=c++17 -O2 -S unordered_set.cpp -o uset_intel.s
 .PHONY: clean
 clean:
-	rm -f *.s uset1 uset2 uset3 buf.txt
+	rm -f uset_gcc* uset_clang* uset_intel* buf.txt
 
 .PHONY: suites
 suites:

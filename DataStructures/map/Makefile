@@ -1,20 +1,20 @@
-executables = map1 map2 map3
+executables = map_gcc map_clang map_intel
 
 .PHONY: default
 default: $(executables)
 
-map1: map.cpp
-	time g++ -std=c++17 -O2 map.cpp -o map1
-	g++ -std=c++17 -O2 -S map.cpp -o map1.s
-map2: map.cpp
-	time clang++ -std=c++17 -O2 map.cpp -o map2
-	clang++ -std=c++17 -O2 -S map.cpp -o map2.s
-map3: map.cpp
-	time icpc -std=c++17 -O2 map.cpp -o map3
-	icpc -std=c++17 -O2 -S map.cpp -o map3.s
+map_gcc: map.cpp
+	time g++ -std=c++17 -O2 map.cpp -o map_gcc
+	g++ -std=c++17 -O2 -S map.cpp -o map_gcc.s
+map_clang: map.cpp
+	time clang++ -std=c++17 -O2 map.cpp -o map_clang
+	clang++ -std=c++17 -O2 -S map.cpp -o map_clang.s
+map_intel: map.cpp
+	time icpc -std=c++17 -O2 map.cpp -o map_intel
+	icpc -std=c++17 -O2 -S map.cpp -o map_intel.s
 .PHONY: clean
 clean:
-	rm -f *.s map1 map2 map3 buf.txt
+	rm -f map_gcc* map_clang* map_intel* buf.txt
 
 .PHONY: suites
 suites:
