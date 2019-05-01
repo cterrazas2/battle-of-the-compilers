@@ -4,3 +4,4 @@
 .viminfo
 .gitconfig
 *.out
+.DS_Store
