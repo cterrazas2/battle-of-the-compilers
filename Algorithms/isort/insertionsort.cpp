@@ -103,6 +103,6 @@ int main() {
   InsertionSort(vec);
   auto end = system_clock::now();
   auto time_trial = duration_cast<milliseconds>(end-start).count();
-  cerr << "Insertion Sort Time: " << time_trial << "ms\n";
+  cout << "Insertion Sort Time: " << time_trial << "ms\n";
   return 0;
 }

@@ -49,8 +49,9 @@ int main() {
   auto start = system_clock::now();
   auto result = BinarySearch(lis,target);
   auto end = system_clock::now();
+  cerr << result << endl;
   auto time_trial = duration_cast<milliseconds>(end-start).count();
-  cerr << "BinarySearch Time: " << time_trial << "ms\n";
+  cout << "BinarySearch Time: " << time_trial << "ms\n";
 
   return 0;
 }
