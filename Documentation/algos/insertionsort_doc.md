@@ -2,8 +2,6 @@
 
 #### Function: generateRandom
 
-#### Function: generateRandom
-
 ```cpp
 template<typename T>
 void generateRandom(unordered_set<T>& rs, const int MAX, const int N)
