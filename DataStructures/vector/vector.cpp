@@ -9,6 +9,10 @@ using namespace std::chrono;
 
 void testVec(int* a, int* x, int n) {
 	vector<int> v;
+
+// test performance of intel with preallocation
+//	v.reserve(n);
+
 	for (int i=0; i<n; i++) {
 		auto it=v.begin();
 		if (i != 0) {
