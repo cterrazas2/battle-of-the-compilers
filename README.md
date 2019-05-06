@@ -43,17 +43,16 @@ There are two options to run the test suites.<br/>
 `$ make suites` for execution of program. <br/>
 - Run all test suites from top level of project directory:<br/>
 `$ sh RunTestSuites.sh` for compilation and execution of all test suites. <br/>
+- No test suites were written for the Microsoft compiler. Those tests must be compiled and executed manually with the following commands:<br/>
+`cl /std:c++17 /O2 /d2cgsummary /FAs /Fa<assemblyFile> <sourceFile>` for compilation. <br/>
+`<program_name> 2>buf.txt` for exectution of program. <br/>
 
 ### Running Intel SDE
 There are two main tools we use in the Intel SDE. We use the [Histogram Tool](https://software.intel.com/en-us/articles/intel-software-development-emulator#inpage-nav-1-4) and the [XED Disassembler](https://software.intel.com/en-us/articles/intel-software-development-emulator#inpage-nav-1-9). Here is an example of how to to generate the necessary files for the `list` data structure into the `IntelSDE_Data` directory:
 ```
  ### For the Histogram File ###
  $ ./sde -mix -omix ~/cpp-class-project/IntelSDE_Data/DataStructures/list/g++list/sde-mix-out-g++_list.txt -iform -- ~/cpp-class-project/DataStructures/list/list_gcc
- $ ./sde -mix -omix ~/cpp-class-project/IntelSDE_Data/DataStructures/list/clang++list/sde-mix-out-clang++_list.txt -iform -- ~/cpp-class-project/DataStructures/list/list_clang
- $ ./sde -mix -omix ~/cpp-class-project/IntelSDE_Data/DataStructures/list/icpclist/sde-mix-out-icpc-list.txt -iform -- ~/cpp-class-project/DataStructures/list/list_intel
 
 ### For the XED Disassembler File ###
  $ ./xed -i ~/cpp-class-project/DataStructures/list/list_gcc > ~/cpp-class-project/IntelSDE_Data/DataStructures/list/g++list/g++dis-list.txt
- $ ./xed -i ~/cpp-class-project/DataStructures/list/list_clang > ~/cpp-class-project/IntelSDE_Data/DataStructures/list/clang++list/clang++dis-list.txt
- $ ./xed -i ~/cpp-class-project/DataStructures/list/list_intel > ~/cpp-class-project/IntelSDE_Data/DataStructures/list/icpclist/icpcdis-list.txt
 ```
