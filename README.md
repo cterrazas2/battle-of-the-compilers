@@ -50,7 +50,7 @@ There are two options to run the test suites.<br/>
 ### Running Intel SDE
 There are two main tools we use in the Intel SDE. We use the [Histogram Tool](https://software.intel.com/en-us/articles/intel-software-development-emulator#inpage-nav-1-4) and the [XED Disassembler](https://software.intel.com/en-us/articles/intel-software-development-emulator#inpage-nav-1-9). Here is an example of how to to generate the necessary files for the `list` data structure into the `IntelSDE_Data` directory on MacOS:
 ```
- ### For the Histogram File ###
+### For the Histogram File ###
  $ ./sde -mix -omix ~/cpp-class-project/IntelSDE_Data/DataStructures/list/g++list/sde-mix-out-g++_list.txt -iform -- ~/cpp-class-project/DataStructures/list/list_gcc
  $ ./sde -mix -omix ~/cpp-class-project/IntelSDE_Data/DataStructures/list/clangg++list/sde-mix-out-clangg++_list.txt -iform -- ~/cpp-class-project/DataStructures/list/list_clang
  $ ./sde -mix -omix ~/cpp-class-project/IntelSDE_Data/DataStructures/list/icpclist/sde-mix-out-icpc-list.txt -iform -- ~/cpp-class-project/DataStructures/list/list_intel
@@ -63,9 +63,9 @@ There are two main tools we use in the Intel SDE. We use the [Histogram Tool](ht
 
 On Windows 10:
 ```
- ### For the Histogram File ###
- $ sde -mix -omix "C:\Users\<username>\cpp-class-project\IntelSDE_Data\DataStructures\list\msvc\sde-list-ms.txt" -iform -- "C:\Users\<username>\cpp-class-project\DataStructures\list\list.exe"
+### For the Histogram File ###
+sde -mix -omix "C:\Users\<username>\cpp-class-project\IntelSDE_Data\DataStructures\list\msvc\sde-list-ms.txt" -iform -- "C:\Users\<username>\cpp-class-project\DataStructures\list\list.exe"
 
 ### For the XED Disassembler File ###
- $ xed -i "C:\Users\<username>\cpp-class-project\DataStructures\list\list.exe" > "C:\Users\<username>\cpp-class-project\IntelSDE_Data\DataStructures\list\msvc\xed-list-ms.txt"
+xed -i "C:\Users\<username>\cpp-class-project\DataStructures\list\list.exe" > "C:\Users\<username>\cpp-class-project\IntelSDE_Data\DataStructures\list\msvc\xed-list-ms.txt"
 ```
